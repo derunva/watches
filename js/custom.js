@@ -574,5 +574,18 @@ $(document).ready(function () {
             $errBox.parent().removeClass('is-err');
             $errBox.parent().addClass('is-success');
         }
+    });
+    $('[data-counter]').click(function(){
+        var $input = $(this).parent().find('input');
+        if($(this).data('counter') == "plus"){
+            $input.val($input.val()*1+1*1)
+        }else{
+            if($input.val()>1){
+                $input.val($input.val()-1)
+            }
+        }
+    });
+    $('.product-block__remove').click(function(){
+        
     })
 });
