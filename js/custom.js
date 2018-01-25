@@ -360,12 +360,15 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         ;
         $('.mobile-menu').toggleClass('opened');
-        if($('.overlay').is(':visible')){
-           $('.overlay').fadeOut(); 
-           $('body').removeClass('noscroll')
-        }else{
-            $('.overlay').fadeIn();
+        if($('.mobile-menu').is('.opened')){
+           $('.overlay').fadeIn();
             $('body').addClass('noscroll')
+        }else{      
+            $('.overlay').fadeOut(); 
+            $('body').removeClass('noscroll');
+            $('.header-dropdown').removeClass('is-active');
+            $('.mobile-menu .has-active').removeClass('is-active');
+            $('.header-dropdown .has-hidden').addClass('is-hidden');
         }
     });
 
@@ -481,8 +484,15 @@ $(document).ready(function () {
     })
     $('[data-open]').click(function(e){
         e.preventDefault();
-        var target = $('[data-show="'+$(this).data('open')+'"]');
+        
         var $this = $(this);
+        var target = $('[data-show="'+$(this).data('open')+'"]');
+        if($this.is('[data-group]') && !$this.is('.is-active')){
+            console.log(123)
+            $('[data-group="'+$this.data('group')+'"].has-active').removeClass('is-active');
+            $('[data-group="'+$this.data('group')+'"].has-hidden').addClass('is-hidden');
+        }
+        
         if(target.hasClass('is-hidden')){
             target.removeClass('is-hidden');
             $this.addClass('is-active');
@@ -501,7 +511,6 @@ $(document).ready(function () {
             
             if($this.is('[data-slide-trigger]')){
                 $('[data-slide="'+$this.data('slide-trigger')+'"]').removeClass('is-active');
-                console.log($('[data-slide="'+$this.data('slide-trigger')+'"]'))
                 
             }
         }
