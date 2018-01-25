@@ -914,7 +914,7 @@ header {
 }
 
 .service-nav__item:last-child {
-    padding: 0;
+    /*padding: 0;*/
     border: none;
     margin: 0;
 }
@@ -9280,7 +9280,7 @@ textarea {
 }
 
 .service-nav__item {
-    margin-right: 15px;
+    /*margin-right: 15px;*/
     position: relative
 }
 
@@ -12077,6 +12077,10 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+}
+.m-v-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 @media only screen and (min-width:650px) {
     .news-block__item{

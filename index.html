@@ -31,16 +31,16 @@
         <!-- HEADER -->
         <header class="header">
             <!-- header right dropdowns -->
-            <div data-slide="header-right" class="header-dropdown">
-                <div data-show="login" class="header-dropdown__form d-form is-hidden">
-                    <div class="d-form__group">
+            <div data-slide="header-right" class="header-dropdown" >
+                <div data-show="login" data-group="sign"  class="header-dropdown__form d-form is-hidden has-hidden ">
+                    <div class="d-form__group m-v-40">
                         <div class="d-form__label">
                             <label>
                                 Логин
                             </label>
                         </div>
                         <div class="d-form__input">
-                            <input type="text" placeholder="Введите ваш e-mail" name="login" data-input="email" data-validate="email">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email" data-validate="email">
                         </div>
                         <div class="d-form__error" data-err="email">
                             <span class="is-hidden"> 
@@ -49,7 +49,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="d-form__group">
+                    <div class="d-form__group m-v-40">
                         <div class="d-form__label">
                             <label>
                                 Пароль
@@ -77,8 +77,8 @@
                         <a data-modal="restore-pass" href="#">Забыли пароль?</a>
                     </div>
                 </div>
-                <div data-show="registration" class="header-dropdown__form d-form is-hidden">
-                    <div class="d-form__group">
+                <div data-show="registration" data-group="sign" class="header-dropdown__form d-form is-hidden has-hidden">
+                    <div class="d-form__group m-v-40">
                         <div class="d-form__label">
                             <label>
                                 ФИО<span>*</span>
@@ -94,7 +94,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="d-form__group">
+                    <div class="d-form__group m-v-40">
                         <div class="d-form__label">
                             <label>
                                 Пароль
@@ -105,7 +105,9 @@
                                 type="text" 
                                 class="is-hidden" 
                                 name="password" 
-                                placeholder="Пароль" data-toggle="pass">
+                                placeholder="Пароль"
+                                data-toggle="pass"
+                            >
                             <input type="password" name="password" placeholder="Пароль" data-toggle="pass">
                             <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
                         </div>
@@ -146,8 +148,8 @@
                 </div>
                 <div class="header-top__right">
                 <div class="service-nav">
-                    <a href="#" data-open="login" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
-                    <a href="#" data-open="registration" class="service-nav__item">Регистрация</a>
+                    <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign" data-slide-trigger="header-right" class="service-nav__item">Регистрация</a>
                 </div>
                 </div>
             </div>
@@ -385,8 +387,8 @@
             <div class="mobile-menu"> <!-- mobile menu start -->
                 <div class="mobile-menu__first">
                     <div class="login-buttons">
-                        <a href="#" data-open="login" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
-                    <a href="#" class="service-nav__item">Регистрация</a>
+                        <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
                     </div>
                     <nav class="mobile-navigation">
                         <ul class="navigtaion-list">
