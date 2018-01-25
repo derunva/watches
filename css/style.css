@@ -2905,7 +2905,6 @@ input:focus::-webkit-input-placeholder {
 /*** breadcrumb ***/
 
 .breadcrumb {
-    height: 40px;
     margin: 40px 20px;
 }
 
@@ -2989,7 +2988,7 @@ input:focus::-webkit-input-placeholder {
 
 .breadcrumb__text {
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 10px;
     font: 300 16px/normal 'Open Sans', sans-serif;
     text-align: center;
     -webkit-transition: all 0.25s ease-in-out 0s;
@@ -4064,7 +4063,7 @@ input:focus::-webkit-input-placeholder {
     max-width: 500px;
     position: relative;
     color: #000;
-    font: 300 34px/normal 'Open Sans', sans-serif;
+    font: 300 32px/normal 'Open Sans', sans-serif;
     text-align: center;
 }
 
@@ -4081,7 +4080,7 @@ input:focus::-webkit-input-placeholder {
     padding: 0;
     margin: 0;
     color: #000;
-    font: 100 20px/27px 'Open Sans', sans-serif;
+    font: 100 18px/27px 'Open Sans', sans-serif;
     text-indent: 0px;
 }
 
@@ -4102,6 +4101,7 @@ input:focus::-webkit-input-placeholder {
 .guarantee-block__text-tagging {
     color: #ACAEB1;
     line-height: normal;
+    font-size: 18px;
 }
 
 .color-tagging {
@@ -4129,7 +4129,7 @@ input:focus::-webkit-input-placeholder {
 .sale_header {
     display: block;
     text-align: center;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .sale_text {
@@ -4176,12 +4176,13 @@ input:focus::-webkit-input-placeholder {
     text-align: center;
     display: block;
     color: #6E6E6E;
+        font-size: 16px;
+    font-weight: 300;
     margin: 15px 0 20px 0;
     line-height: normal;
 }
 
 .payment-methods {
-    margin: 0 10% 0px 10%;
     transition: 0.5s ease;
 }
 
@@ -8124,7 +8125,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width:992px) and (min-width:767px) {
+@media only screen and (max-width:992px) and (min-width:770px) {
     .fullHeight {
         height: 880px!important
     }
@@ -8141,7 +8142,7 @@ textarea {
 
 }
 
-@media only screen and (max-width:1024px) and (min-width:767px) {
+@media only screen and (max-width:1024px) and (min-width:770px) {
     .button-up {
         right: 20px!important
     }
@@ -8299,7 +8300,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:770px) {
     .filter-block__type-form.order{
         margin-left:0 !important;
     }
@@ -12153,7 +12154,7 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         width: 40%;
     }
 }
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:480px) {
     .section-user-page .user-list-base li{
         font-size: 16px;
         padding-bottom: 12px;
@@ -12193,8 +12194,56 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     .guarantee-block__title-min{
         font-size: 18px;
     }
-    .guarantee-block__text-tagging{
+    
+    
+    .content .section-guarantee{
+        padding: 0 30px;
+    }
+    .guarantee-block__title{
+            font-size: 20px;
+    font-weight: 300;
+    }
+    .breadcrumb__text{
+            font: 300 14px/normal 'Open Sans', sans-serif;
+    }
+    .breadcrumb{
+     margin: 20px 30px 38px;
+
+    font-size: 14px;
+    }
+    .shares-page-block__text{
+        font: 300 14px/30px 'Open Sans', sans-serif;
+    }
+}
+@media only screen and (max-width:770px) {
+   .payment-methods{
+    margin: 0;
+   }
+   .shares-page-block__text{
+        font: 300 16px/30px 'Open Sans', sans-serif;
+    }
+   .guarantee-block__text-tagging{
             font-size: 16px;
         font-weight: 300;
+    }
+    .guarantee-block__text-title{
+    font-size: 16px;
+    font-weight: 300;
+    }
+    .guarantee-block__title{
+    font: 300 24px/normal 'Open Sans', sans-serif;
+    }
+   .payment-methods .delivery-methods-item{
+        min-height: 235px;
+   }
+   .sale_header{
+    font-size: 20px;
+   }
+   .delivery_text{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .guarantee-block__title-min{
+        font-size: 20px;
     }
 }
