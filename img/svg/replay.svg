@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4620 8086 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f68b23;
+        font-size: 200px;
+        font-family: MaterialIcons-Regular, Material Icons;
+      }
+    </style>
+  </defs>
+  <text id="replay" class="cls-1" transform="translate(4620 8286)"><tspan x="0" y="0">replay</tspan></text>
+</svg>

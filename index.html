@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>Мир часов | Главная</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
+
+
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body class="loaded">
+
+
+    <!-- BODY -->
+
+    <div class="main-wrapper">
+
+        <!-- HEADER -->
+        <header class="header">
+            <!-- header right dropdowns -->
+            <div data-slide="header-right" class="header-dropdown">
+                <div data-show="login" class="header-dropdown__form d-form is-hidden">
+                    <div class="d-form__group">
+                        <div class="d-form__label">
+                            <label>
+                                Логин
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login" data-input="email" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input type="text" class="is-hidden" name="password" placeholder="Пароль" data-toggle="pass">
+                            <input type="password" name="password" placeholder="Пароль" data-toggle="pass">
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
+                        </div>
+                        <div class="d-form__error">
+                            <span class="is-hidden"> 
+                                Неверный логин или пароль
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        <a data-modal="restore-pass" href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div data-show="registration" class="header-dropdown__form d-form is-hidden">
+                    <div class="d-form__group">
+                        <div class="d-form__label">
+                            <label>
+                                ФИО<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваше фио" name="name" data-input="name" data-validate="length">
+                        </div>
+                        <div class="d-form__error" data-err="name">
+                            <span class="is-hidden"> 
+                                Шлишком короткое имя
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Пароль" data-toggle="pass">
+                            <input type="password" name="password" placeholder="Пароль" data-toggle="pass">
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
+                        </div>
+                        <div class="d-form__error">
+                            <span class="is-hidden"> 
+                                Неверный логин или пароль
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        <a data-modal="restore-pass" href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+            <!-- header right dropdowns -->
+            <div class="header-top">
+                <div class="header-top__left">
+                    <nav class="main-nav">
+                        <a href="about-company.html" class="main-nav__item">О нас</a>
+                        <a href="drop-shipping.html" class="main-nav__item">Drop shipping - прямые поставки</a>
+                        <a href="guarantee.html" class="main-nav__item">Гарантия</a>
+                        <a href="#" class="main-nav__item">Ремонт и обслуживание часов</a>
+                        <a href="#" class="main-nav__item">Доставка и оплата</a>
+                    </nav>
+
+                    <div class="switch-lang">
+                        <a href="#" class="switch-lang__item">UA</a> /
+                        <a href="#" class="switch-lang__item">EN</a> /
+                        <a href="#" class="switch-lang__item active">RU</a>
+                    </div>
+                </div>
+                <div class="header-top__right">
+                <div class="service-nav">
+                    <a href="#" data-open="login" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
+                    <a href="#" data-open="registration" class="service-nav__item">Регистрация</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="header-bottom clearfix">
+                <div class="mobile-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo-wrap">
+                    <a href="index.html" class="logo-link"><img src="img/logo.png" alt="" title="" class="logo"></a>
+                </div>
+
+                <div class="categories-nav-wrap">
+                    <ul class="categories-nav">
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">
+
+                                Каталог часов
+                                <!-- <i class="fa fa-chevron-right hidden-min1200" aria-hidden="true"></i> -->
+                            </a>
+
+                            <div class="categories-nav__submenu-wrap">
+                                <ul class="categories-nav__submenu clearfix">
+                                    <li class="categories-nav__submenu-item submenu-item_xl">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Швейцарские часы</a>
+                                            <span class="categories-nav__icon bg-Civil_Ensign_of_Switzerland__Pantone_"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list col-3">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Alfex</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Calvin Klein</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jaguar</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Atlantic</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rue du Rhone</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Chrono</a>
+                                            </li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Balmain</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova Accutron</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Candino</a></li>
+
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Epos</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Franck Muller</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Longines</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Louis Erard</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Maurice Lacroix</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rado</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Raymond Weil</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Roamer</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Hanowa</a>
+                                            </li>
+
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Tag Heuer</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Oris</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Versace</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Zenith</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Certina</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Christina Design</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Японские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Japan"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Casio</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Citizen</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Q & Q</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Orient</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Seiko</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Английские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_England"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Vivienne</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Westwood</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Royal London</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Французские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_France"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Michel Renee</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Elite</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Pierre Lannier</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Корейские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_the_Provisional_Government_of_the_Republic_of_Korea"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Romanson</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Датские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Denmark"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Skagen</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Итальянские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Italy"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Diesel</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Шведские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Sweden"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Daniel Wellington</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Австрийские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Austria"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jacques Lemans</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Немецкие часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Germany"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bruno Sohnle</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Continental</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">США часы</a>
+                                            <span class="categories-nav__icon bg-usa"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Fossil</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Испанские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Spain"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Festina</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Украинские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Ukraine"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Kleynod</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">Мужские часы</a>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">Женские часы</a>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="contact.html" class="categories-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-button-wrap clearfix">
+
+
+                    <a href="#" class="header-button button-search">
+                    <i class="fa fa-search fa-2" aria-hidden="true"></i>
+                    <form action="" class="header-search">
+                        <label for="header_search" class="header-search__label">
+                        <input type="text" id="header_search" class="header-search__input" placeholder="Ищете что-то конкретное?">
+                        <!-- <input type="button" class="header-search__button "> -->
+                        <button type="submit" name="button" class="header-search__submit"><i class="fa fa-search"></i></button>
+                    </label>
+                    </form>
+                </a>
+
+                    <a href="#" class="header-button button-wish">
+                    <i class="fa fa-heart fa-2" aria-hidden="true"></i>
+                </a>
+
+                    <a href="#" class="header-button button-cart">
+                    <i class="fa fa-shopping-bag fa-2" aria-hidden="true"></i>
+                    <span class="cart-item-count">9</span>
+                </a>
+                </div>
+            </div>
+
+            <div class="mobile-menu"> <!-- mobile menu start -->
+                <div class="mobile-menu__first">
+                    <div class="login-buttons">
+                        <a href="#" data-open="login" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
+                    <a href="#" class="service-nav__item">Регистрация</a>
+                    </div>
+                    <nav class="mobile-navigation">
+                        <ul class="navigtaion-list">
+                            <li class="navigtaion-list__item submenu-link" data-target="menu_1"><a href="#">Каталог часов <i class="fa fa-chevron-right"></i></a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Мужские часы</a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Женские часы</a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Контакты</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-switch-lang">
+                        <a href="#" class="mobile-switch-lang__item">UA</a> <span>/</span>
+                        <a href="#" class="mobile-switch-lang__item">EN</a> <span>/</span>
+                        <a href="#" class="mobile-switch-lang__item active">RU</a>
+                    </div>
+                    <nav class="mobile-menu-footer">
+                        <ul class="mobile-menu-footer-list">
+                            <li class="mobile-menu-footer-list__item"><a href="#">О нас</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Drop shipping - прямые поставки</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Гарантия</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Ремонт и обслуживание часов</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Доставка и оплата</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Дисконтная система</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu__second" data-target="menu_1">
+                    <nav class="watches-navigation">
+                        <ul class="watches-list">
+                            <li class="navigtaion-list__item submenu-link" data-target="menu_1"><a href="#">Каталог часов <i class="fa fa-chevron-up"></i></a> </li>
+                            <li class="watches-list__item"><a href="#">Швейцарские часы <span class="categories-nav__icon bg-Civil_Ensign_of_Switzerland__Pantone_"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Японские часы <span class="categories-nav__icon bg-Flag_of_Japan"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Австрийские часы <span class="categories-nav__icon bg-Flag_of_Austria"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Английские часы <span class="categories-nav__icon bg-Flag_of_England"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Немецкие часы <span class="categories-nav__icon bg-Flag_of_Germany"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Французские часы <span class="categories-nav__icon bg-Flag_of_France"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Американские часы <span class="categories-nav__icon bg-usa"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Корейские часы <span class="categories-nav__icon bg-Flag_of_the_Provisional_Government_of_the_Republic_of_Korea"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Итальянские часы <span class="categories-nav__icon bg-Flag_of_Italy"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Испанские часы <span class="categories-nav__icon bg-Flag_of_Spain"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Датские часы <span class="categories-nav__icon bg-Flag_of_Denmark"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Шведские часы <span class="categories-nav__icon bg-Flag_of_Sweden"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Украинские часы <span class="categories-nav__icon bg-Flag_of_Ukraine"></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>  <!-- mobile menu end -->
+        </header>
+        <!-- HEADER END   -->
+
+        <!-- CONTENT -->
+        <main class="content">
+            <section class="section-slider">
+                <div class="main-slider">
+                    <div class="slider-navigation">
+								<div class="slider-left-btn navigation-btn" data-slider-navigation="main-slider__slider" data-owl-navigaion="prev"><i class="main-slider__arrow-left"></i></div>
+								<div class="slider-right-btn navigation-btn" data-slider-navigation="main-slider__slider" data-owl-navigaion="next"><i class="main-slider__arrow-left"></i></div>
+							</div>
+                    <div class="main-slider__slider owl-carousel owl-theme">
+                        <a href="#" class="item" style="background-image:url('img/slide-img01.jpg')">
+                            <div class="main-slider__slide-description">
+                                <p class="main-slider__slide-text">ХИТ ЭТОГО ЛЕТА <span class="main-slider__slide-text_inside">Timex EASY READER</span></p>
+                                <span class="main-slider__percent">-20%</span>
+                                <span class="main-slider__slide-button">Подробней</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item" style="background-image:url('img/slide-img01.jpg')">
+                            <div class="main-slider__slide-description">
+                                <p class="main-slider__slide-text">ХИТ ЭТОГО ЛЕТА <span class="main-slider__slide-text_inside">Timex EASY READER</span></p>
+                                <span class="main-slider__percent">-20%</span>
+                                <span class="main-slider__slide-button">Подробней</span>
+                            </div>
+                        </a>
+                        <a href="#" class="item" style="background-image:url('img/slide-img01.jpg')">
+                            <div class="main-slider__slide-description">
+                                <p class="main-slider__slide-text">ХИТ ЭТОГО ЛЕТА <span class="main-slider__slide-text_inside">Timex EASY READER</span></p>
+                                <span class="main-slider__percent">-20%</span>
+                                <span class="main-slider__slide-button">Подробней</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section-categories">
+                <div class="categories-block">
+                    <div class="categories-block__line first-line">
+                        <div class="categories-block__item item-col_50">
+                            <p class="categories-block__title"><a href="#" class="categories-block__title-link">Мужские часы</a></p>
+                            <div class="categories-block__img-wrap">
+                                <img src="img/categories-img01.jpg" class="categories-block__img" alt="" title="">
+                            </div>
+                            <div class="categories-block__other-categories">
+                                <a href="catalog.html" class="categories-block__link white-btn">Новинки</a>
+                                <a href="catalog.html" class="categories-block__link white-btn">Топ продаж</a>
+                                <a href="catalog.html" class="categories-block__link white-btn">Акции</a>
+                            </div>
+                        </div>
+
+                        <div class="categories-block__item item-col_50">
+                            <p class="categories-block__title"><a href="#" class="categories-block__title-link">Женские часы</a></p>
+                            <div class="categories-block__img-wrap">
+                                <img src="img/categories-img02.jpg" class="categories-block__img" alt="" title="">
+                            </div>
+                            <div class="categories-block__other-categories">
+                                <a href="catalog.html" class="categories-block__link white-btn">Новинки</a>
+                                <a href="catalog.html" class="categories-block__link white-btn">Топ продаж</a>
+                                <a href="catalog.html" class="categories-block__link white-btn">Акции</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categories-block__line second-line">
+                        <div class="categories-block__item item-col_75">
+                            <p class="categories-block__title title-s"><a href="#" class="categories-block__title-link">Классические</a></p>
+                            <div class="categories-block__img-wrap img-wrap-s">
+                                <img src="img/cat003.jpg" class="categories-block__img  img768" alt="" title="">
+                                <img src="img/categories-img03.jpg" class="categories-block__img imgfull" alt="" title="">
+                            </div>
+                            <a href="catalog.html" class="categories-block__link categories-block__all-categories white-btn">Смотреть все</a>
+                        </div>
+
+                        <div class="categories-block__item item-col_25">
+                            <p class="categories-block__title title-s"><a href="#" class="categories-block__title-link">Smart</a></p>
+                            <div class="categories-block__img-wrap img-wrap-s">
+                                <img src="img/categories-img04.jpg" class="categories-block__img" alt="" title="">
+                            </div>
+                            <a href="catalog.html" class="categories-block__link categories-block__all-categories white-btn">Смотреть все</a>
+                        </div>
+                    </div>
+
+                    <div class="categories-block__line  third-line">
+                        <div class="categories-block__item item-col_25">
+                            <p class="categories-block__title title-s"><a href="#" class="categories-block__title-link">Fashion</a></p>
+                            <div class="categories-block__img-wrap img-wrap-s">
+                                <img src="img/categories-img05.jpg" class="categories-block__img" alt="" title="">
+                            </div>
+                            <a href="catalog.html" class="categories-block__link categories-block__all-categories white-btn">Смотреть все</a>
+                        </div>
+
+                        <div class="categories-block__item item-col_75">
+                            <p class="categories-block__title title-s"><a href="#" class="categories-block__title-link">Спортивные</a></p>
+                            <div class="categories-block__img-wrap img-wrap-s">
+                                <img src="img/cat006.jpg" class="categories-block__img  img768" alt="" title="">
+                                <img src="img/categories-img06.png" class="categories-block__img imgfull" alt="" title="">
+                            </div>
+                            <a href="catalog.html" class="categories-block__link categories-block__all-categories white-btn">Смотреть все</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-brand">
+
+                    <p class="section-title">Бренды</p>
+
+                    <div class="brand-block">
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img01.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img02.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img03.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img04.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img05.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img06.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img07.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img08.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img09.svg" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img10.png" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img11.png" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+
+                        <div class="brand-block__item">
+                            <a href="#" class="brand-block__link">
+                            <img src="img/brand/brand-img12.png" class="brand-block__img" alt="" title="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="show-all">
+                        <span>Показать все</span>
+                        <i class="icon-arrow-right arrow-down"></i>
+                    </div>
+            </section>
+            <section class="section-tab">
+                <div class="wrapper">
+                    <div id="tabs" class="categories-tab">
+                        <ul class="categories-tab__tabs-block">
+                            <li class="categories-tab__item visible-tab" data-tab='1'>
+                                <a href="#tabs-1" class="categories-tab__tab">Новинки</a>
+                            </li>
+
+                            <li class="categories-tab__item" data-tab='2'>
+                                <a href="#tabs-2" class="categories-tab__tab">Топ продаж</a>
+                            </li>
+
+                            <li class="categories-tab__item" data-tab='3'>
+                                <a href="#tabs-3" class="categories-tab__tab">Акции</a>
+                            </li>
+                        </ul>
+                        <div class="mobile-tabs-pagination">
+                            <div class="pagination-btn pagination-left" data-tab="1"><i class="fa fa-angle-left"></i></div>
+                            <div class="pagination-btn pagination-right" data-tab="1"><i class="fa fa-angle-right"></i></div>
+                        </div>
+
+                        <div id="tabs-1" class="categories-tab__tab-content">
+                            <div class="product-block">
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img01.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 12947474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы FESTINA F16875/1</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <!--<p class="product-block__old-price">2 686 грн</p>-->
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <!--<span class="product-block__label label-new">Новинка</span>-->
+                                            <span class="product-block__label label-discount">- 15%</span>
+                                            <span class="product-block__label label-top label-top_top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 23575787</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">9 888 грн</p>
+                                            <p class="product-block__price">8 599 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">3 035 грн</p>
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img04.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top label-top_top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 32546718</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Casio EFR-526L-1AVUEF</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__price">3 689 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img05.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 07747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Q & Q VW56J304Y</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">411 грн</p>
+                                            <p class="product-block__price">329 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img06.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы Q & Q Q947J304Y</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">499 грн</p>
+                                            <p class="product-block__price">399 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img07.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы EASY READER Original</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 686 грн</p>
+                                            <p class="product-block__price">2 239 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img08.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы Timex TREND</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 833 грн</p>
+                                            <p class="product-block__price">2 699 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="product-block__link-all">Смотреть все <span class="icon-arrow-right arrow-dark"></span></a>
+                        </div>
+
+                        <div id="tabs-2" class="categories-tab__tab-content">
+                            <div class="product-block">
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img05.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 07747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Q & Q VW56J304Y</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">411 грн</p>
+                                            <p class="product-block__price">329 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img06.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы Q & Q Q947J304Y</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">499 грн</p>
+                                            <p class="product-block__price">399 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img07.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы EASY READER Original</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 686 грн</p>
+                                            <p class="product-block__price">2 239 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img08.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы Timex TREND</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 833 грн</p>
+                                            <p class="product-block__price">2 699 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img01.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 12947474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы FESTINA F16875/1</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <!--<p class="product-block__old-price">2 686 грн</p>-->
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <!--<span class="product-block__label label-new">Новинка</span>-->
+                                            <span class="product-block__label label-discount">- 15%</span>
+                                            <span class="product-block__label label-top label-top_top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 23575787</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">9 888 грн</p>
+                                            <p class="product-block__price">8 599 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">3 035 грн</p>
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img04.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 32546718</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Casio EFR-526L-1AVUEF</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__price">3 689 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="catalog.html" class="product-block__link-all">Смотреть все <span class="icon-arrow-right arrow-dark"></span></a>
+                        </div>
+
+                        <div id="tabs-3" class="categories-tab__tab-content">
+                            <div class="product-block">
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img07.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы EASY READER Original</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 686 грн</p>
+                                            <p class="product-block__price">2 239 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img08.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы Timex TREND</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">2 833 грн</p>
+                                            <p class="product-block__price">2 699 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img01.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 12947474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы FESTINA F16875/1</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <!--<p class="product-block__old-price">2 686 грн</p>-->
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <!--<span class="product-block__label label-new">Новинка</span>-->
+                                            <span class="product-block__label label-discount">- 15%</span>
+                                            <span class="product-block__label label-top label-top_top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 23575787</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">9 888 грн</p>
+                                            <p class="product-block__price">8 599 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-new">Новинка</span>
+                                            <span class="product-block__label label-discount">-20%</span>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 47747474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">3 035 грн</p>
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img04.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 32546718</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Casio EFR-526L-1AVUEF</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__price">3 689 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img01.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <span class="product-block__label label-top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 12947474</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы FESTINA F16875/1</a></p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <!--<p class="product-block__old-price">2 686 грн</p>-->
+                                            <p class="product-block__price">2 529 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-block__list-item">
+                                    <div class="product-block__item">
+                                        <div class="product-block__img-box">
+                                            <a href="#" class="product-block__link">
+                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                        </a>
+                                            <!--<span class="product-block__label label-new">Новинка</span>-->
+                                            <span class="product-block__label label-discount">- 15%</span>
+                                            <span class="product-block__label label-top label-top_top">Топ</span>
+                                        </div>
+
+                                        <div class="product-block__description-box">
+                                            <p class="product-block__prod-code">Код товара: 23575787</p>
+                                            <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                            </p>
+                                            <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                            </p>
+                                            <p class="product-block__old-price">9 888 грн</p>
+                                            <p class="product-block__price">8 599 грн</p>
+                                        </div>
+
+                                        <div class="product-block__button-box">
+                                            <a href="#" class="product-block__buy-button">Купить</a>
+                                            <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="product-block__link-all">Смотреть все <span class="icon-arrow-right arrow-dark"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-promotion">
+                <p class="section-title title_other">Акции</p>
+
+                <div class="promotion-slider">
+                    <div class="promotion-slider__item">
+                        <a href="shares-page.html" class="promotion-slider__link">
+                        <img src="img/promo-slide01.png" class="promotion-slider__slide-img" alt="" title="">
+
+                        <div class="promotion-slider__date-box">
+                            <span class="promotion-slider__date">10 сентября - 10 октября 2017</span>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="promotion-slider__item">
+                        <a href="shares-page.html" class="promotion-slider__link">
+                        <img src="img/promo-slide02.png" class="promotion-slider__slide-img" alt="" title="">
+
+                        <div class="promotion-slider__date-box">
+                            <span class="promotion-slider__date">7 сентября - 14 октября 2017</span>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="promotion-slider__item">
+                        <a href="shares-page.html" class="promotion-slider__link">
+                        <img src="img/promo-slide01.png" class="promotion-slider__slide-img" alt="" title="">
+
+                        <div class="promotion-slider__date-box">
+                            <span class="promotion-slider__date">10 сентября - 10 октября 2017</span>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="promotion-slider__item">
+                        <a href="shares-page.html" class="promotion-slider__link">
+                        <img src="img/promo-slide02.png" class="promotion-slider__slide-img" alt="" title="">
+
+                        <div class="promotion-slider__date-box">
+                            <span class="promotion-slider__date">7 сентября - 14 октября 2017</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <a href="shares.html" class="section-link_all-promo">Все акции <span class="icon-arrow-right arrow-dark"></span></a>
+            </section>
+            <section class="section-news">
+                <p class="section-title title_other">Новости</p>
+
+                <div class="news-block">
+                    <div class="news-block__item">
+                        <p class="news-block__item-title"><a href="news-page.html" class="news-block__link">Новые часы от Apple уже у нас</a></p>
+
+                        <img src="img/news-img01.png" class="news-block__img" alt="" title="">
+
+                        <div class="news-block__date-box">
+                            <span class="news-block__date">7 сентября 2017</span>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <p class="news-block__item-title"><a href="news-page.html" class="news-block__link">Заключен эксклюзивный договор на поставки с компанией Timex</a></p>
+
+                        <img src="img/news-img02.png" class="news-block__img" alt="" title="">
+
+                        <div class="news-block__date-box">
+                            <span class="news-block__date">5 сентября 2017</span>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <p class="news-block__item-title"><a href="news-page.html" class="news-block__link">Запускаеться новая акция!</a></p>
+
+                        <img src="img/news-img03.png" class="news-block__img" alt="" title="">
+
+                        <div class="news-block__date-box">
+                            <span class="news-block__date">1 сентября 2017</span>
+                        </div>
+                    </div>
+
+                    <div class="news-block__item">
+                        <p class="news-block__item-title"><a href="news-page.html" class="news-block__link">Мы расширяемся. Здравствуй, столица!</a></p>
+
+                        <img src="img/news-img04.png" class="news-block__img" alt="" title="">
+
+                        <div class="news-block__date-box">
+                            <span class="news-block__date">25 августа 2017</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="news.html" class="section-link_all-news">Все новости <span class="icon-arrow-right arrow-dark"></span></a>
+            </section>
+            <section class="section-description">
+                <div class="wrapper">
+                    <div class="description-block">
+                        <div class="description-block__item">
+                            <p class="description-block__title">Мир Часов - современный интернет магазин наручных часов и лучший выбор для Вас!</p>
+
+                            <p class="description-block__text-wrap">
+                                <span class="description-block__text">На сегодняшний день часы не только не утратили своей актуальности с появлением мобильных гаджетов, а стали цениться на порядок выше. Этот наручный аксессуар, показывающий время, приобрел другой, более глубокий смысл и назначение.</span>
+
+                                <span class="description-block__text">Сейчас в интернет магазине часов в Украине можно подобрать модели на любой вкус. Множество часов отечественных и зарубежных брендов представлено в различных коллекциях и ценовых категориях.</span>
+
+                                <span class="description-block__text">Интернет магазин «Мир часов» часов предлагает своим будущим клиентам ознакомиться с выбором недорогих моделей различных марок часов, осуществляя доставку по всей Украине. Насчитывая 20-ти летнюю историю работы на отечественном рынке, наша торговая сеть постоянно развивается и открывает новые современные магазины по городам Украины.
+Осваивая розничное направление Южного региона Украины и Киева, интернет магазин «Мир часов» осуществляет доставку также и в Крым, Донецкую и Луганскую области. Помогают нам в этом проверенные и зарекомендовавшие себя перевозчики – «Новая почта», «Деливери», «Мист экспресс» и «Гюнсел».</span>
+
+                                <span class="description-block__text">Подобрать и приобрести идеальный аксессуар в нашем магазине наручных часов в Киеве через интернет достаточно легко. Для этого необходимо определиться с назначением, желаемыми техническими характеристиками и ценовой категорией. После заказа уже через 1-2 дня Вы будете держать в руках заветную покупку.</span>
+
+                                <span class="description-block__text">Почему стоит выбрать именно нас?</span>
+                            </p>
+
+                            <div class="description-block__vantage-box">
+                                <div class="description-block__vantage-item">
+                                    <img src="img/vantage-img01.png" class="description-block__vantage-img" alt="" title="">
+                                    <p class="description-block__vantage-title">Бесплатная доставка</p>
+                                    <span class="description-block__vantage-subtitle">Доставка Новой почтой и Деливери по всей Украине. Доставим товар в Крым, Луганскую и Донецкую области.</span>
+                                </div>
+
+                                <div class="description-block__vantage-item">
+                                    <img src="img/vantage-img02.png" class="description-block__vantage-img" alt="" title="">
+                                    <p class="description-block__vantage-title">Все модели в наличии</p>
+                                    <span class="description-block__vantage-subtitle">В наличии более чем 20 000 моделей разных брендов и категорий.  Минимальный срок доставки 1-2 дня.</span>
+                                </div>
+
+                                <div class="description-block__vantage-item">
+                                    <img src="img/vantage-img03.png" class="description-block__vantage-img" alt="" title="">
+                                    <p class="description-block__vantage-title">Официальные дилеры</p>
+                                    <span class="description-block__vantage-subtitle">Мы уже более 20 лет на рынке и являемся официальными дилерами более чем 30 часовых брендов.</span>
+                                </div>
+
+                                <div class="description-block__vantage-item">
+                                    <img src="img/vantage-img04.png" class="description-block__vantage-img" alt="" title="">
+                                    <p class="description-block__vantage-title">Только оригинальный товар</p>
+                                    <span class="description-block__vantage-subtitle">Совершив покупку у нас Вы получаете оригинальные часы в фирменной упаковке от производителя.</span>
+                                </div>
+
+                                <div class="description-block__vantage-item">
+                                    <img src="img/vantage-img05.png" class="description-block__vantage-img" alt="" title="">
+                                    <p class="description-block__vantage-title">Гарантийный сервис</p>
+                                    <span class="description-block__vantage-subtitle">Гарантия на все часы от 12 до 24-х месяцев. За все время нашей работы  обслужено более 500 000 часов.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="description-block__item">
+                            <p class="description-block__title">Гарантия и обслуживание</p>
+
+                            <p class="description-block__text-wrap">
+                                <span class="description-block__text">Чтобы быть уверенным в качестве наручных часов, стоит приобретать их в проверенных интернет магазинах. Так, компания «Мира часов» осуществляет реализацию своей продукции, являясь официальным дилером около 30 часовых брендов. Мы предоставляем покупателям не только фирменную заводскую упаковку товара, но и полную информационную и гарантийную документацию. Кроме официальной, магазин также сопровождает любой приобретенный аксессуар собственной гарантией от магазина.</span>
+
+                                <span class="description-block__text">Для того, чтобы подбор необходимого аксессуара в магазине наручных часов был максимально простым, каждая модель снабжена детализированными фотографиями и полным описанием технических параметров. На фото Вы также можете увидеть, как выглядит фирменная упаковка, прилагающаяся к часам.</span>
+                            </p>
+                        </div>
+
+                        <div class="description-block__item">
+                            <p class="description-block__title">Подбор часов</p>
+
+                            <p class="description-block__text-wrap">
+                                <span class="description-block__text">Прежде, чем сделать заказ наручных часов через интернет магазин, помните, что вы приобретаете не просто хронометр, определяющий время, но и верного спутника, который будет служить Вам многие годы и всегда Вас сопровождать. Поэтому уделите этому вопросу большое внимание.</span>
+
+                                <span class="description-block__text">Для обычного ежедневного использования лучше всего выбирать часы в классическом варианте исполнения корпуса, ремешка и циферблата. Обычно в таких моделях корпус имеет правильную круглую форму и строгие цвета отделки. Такие часы будут отлично смотреться не только с деловым костюмом или платьем, но и повседневными вариантами одежды. Зачастую они оснащаются только двумя стрелками и не имеют дополнительных усложнений. Это делает универсальный аксессуар более тонким по размеру корпуса и легким по весу.</span>
+
+                                <span class="description-block__text">Более серьезный вариант классических часов уже оснащен календарем, секундной стрелкой или отдельным циферблатом, хронографом и другими функциями. Он также может быть выполнен в строгом стиле, но предназначен уже в основном для мужской половины общества из-за размера и увеличенного веса. Экземпляры этой категории, как правило, принадлежат известным брендам и свидетельствуют о мастерстве часовых производителей.</span>
+
+                                <span class="description-block__text">Особого внимания заслуживают часы, изготовленные из драгоценных металлов и украшенные камнями. Для их производства зачастую используют платину, золото всех оттенков, реже - серебро. Эксклюзивные модели для женщин выполняют с использованием бриллиантов, сапфиров, рубинов и других драгоценных камней. Этот аксессуар имеет высокую стоимость и выпускается ограниченными партиями.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- CONTENT END   -->
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="subscribe-wrap">
+                    <form action="" method="get" class="subscribe-form">
+                        <label for="subscribe-field_footer" class="subscribe-form__label clearfix">
+                        <input type="text" id="subscribe-field_footer" class="subscribe-form__input"
+                               placeholder="Введите ваш e-mail чтобы первым узнавать о скидках">
+                        <input type="submit" class="subscribe-form__button" value="Подписаться">
+                    </label>
+                    </form>
+                </div>
+
+                <div class="footer-nav-wrap">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Drop shipping - прямые поставки</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ремон и обслуживание часов</a></li>
+                    </ul>
+
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Гарантия</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Дисконтная система</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom clearfix">
+                <div class="copyright">
+                    <span class="copyright__text">Интернет Магазин МИР ЧАСОВ © 2000-2017 Copyright. Все права защищены.</span>
+                </div>
+
+                <div class="studio-logo">
+                    <a href="#" class="studio-logo__link">
+                    <img src="img/svg/studio-logo.svg" class="studio-logo__img" alt="" title="">
+                </a>
+                </div>
+            </div>
+
+            <button id="to-top" class="button-up">
+            <span class="icon-arrow-right arrow-dark"></span>
+        </button>
+        </footer>
+        <!-- FOOTER END   -->
+
+    </div>
+
+    <div class="icon-load"></div>
+
+    <!-- BODY END   -->
+
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/components/slick.js"></script>
+    <script type="text/javascript" src="js/components/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
+    <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
+    <!--
+<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
+<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+-->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--]-->
+    <!-- <div style="text-align:center;font-size:11px" class="cbalink"><a href="https://www.zzz.com.ua/" title="&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;">&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;</a>        ZZZ.COM.UA<br/><br/></div>
+    <script type="text/javascript" src="//a5.zzz.com.ua/r1.js"></script> -->
+    <div class="cumf_bt_form_wrapper" style="display:none">
+        <form id="contact_us_mail_feedback" action="/oldTi9QvqM6ytokU9Q8ylQq" method="post">
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Contact Us</legend>
+                <!-- Text input-->
+                <div class="cumf_bt_form-group">
+                    <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_name">name</label>
+                    <div class="col-md-4">
+                        <input id="cumf_bt_name" name="cumf_bt_name" type="text" placeholder="your name" class="cumf_bt_form-control cumf_bt_input-md" required />
+                        <span class="cumf_bt_help-block">Please enter your name</span>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="cumf_bt_form-group">
+                    <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_email">your email</label>
+                    <div class="col-md-4">
+                        <input id="cumf_bt_email" name="cumf_bt_email" type="text" placeholder="enter your email" class="cumf_bt_form-control cumf_bt_input-md" required />
+                        <span class="cumf_bt_help-block">please enter your email</span>
+                    </div>
+                </div>
+                <!-- Textarea -->
+                <div class="cumf_bt_form-group">
+                    <label class="col-md-4 cumf_bt_control-label" for="cumf_bt_message">your message</label>
+                    <div class="col-md-4">
+                        <textarea class="cumf_bt_form-control" id="cumf_bt_message" name="cumf_bt_message">Message goes here</textarea>
+                    </div>
+                </div>
+                <input type="submit" id="cumf_bt_submit" value="Send" />
+            </fieldset>
+        </form>
+    </div>
+<div class="d-modal">
+    <div class="d-modal__inner">
+        <div class="d-modal__body">
+            <div class="d-modal__text">
+                Для восстановления доступа к учетной 
+                записи введите e-mail который 
+                использовался при регистрации
+            </div>
+            <div class="d-form d-form_modal">
+                <div class="d-form__group">
+                    <div class="d-form__input">
+                        <input type="text" placeholder="Введите ваш e-mail" name="email" data-input="email1" data-validate="email">
+                    </div>
+                    <div class="d-form__error" data-err="email1">
+                        <span class="is-hidden"> 
+                            Неверно набран e-mail
+                            <i class="d-icon d-icon_alert"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-modal__btns">
+                <a class="d-btn d-btn_noborder modal-close" href="#">Отмена</a>
+                <a class="d-btn" href="#">Отправить</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+
+</body>
+
+</html>
+<!-- zzz </body><!-->

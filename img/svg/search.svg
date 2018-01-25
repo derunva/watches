@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2783 70 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dcdcdc;
+        font-size: 38px;
+        font-family: MaterialIcons-Regular, Material Icons;
+      }
+    </style>
+  </defs>
+  <text id="search" class="cls-1" transform="translate(2783 108)"><tspan x="0" y="0">search</tspan></text>
+</svg>
