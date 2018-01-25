@@ -12180,4 +12180,11 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         font-size: 14px;
         font-weight: 300;
     }
+    .guarantee-block__title-min{
+        font-size: 18px;
+    }
+    .guarantee-block__text-tagging{
+            font-size: 16px;
+        font-weight: 300;
+    }
 }
