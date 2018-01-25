@@ -11890,12 +11890,15 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     margin: 20px 0;
 }
 .d-form__group{
-    margin: 0 0 20px;
+    margin: 0 0 20px; 
 }
 .d-form__label{
     font-size: 12px;
     color: #95989a;
     margin-bottom: 10px;
+}
+.d-form__label span,.d-form__linkholder span{
+    color: #db4437;
 }
 .d-form__input input{
     height: 28px;
@@ -11957,7 +11960,7 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     display: none;
 }
 .header-dropdown{
-    position: absolute;
+    position: fixed;
     top: 130px;
     width: 100%;
     left: -100%;
@@ -11983,7 +11986,8 @@ a.categories-block__link.categories-block__all-categories.white-btn{
 .d-form__linkholder{
     text-align: center;
     margin: 30px 0;
-
+    color: #95989a;
+    font-size: 14px;
 }
 .d-form__linkholder a{
     font-size: 16px;

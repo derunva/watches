@@ -56,8 +56,21 @@
                             </label>
                         </div>
                         <div class="d-form__input d-form__input_pass">
-                            <input type="text" class="is-hidden" name="password" placeholder="Пароль" data-toggle="pass">
-                            <input type="password" name="password" placeholder="Пароль" data-toggle="pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
                             <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
                         </div>
                         <div class="d-form__error">
@@ -97,7 +110,39 @@
                     <div class="d-form__group m-v-40">
                         <div class="d-form__label">
                             <label>
-                                Пароль
+                                E-mail<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email2" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email2">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Телефон
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш телефон" name="login"  data-input="phone" data-validate="phone">
+                        </div>
+                        <div class="d-form__error" data-err="phone">
+                            <span class="is-hidden"> 
+                                Неверно набран номер
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
                             </label>
                         </div>
                         <div class="d-form__input d-form__input_pass">
@@ -106,14 +151,58 @@
                                 class="is-hidden" 
                                 name="password" 
                                 placeholder="Пароль"
-                                data-toggle="pass"
+                                data-toggle="pass12"
+                                data-compare="pass12"
+                                data-same="password"
                             >
-                            <input type="password" name="password" placeholder="Пароль" data-toggle="pass">
-                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass12"
+                                data-compare="pass12"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass12"></i>
                         </div>
-                        <div class="d-form__error">
+                        <div class="d-form__error" data-err="password">
                             <span class="is-hidden"> 
-                                Неверный логин или пароль
+                                Пароли не совпадают
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Повторите пароль"
+                                data-toggle="pass11"
+                                data-compare="pass11"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Повторите пароль" 
+                                data-toggle="pass11"
+                                data-compare="pass11"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass11"></i>
+                        </div>
+                        <div class="d-form__error" data-err="password">
+                            <span class="is-hidden"> 
+                                Пароли не совпадают
                                 <i class="d-icon d-icon_alert"></i>
                             </span>
                             
@@ -121,11 +210,11 @@
                     </div>
                     <div class="d-form__btnholder">
                         <button type="submit">
-                            Войти
+                            Регистрация
                         </button>
                     </div>
                     <div class="d-form__linkholder">
-                        <a data-modal="restore-pass" href="#">Забыли пароль?</a>
+                        Поля с <span>*</span> обязательны для заполнения
                     </div>
                 </div>
             </div>
@@ -1534,6 +1623,7 @@
     <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
     <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.masked.input.js"></script>
     <script src="js/common.js"></script>
     <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
