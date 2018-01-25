@@ -15,5 +15,8 @@
     "url": "https://github.com/derunva/watches/issues"
   },
   "homepage": "https://github.com/derunva/watches#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gulp-server-livereload": "^1.9.2"
+  }
 }
