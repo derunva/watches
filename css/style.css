@@ -12079,15 +12079,100 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-#lovelist .product-block__item{
+#lovelist .product-block__item,#cartlist .product-block__item{
     position: relative;
     width: auto;
     text-align: center;
+}
+#cartlist .product-block__old-price{
+    margin-left: 0 !important;
+    text-align: center ;
+}
+#cartlist .product-block__item{
+    border-bottom: 1px solid #dcdcdc;
+}
+.d-counter{
+    position: relative;
+    padding-right: 50px;
+    border:1px solid #dcdcdc;
+    border-radius: 2px;
+}
+.d-counter input{
+    width: 50px;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #95989a;
+}
+.d-counter__up{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50%;
+    width: 50px;
+    cursor: pointer;
+    opacity: .28;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.d-counter__down{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 50px;
+    cursor: pointer;
+    opacity: .28;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+.d-counter__up:hover,.d-counter__down:hover{
+    background: #eeeeee;
+    opacity: 1;
+}
+.d-counter__up:before,.d-counter__down:before,.d-counter__up:after,.d-counter__down:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 10px;
+    height: 2px;
+    background: #95989a;
+    -moz-transform: rotate(-45deg) translateX(2px) translateY(2px);
+    -webkit-transform: rotate(-45deg) translateX(2px) translateY(2px);
+    -o-transform: rotate(-45deg) translateX(2px) translateY(2px);
+    -ms-transform: rotate(-45deg) translateX(2px) translateY(2px);
+    transform: rotate(-45deg) translateX(2px) translateY(2px);
+}
+.d-counter__up:before,.d-counter__down:before{
+    -moz-transform: rotate(45deg) translateX(-2px) translateY(2px);
+    -webkit-transform: rotate(45deg) translateX(-2px) translateY(2px);
+    -o-transform: rotate(45deg) translateX(-2px) translateY(2px);
+    -ms-transform: rotate(45deg) translateX(-2px) translateY(2px);
+    transform: rotate(45deg) translateX(-2px) translateY(2px);  
 }
 .d-titled__btn{
     text-align: center;
     margin: 20px 0;
 }
+
 .d-titled__title:after{
     content: '';
     position: absolute;
@@ -12111,6 +12196,51 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+.product-block__remove{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: .16;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.product-block__remove:hover{
+    opacity: 1;
+}
+.product-block__remove:after{
+    content: '';
+    top: 0;
+    position: absolute;
+    right: 0;
+    height: 4px;
+    width: 26px;
+    background: #000;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.product-block__remove:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    top: 0;
+    width: 26px;
+    background: #000;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 .d-form__btnholder{
     text-align: center;
