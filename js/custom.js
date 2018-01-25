@@ -551,4 +551,17 @@ $(document).ready(function () {
             $errBox.parent().addClass('is-success');
         }
     })
+    $('[data-same]').keyup(function(){
+        var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
+        console.log($(this).val(),$('[data-same-input="'+$(this).data('same')+'"]').val())
+        if($(this).val() != $('[data-same-input="'+$(this).data('same')+'"]').val()){
+            $errBox.removeClass('is-hidden');
+            $errBox.parent().addClass('is-err');
+            $errBox.parent().removeClass('is-success');
+        }else{
+            $errBox.addClass('is-hidden');
+            $errBox.parent().removeClass('is-err');
+            $errBox.parent().addClass('is-success');
+        }
+    })
 });
