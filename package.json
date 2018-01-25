@@ -17,6 +17,7 @@
   "homepage": "https://github.com/derunva/watches#readme",
   "description": "",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-server-livereload": "^1.9.2"
   }
 }

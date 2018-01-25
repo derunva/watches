@@ -459,8 +459,12 @@ $(document).ready(function () {
     });
     $('.d-form__input_pass input').keyup(function(){
         var pass = $(this).val();
-        $('.d-form__input_pass input').val(pass);
+        $('.d-form__input_pass input[data-compare="'+$(this).data('compare')+'"]').val(pass);
     });
+    $('[data-validate="phone"]').mask("(999) 99-99-999");
+    $('[data-validate="phone"]').blur(function(){
+        console.log($(this).val().length)
+    })
     $('[data-validate="email"]').keyup(function(){
         var email = $(this).val();
         var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
@@ -534,5 +538,17 @@ $(document).ready(function () {
     $('.modal-close').click(function(e){
         e.preventDefault();
         modalClose();
+    })
+    $('[data-same-input]').keyup(function(){
+        var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
+        if($(this).val() != $('[data-same="'+$(this).data('same-input')+'"]').val()){
+            $errBox.removeClass('is-hidden');
+            $errBox.parent().addClass('is-err');
+            $errBox.parent().removeClass('is-success');
+        }else{
+            $errBox.addClass('is-hidden');
+            $errBox.parent().removeClass('is-err');
+            $errBox.parent().addClass('is-success');
+        }
     })
 });
