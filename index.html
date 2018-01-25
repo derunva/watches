@@ -6,10 +6,11 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <title>Мир часов | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
 
-
+    
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -33,12 +34,71 @@
             <!-- header right dropdowns -->
             <div class="header-dropdown header-dropdown_right" data-slide="header-left">
                 <div data-show="lovelist" data-group="cart" class="d-titled has-hidden is-hidden">
-                    <div class="d-titled__close"></div>
+                    <div class="d-titled__close" data-close-slide="header-left"></div>
                     <div class="d-titled__title">
                         Список желаний
                     </div>
                     <div class="d-titled__info">
                         В вашем списке желаний 5 товаров
+                    </div>
+                    <ul id="lovelist">
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a href="#" class="product-block__buy-button">Купить</a>
+                                    <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a href="#" class="product-block__buy-button">Купить</a>
+                                    <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder" href="#">Продолжить покупки</a>
                     </div>
                 </div>
             </div>
@@ -1629,7 +1689,7 @@
     <div class="icon-load"></div>
 
     <!-- BODY END   -->
-
+    
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="js/components/slick.js"></script>
@@ -1638,6 +1698,7 @@
     <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.masked.input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <script src="js/common.js"></script>
     <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
