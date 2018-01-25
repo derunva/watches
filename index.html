@@ -31,6 +31,17 @@
         <!-- HEADER -->
         <header class="header">
             <!-- header right dropdowns -->
+            <div class="header-dropdown header-dropdown_right" data-slide="header-left">
+                <div data-show="lovelist" data-group="cart" class="d-titled has-hidden is-hidden">
+                    <div class="d-titled__close"></div>
+                    <div class="d-titled__title">
+                        Список желаний
+                    </div>
+                    <div class="d-titled__info">
+                        В вашем списке желаний 5 товаров
+                    </div>
+                </div>
+            </div>
             <div data-slide="header-right" class="header-dropdown" >
                 <div data-show="login" data-group="sign"  class="header-dropdown__form d-form is-hidden has-hidden ">
                     <div class="d-form__group m-v-40">
@@ -462,7 +473,7 @@
                     </form>
                 </a>
 
-                    <a href="#" class="header-button button-wish">
+                    <a href="#" data-open="lovelist" data-group="cart" data-slide-trigger="header-left" class="header-button button-wish">
                     <i class="fa fa-heart fa-2" aria-hidden="true"></i>
                 </a>
 
