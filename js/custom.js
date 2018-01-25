@@ -486,6 +486,10 @@ $(document).ready(function () {
         }
         
     })
+    var slider =  $("#lovelist").lightSlider({
+        item: 1,
+        pager: false
+    });
     $('[data-open]').click(function(e){
         e.preventDefault();
         
@@ -502,6 +506,7 @@ $(document).ready(function () {
             $this.addClass('is-active');
             
             if($this.is('[data-slide-trigger]')){
+                slider.refresh();
                 setTimeout(function(){
                     $('[data-slide="'+$this.data('slide-trigger')+'"]').addClass('is-active');
                 },500)
@@ -550,6 +555,12 @@ $(document).ready(function () {
             $errBox.parent().removeClass('is-err');
             $errBox.parent().addClass('is-success');
         }
+    });
+
+    $('[data-close-slide]').click(function(e){
+        e.preventDefault();
+        $('[data-slide="'+$(this).data('close-slide')+'"]').removeClass('is-active');
+        $('[data-slide="'+$(this).data('close-slide')+'"] .has-hidden').addClass('is-hidden');
     })
     $('[data-same]').keyup(function(){
         var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
