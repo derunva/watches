@@ -1300,6 +1300,13 @@ footer.footer {
     .repair-info p {
         float: left !important;
         text-align: center;
+        font-weight: 300;
+        span{
+            font-weight: 500;
+        }
+    }
+    .repair-info p span{
+         font-weight: 500;
     }
     .repair-info a {
         float: left !important;
@@ -3534,7 +3541,7 @@ input:focus::-webkit-input-placeholder {
 
 .styled {
     width: auto;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .styled.focused .jq-selectbox__select {
@@ -3754,6 +3761,8 @@ input:focus::-webkit-input-placeholder {
 
 .shares-block__sort-text {
     font: 300 18px/normal 'Open Sans', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .shares-block__sorting-form {
@@ -7865,7 +7874,7 @@ textarea {
         padding-right: 0 !important;
         text-align: center;
         width: 100%;
-        float: none !important;
+        float: left; !important;
     }
     .location .mobile-direction {
         float: none;
@@ -7905,8 +7914,8 @@ textarea {
         width: 100% !important;
     }
     .about-content-text {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .location .mobile-direction a {
         margin: 0 auto;
@@ -8008,8 +8017,8 @@ textarea {
         transition: 0.5s ease;
     }
     .about-content-text {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .content-block.repair .wrapper {
         width: 100%;
@@ -8783,7 +8792,7 @@ textarea {
     }
     .repair-tel p {
         text-align: center;
-        float: none !important;
+        float: left !important;
         padding-top: 10px;
         margin: 0;
     }
@@ -10765,6 +10774,7 @@ textarea {
 .about-content-text p {
     font: 400 18px/normal "Open Snas", sans-serif;
     text-align: left;
+        padding: 30px 0 15px 0;
     padding-bottom: 2em;
 }
 
@@ -10896,6 +10906,8 @@ textarea {
 .repair-img {
     float: right;
     width: 50%;
+    margin-bottom: 70px;
+    margin-top: 40px;
     transition: 0.5s ease;
 }
 
@@ -10919,7 +10931,7 @@ textarea {
 
 .repair-info p {
     float: left;
-    padding-right: 3em;
+    padding-right: 2em;
     transition: 0.5s ease;
 }
 
@@ -12280,6 +12292,14 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         width: 40%;
     }
 }
+.jq-selectbox li.selected{
+    background: #fff;
+    color: #95989a;
+}
+.jq-selectbox li:hover{
+     background: #fff;
+    color: #95989a;
+}
 @media only screen and (max-width:480px) {
     .section-user-page .user-list-base li{
         font-size: 16px;
@@ -12340,6 +12360,21 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     .shares-page-block__text{
         font: 300 14px/30px 'Open Sans', sans-serif;
     }
+    .shares-page-block__title{
+            font: 400 20px/normal 'Open Sans', sans-serif;
+    }
+    .pagination-item{
+            width: 40px;
+    height: 40px;
+    padding: 8px 0;
+        font: 300 18px/normal 'Open Sans', sans-serif;
+    }
+    .about-content-text p{
+            font: 400 16px/normal "Open Snas", sans-serif;
+    }
+    .about-content-text{
+        padding: 0 30px;
+    }
 }
 @media only screen and (max-width:770px) {
    .payment-methods{
@@ -12371,5 +12406,8 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     }
     .guarantee-block__title-min{
         font-size: 20px;
+    }
+    .about-content-text p{
+        font-size: 16px;
     }
 }
