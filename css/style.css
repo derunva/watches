@@ -11951,7 +11951,69 @@ a.categories-block__link.categories-block__all-categories.white-btn{
 .d-form__error.is-success{
     border-color: #41ac4b;
 }
-
+.d-alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 10;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.d-alert.is-active{
+    height: 100%;
+    opacity: 1; 
+}
+.d-alert__inner{
+    background: #fff;
+    padding: 25px;
+    min-width: 300px;
+    min-height: 200px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    max-width: 90%;
+    max-height: 80%;
+    overflow: auto;
+}
+.d-alert__icon{
+    text-align: center;
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.d-alert__text{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
 .d-icon{
     display: inline-block;
     vertical-align: middle;
@@ -11968,6 +12030,16 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     background-image: url('../img/alert.png');
     height: 16px;
     width: 17px;
+}
+.d-icon_heart{
+    background-image: url('../img/icon-heart.png');
+    height: 34px;
+    width: 40px;
+}
+.d-icon_case{
+    background-image: url('../img/icon-case.png');
+    height: 39px;
+    width: 40px; 
 }
 .d-form__error .d-icon_alert{
     float: right;

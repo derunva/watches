@@ -606,8 +606,26 @@ $(document).ready(function () {
     $('.product-block__remove').click(function(){
         $(this).parent().remove();
     })
-    console.log($('[data-price]'))
-    $('[data-price]').change(function(){
-        console.log(123)
+    $('.d-alert').click(function(){
+        $(this).removeClass('is-active');
+    });
+    $('.d-alert__inner').click(function(e){
+        e.stopPropagation()
+    })
+    $('[data-alert]').click(function(e){
+        e.preventDefault();
+        var data = $(this).data('alert');
+        console.log(data)
+        if(typeof data == 'string'){
+            data = data.replace(/(\r\n|\n|\r)/gm,"");
+            data = JSON.parse(data);
+        }
+        $('[data-icon]').addClass('is-hidden');
+        $('[data-icon="'+data.icon+'"]').removeClass('is-hidden');
+        $('.d-alert__text').text(data.text);
+        $('.d-alert').addClass('is-active');
+        setTimeout(function(){
+            $('.d-alert').removeClass('is-active');
+        },2000)
     })
 });
