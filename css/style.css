@@ -3519,7 +3519,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .contact-block__list-item .contact-phone:first-child {
-    margin: 0 30px 0 0;
+    margin: 0 75px 0 0;
 }
 
 .contact-block__text {
@@ -3992,12 +3992,12 @@ input:focus::-webkit-input-placeholder {
     padding-bottom: 30px;
     margin: 0 0 20px;
     color: #000;
-    font: 300 28px/normal 'Open Sans', sans-serif;
+    font: 300 32px/normal 'Open Sans', sans-serif;
     text-align: center;
 }
 
 .drop-shipping-block__title:after {
-    content: "Drop shiping - Ð¿Ñ€ÑÐ¼Ñ‹Ðµ Ð¿Ð¾ÑÑ‚Ð°Ð²ÐºÐ¸";
+    content: "Drop shipping - прямые поставки";
     padding-bottom: 30px;
     border-bottom: 1px solid #F80;
 }
@@ -4007,7 +4007,7 @@ input:focus::-webkit-input-placeholder {
     padding: 0;
     margin: 0;
     color: #000;
-    font: 400 20px/27px 'Open Sans', sans-serif;
+    font: 300 18px/27px 'Open Sans', sans-serif;
     text-indent: 30px;
 }
 
@@ -4038,7 +4038,7 @@ input:focus::-webkit-input-placeholder {
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    border: 1px solid #FF9A33
+    border: 2px solid #FF9A33
 }
 
 .drop-shipping-outline__title {
@@ -8945,13 +8945,13 @@ textarea {
         font-size: 1.8em;
     }
     .drop-shipping-block span {
-        font-size: 1.5em;
+        font-size: 14px;
     }
     .drop-shipping-outline__title {
-        font-size: 2em
+        font-size: 16px;
     }
     .drop-shipping-outline .drop-shipping-outline__text {
-        font-size: 0.6em;
+        font-size: 14px;
     }
 }
 
@@ -10760,7 +10760,7 @@ textarea {
 /* ABOUT */
 
 .about-title h1 {
-    font: 100 32px/normal "Open Snas", sans-serif;
+    font: 100 20px/normal "Open Snas", sans-serif;
     text-align: center;
     border-bottom: 1px solid #f68b23;
     width: 500px;
@@ -10787,7 +10787,7 @@ textarea {
 }
 
 .about-content-text p {
-    font: 400 18px/normal "Open Snas", sans-serif;
+    font: 300 18px/normal "Open Snas", sans-serif;
     text-align: left;
         padding: 30px 0 15px 0;
     padding-bottom: 2em;
@@ -12562,7 +12562,7 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         font: 300 18px/normal 'Open Sans', sans-serif;
     }
     .about-content-text p{
-            font: 400 16px/normal "Open Snas", sans-serif;
+            font: 300 16px/normal "Open Snas", sans-serif;
     }
     .about-content-text{
         padding: 0 30px;
@@ -12590,8 +12590,33 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         font-size: 16px;
         max-width: 200px;
     }
+    .guarantee-block__text{
+        font-size: 14px;
+    }
+    .guarantee-block__text-title{
+        font-size: 14px;
+    }
+   .drop-shipping-block__text{
+    font-size: 14px;
+   }
+    .drop-shipping-block__title{
+        font-size: 20px;
+    }
+    .drop-shipping-outline-circle{
+        font-size: 24px;
+    }
+    .contact-block__title{
+        font-size: 18px;
+    }
+    .contact-block__text{
+        font-size: 16px;
+    }
+   .about-title h1{
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width:770px) {
+
      .news-page-block__text{
         font-size: 16px;
     }
@@ -12640,6 +12665,27 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     .all-news-block__description-text{
         font-size: 16px;
     }
+    .drop-shipping-block__title{
+        font-size: 24px;
+    }
+    .drop-shipping-block__text {
+       font-size:  16px;
+   }
+   .drop-shipping-outline__title{
+    font-size: 24px;
+   }
+   .section-contact .contact-block__contact-box{
+    width: 100%;
+   }
+
+}
+@media only screen and (max-width:1500px) {
+        .section-contact .contact-block__contact-box{
+    width: 100%;
+   }
+   .contact-block__map-box{
+    max-width: 100%
+   }
 }
 .all-news-block__link-wrap{
         margin: auto;
@@ -12649,4 +12695,23 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     .all-news-block__link{
         float: right;
     }
+       .contact-block__title{
+    font-size: 20px;
+   }
+   .contact-block__text{
+    font-size: 20px;
+   }
 }
+.guarantee-block__text-title{
+        font-weight: 500;
+    }
+    .section-drop-shipping{
+        margin-bottom: 70px;
+    }
+    .contact-block__contact-box{
+        margin-bottom: 30px;
+    }
+    .about-content-text p {
+        text-indent: 30px;
+            padding: 30px 0 0 0;
+    }
