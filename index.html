@@ -33,7 +33,7 @@
         <header class="header">
             <!-- header right dropdowns -->
             <div class="header-dropdown header-dropdown_right" data-slide="header-left">
-                <div data-show="shopingcart" data-group="cart" class="d-titled has-hidden is-hidden">
+                <div data-cart data-show="shopingcart" data-group="cart" class="d-titled has-hidden is-hidden">
                     <div class="d-titled__close" data-close-slide="header-left"></div>
                     <div class="d-titled__title">
                         Корзина
@@ -67,7 +67,39 @@
                                 <div class="product-block__button-box">
                                     <p class="product-block__price">2 529 грн</p>
                                     <div class="d-counter">
-                                        <input value="1" type="text" name="count">
+                                        <input value="1" type="text" data-price="2529" name="count">
+                                        <div data-counter="plus" class="d-counter__up"></div>
+                                        <div data-counter="minus" class="d-counter__down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__remove"></div>
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <span class="product-block__label label-new">Новинка</span>
+                                    <span class="product-block__label label-discount">-20%</span>
+                                    <span class="product-block__label label-top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 47747474</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">3 035 грн</p>
+                                    
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <p class="product-block__price">2 529 грн</p>
+                                    <div class="d-counter">
+                                        <input value="1" type="text" data-price="2529" name="count">
                                         <div data-counter="plus" class="d-counter__up"></div>
                                         <div data-counter="minus" class="d-counter__down"></div>
                                     </div>
@@ -75,6 +107,20 @@
                             </div>
                         </li>
                     </ul>
+                    <ul class="info-list">
+                        <li>
+                            Доставка:
+                            <span class="pull-right text-green">Бесплатно</span>
+                        </li>
+                        <li>
+                            Итого к оплате:
+                            <span class="pull-right text-orange"><span data-sum>2 527</span> грн</span>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn ">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder m-v-40" href="#">Продолжить покупки</a>
+                        <a class="d-btn d-btn_large d-btn_shadow d-btn_orange m-v-40" href="#">Оформить заказ</a>
+                    </div>
                 </div>
                 <div data-show="lovelist" data-group="cart" class="d-titled has-hidden is-hidden">
                     <div class="d-titled__close" data-close-slide="header-left"></div>
@@ -354,8 +400,8 @@
                 </div>
                 <div class="header-top__right">
                 <div class="service-nav">
-                    <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item">Вход</a>
-                    <a href="#" data-open="registration" data-group="sign" data-slide-trigger="header-right" class="service-nav__item">Регистрация</a>
+                    <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
                 </div>
                 </div>
             </div>

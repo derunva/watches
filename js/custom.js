@@ -2,7 +2,22 @@ function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email.toLowerCase());
 }
-
+function cartPrice(){
+    $('[data-cart]').each(function(){
+        var sum = 0;
+        $('[data-price]',this).each(function(){
+            sum += $(this).val()*$(this).data('price');
+        });
+        var text = '';
+        sum = sum.toString();
+        if(sum.length > 3){
+            text = sum.substring(0, sum.length - 3)+ ' ' +sum.slice(-3)
+        }else{
+            text = sum;
+        }
+        $('[data-sum]',this).text(text);
+    })
+}
 $(window).load(function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         $('body').addClass('ios');
@@ -356,6 +371,9 @@ $(window).bind('resize', handler);
 
 $(document).ready(function () {
     // burger
+    setInterval(function(){
+        cartPrice()
+    },100)
     $('.mobile-burger').click(function () {
         $(this).toggleClass('open');
         ;
@@ -586,6 +604,10 @@ $(document).ready(function () {
         }
     });
     $('.product-block__remove').click(function(){
-        
+        $(this).parent().remove();
+    })
+    console.log($('[data-price]'))
+    $('[data-price]').change(function(){
+        console.log(123)
     })
 });
