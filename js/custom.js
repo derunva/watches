@@ -503,6 +503,18 @@ $(document).ready(function () {
             $errBox.parent().removeClass('is-err');
         }
         
+    });
+    $('[data-validate="length"]').keyup(function(){
+        var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
+        if($(this).val().length < 3){
+            $errBox.removeClass('is-hidden');
+            $errBox.parent().addClass('is-err');
+            $errBox.parent().removeClass('is-success');
+        }else{
+            $errBox.addClass('is-hidden');
+            $errBox.parent().removeClass('is-err');
+            $errBox.parent().addClass('is-success');
+        }
     })
     var slider =  $("#lovelist").lightSlider({
         item: 1,
@@ -606,8 +618,26 @@ $(document).ready(function () {
     $('.product-block__remove').click(function(){
         $(this).parent().remove();
     })
-    console.log($('[data-price]'))
-    $('[data-price]').change(function(){
-        console.log(123)
+    $('.d-alert').click(function(){
+        $(this).removeClass('is-active');
+    });
+    $('.d-alert__inner').click(function(e){
+        e.stopPropagation()
+    })
+    $('[data-alert]').click(function(e){
+        e.preventDefault();
+        var data = $(this).data('alert');
+        console.log(data)
+        if(typeof data == 'string'){
+            data = data.replace(/(\r\n|\n|\r)/gm,"");
+            data = JSON.parse(data);
+        }
+        $('[data-icon]').addClass('is-hidden');
+        $('[data-icon="'+data.icon+'"]').removeClass('is-hidden');
+        $('.d-alert__text').text(data.text);
+        $('.d-alert').addClass('is-active');
+        setTimeout(function(){
+            $('.d-alert').removeClass('is-active');
+        },2000)
     })
 });
