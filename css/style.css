@@ -12169,9 +12169,38 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     border-bottom: 1px solid #dcdcdc;
      margin-bottom: 20px;
 }
+.d-titled__title_wide{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
 .d-titled__info{
     margin-bottom: 30px;
     font-size: 16px;
+}
+.order-steps{
+    counter-reset: section; 
+}
+.order-step{
+    margin: 30px 0;
+    padding: 0 10px;
+    
+}
+.order-step:before{
+    counter-increment: section;                 
+    content: counter(section);
+    display: block;
+    margin: 0 0 20px -10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 40px;
+    color: #f68b23;
+    -webkit-box-shadow:inset 0 0 0 1px #f68b23;
+    box-shadow:inset 0 0 0 1px #f68b23;
+    font-size: 20px;
 }
 .lSAction>a{
     background-image: none;

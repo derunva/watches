@@ -5,25 +5,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <title>Мир часов | Описание</title>
+    <title>Мир часов | Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
 
-
-    <link rel="stylesheet" href="css/main.min.css">
+    
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-
-    <link rel="stylesheet" href="css/magnific.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/slider.js"></script>
+
 </head>
 
 <body class="loaded">
@@ -35,24 +31,398 @@
 
         <!-- HEADER -->
         <header class="header">
-            <div class="header-top clearfix">
-                <nav class="main-nav">
-                    <a href="about-company.html" class="main-nav__item">О нас</a>
-                    <a href="#" class="main-nav__item">Drop shipping - прямые поставки</a>
-                    <a href="#" class="main-nav__item">Гарантия</a>
-                    <a href="#" class="main-nav__item">Ремон и обслуживание часов</a>
-                    <a href="#" class="main-nav__item">Доставка и оплата</a>
-                </nav>
+            <!-- header right dropdowns -->
+            <div class="header-dropdown header-dropdown_right" data-slide="header-left">
+                <div data-cart data-show="shopingcart" data-group="cart" class="d-titled has-hidden is-hidden">
+                    <div class="d-titled__close" data-close-slide="header-left"></div>
+                    <div class="d-titled__title">
+                        Корзина
+                    </div>
+                    <div class="d-titled__info">
+                        В вашей корзине 2 товара
+                    </div>
+                    <ul id="cartlist">
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__remove"></div>
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <span class="product-block__label label-new">Новинка</span>
+                                    <span class="product-block__label label-discount">-20%</span>
+                                    <span class="product-block__label label-top">Топ</span>
+                                </div>
 
-                <div class="switch-lang">
-                    <a href="#" class="switch-lang__item">UA</a> /
-                    <a href="#" class="switch-lang__item">EN</a> /
-                    <a href="#" class="switch-lang__item active">RU</a>
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 47747474</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">3 035 грн</p>
+                                    
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <p class="product-block__price">2 529 грн</p>
+                                    <div class="d-counter">
+                                        <input value="1" type="text" data-price="2529" name="count">
+                                        <div data-counter="plus" class="d-counter__up"></div>
+                                        <div data-counter="minus" class="d-counter__down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__remove"></div>
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <span class="product-block__label label-new">Новинка</span>
+                                    <span class="product-block__label label-discount">-20%</span>
+                                    <span class="product-block__label label-top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 47747474</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">3 035 грн</p>
+                                    
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <p class="product-block__price">2 529 грн</p>
+                                    <div class="d-counter">
+                                        <input value="1" type="text" data-price="2529" name="count">
+                                        <div data-counter="plus" class="d-counter__up"></div>
+                                        <div data-counter="minus" class="d-counter__down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="info-list">
+                        <li>
+                            Доставка:
+                            <span class="pull-right text-green">Бесплатно</span>
+                        </li>
+                        <li>
+                            Итого к оплате:
+                            <span class="pull-right text-orange"><span data-sum>2 527</span> грн</span>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn ">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder m-v-40" href="#">Продолжить покупки</a>
+                        <a class="d-btn d-btn_large d-btn_shadow d-btn_orange m-v-40" href="#">Оформить заказ</a>
+                    </div>
                 </div>
+                <div data-show="lovelist" data-group="cart" class="d-titled has-hidden is-hidden">
+                    <div class="d-titled__close" data-close-slide="header-left"></div>
+                    <div class="d-titled__title">
+                        Список желаний
+                    </div>
+                    <div class="d-titled__info">
+                        В вашем списке желаний 5 товаров
+                    </div>
+                    <ul id="lovelist">
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
 
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a 
+                                        href="#" 
+                                        data-alert='{"icon":"case", "text":"Товар успешно добавлен в корзину"}' 
+                                        class="product-block__buy-button"
+                                    >
+                                            Купить
+                                    </a>
+                                    <a 
+                                        href="#"
+                                        data-alert='{"icon":"heart", "text":"Товар успешно добавлен в список желаний"}'  
+                                        class="product-block__wish-button"
+                                    ><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a 
+                                        href="#" 
+                                        data-alert='{"icon":"case", "text":"Товар успешно добавлен в корзину"}' 
+                                        class="product-block__buy-button"
+                                    >
+                                            Купить
+                                    </a>
+                                    <a 
+                                        href="#"
+                                        data-alert='{"icon":"heart", "text":"Товар успешно добавлен в список желаний"}'
+                                        class="product-block__wish-button"
+                                    ><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder" href="#">Продолжить покупки</a>
+                    </div>
+                </div>
+            </div>
+            <div data-slide="header-right" class="header-dropdown" >
+                <div data-show="login" data-group="sign"  class="header-dropdown__form d-form is-hidden has-hidden ">
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Логин
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
+                        </div>
+                        <div class="d-form__error">
+                            <span class="is-hidden"> 
+                                Неверный логин или пароль
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        <a data-modal="restore-pass" href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div data-show="registration" data-group="sign" class="header-dropdown__form d-form is-hidden has-hidden">
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                ФИО<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваше фио" name="name" data-input="name" data-validate="length">
+                        </div>
+                        <div class="d-form__error" data-err="name">
+                            <span class="is-hidden"> 
+                                Шлишком короткое имя
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                E-mail<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email2" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email2">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Телефон
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш телефон" name="login"  data-input="phone" data-validate="phone">
+                        </div>
+                        <div class="d-form__error" data-err="phone">
+                            <span class="is-hidden"> 
+                                Неверно набран номер
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                             <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Повторите пароль"
+                                data-toggle="pass12"
+                                data-compare="pass-compare"
+                                data-same="password"
+                                data-input="password"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass12"
+                                data-compare="pass-compare"
+                                data-same="password"
+                                data-input="password"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass12"></i>
+                        </div>
+                        <div class="d-form__error" data-err="password">
+                            <span class="is-hidden"> 
+                                Пароли не совпадают
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Повторите пароль"
+                                data-toggle="pass11"
+                                data-compare="pass-compare1"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Повторите пароль" 
+                                data-toggle="pass11"
+                                data-compare="pass-compare1"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass11"></i>
+                        </div>
+                        <div class="d-form__error" data-err="password">
+                            <span class="is-hidden"> 
+                                Пароли не совпадают
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Регистрация
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        Поля с <span>*</span> обязательны для заполнения
+                    </div>
+                </div>
+            </div>
+            <!-- header right dropdowns -->
+            <div class="header-top">
+                <div class="header-top__left">
+                    <nav class="main-nav">
+                        <a href="about-company.html" class="main-nav__item">О нас</a>
+                        <a href="drop-shipping.html" class="main-nav__item">Drop shipping - прямые поставки</a>
+                        <a href="guarantee.html" class="main-nav__item">Гарантия</a>
+                        <a href="#" class="main-nav__item">Ремонт и обслуживание часов</a>
+                        <a href="#" class="main-nav__item">Доставка и оплата</a>
+                    </nav>
+
+                    <div class="switch-lang">
+                        <a href="#" class="switch-lang__item">UA</a> /
+                        <a href="#" class="switch-lang__item">EN</a> /
+                        <a href="#" class="switch-lang__item active">RU</a>
+                    </div>
+                </div>
+                <div class="header-top__right">
                 <div class="service-nav">
-                    <a href="#" class="service-nav__item">Вход</a>
-                    <a href="#" class="service-nav__item">Регистрация</a>
+                    <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
+                </div>
                 </div>
             </div>
 
@@ -275,22 +645,22 @@
                     </form>
                 </a>
 
-                    <a href="javascript:PopUpShow()" class="header-button button-wish">
+                    <a href="#" data-open="lovelist" data-group="cart" data-slide-trigger="header-left" class="header-button button-wish">
                     <i class="fa fa-heart fa-2" aria-hidden="true"></i>
                 </a>
 
-                    <a href="#" class="header-button button-cart">
+                    <a href="#" data-open="shopingcart" data-group="cart" data-slide-trigger="header-left"  class="header-button button-cart">
                     <i class="fa fa-shopping-bag fa-2" aria-hidden="true"></i>
                     <span class="cart-item-count">9</span>
                 </a>
                 </div>
             </div>
-            <div class="mobile-menu">
-                <!-- mobile menu start -->
+
+            <div class="mobile-menu"> <!-- mobile menu start -->
                 <div class="mobile-menu__first">
                     <div class="login-buttons">
-                        <a href="#">Мой кабинет</a>
-                        <a href="#">Выход</a>
+                        <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
                     </div>
                     <nav class="mobile-navigation">
                         <ul class="navigtaion-list">
@@ -336,127 +706,69 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-            <!-- mobile menu end -->
+            </div>  <!-- mobile menu end -->
         </header>
         <!-- HEADER END   -->
 
         <!-- CONTENT -->
         <main class="content">
-            <div class="wrapper">
-                <div class="place-order">
-                    <div class="place-order-title">
-                        <h1>Оформление заказа</h1>
-                    </div>
-                    <div class="place-order-content">
-                        <div class="first-step">
-                            <div class="step-num">
-                                <p>1</p>
-                            </div>
-                            <div class="step-content">
-                                <form>
-                                    <p>ФИО<span>*</span></p>
-                                    <input placeholder="Введите ваше фио">
-                                    <p>E-mail</p>
-                                    <input placeholder="Введите ваш e-mail">
-                                    <p>Телефон<span>*</span></p>
-                                    <input placeholder="Введите ваш телефон">
-                                    <p>Город<span>*</span></p>
-                                    <input class="city-in" placeholder="Введите ваш город" list="citylist">
-                                    <datalist id="citylist">
-                                        <option value="Херсон">
-                                        <option value="Киев">
-                                    </datalist>
-                                    <p class="important"><span>*</span>— Поля, обязательные для заполнения</p>
-                                </form>
-                            </div>
+            <div class="d-titled order-steps">
+                <div class="d-titled__title d-titled__title_wide">
+                    Оформление заказа
+                </div>
+                <div class="order-step">
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                ФИО<span>*</span>
+                            </label>
                         </div>
-                        <div class="second-step">
-                            <div class="step-num">
-                                <p>2</p>
-                            </div>
-                            <div class="step-content">
-                                <p>Выберите способ доставки</p>
-                                <form>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="1" id="customcb1" name="" />
-                                        <label class="inner" for="customcb1"></label>
-                                        <label class="outer" for="customcb1">Самовывоз из Новой почты</label>
-                                    </div>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="2" id="customcb2" name="" />
-                                        <label class="inner" for="customcb2"></label>
-                                        <label class="outer" for="customcb2">Самовывоз со склада Деливери</label>
-                                    </div>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="3" id="customcb3" name="" />
-                                        <label class="inner" for="customcb3"></label>
-                                        <label class="outer" for="customcb3">Курьером Новой почты</label>
-                                    </div>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="1" id="customcb4" name="" />
-                                        <label class="inner" for="customcb4"></label>
-                                        <label class="outer" for="customcb4">Курьером службы Мист Экспресс</label>
-                                    </div>
-                                    <p>Укажите адaрес склада<span>*</span></p>
-                                    <input class="adress" placeholder="Введите адрес склада" list="dropsklad">
-                                    <datalist id="dropsklad">
-                                        <option value="Склад №1">
-                                        <option value="Склад №2">
-                                    </datalist>
-                                </form>
-                            </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваше фио" name="name" data-input="name-o" data-validate="length">
                         </div>
-                        <div class="third-step">
-                            <div class="step-num">
-                                <p>3</p>
-                            </div>
-                            <div class="step-content">
-                                <p>Выберите способ оплаты</p>
-                                <form>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="5" id="customcb5" name="" />
-                                        <label class="inner" for="customcb5"></label>
-                                        <label class="outer" for="customcb5">Наличными</label>
-                                    </div>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="6" id="customcb6" name="" />
-                                        <label class="inner" for="customcb6"></label>
-                                        <label class="outer" for="customcb2">Безналичными</label>
-                                    </div>
-                                    <div class="red customcb">
-                                        <input type="checkbox" value="7" id="customcb7" name="" />
-                                        <label class="inner" for="customcb7"></label>
-                                        <label class="outer" for="customcb2">Visa/MasterCard</label>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="order-details">
-                            <div class="brew-descr">
-                                <img alt="" src="img/watches-1.jpg" width="66" height="100">
-                                <div class="cart-descr">
-                                    <h2>Мужские часы Timex ORIGINALS Waterbury</h2>
-                                    <p>Код товара:  47747474</p>
-                                    <span class="cart-price">2 529 грн</span>
-                                    <input type="number" id="quantiy" name="quantiy">
-                                    <span class="fa fa-times close-btn"></span>
-                                </div>
-                            </div>
-                            <div class="order-info">
-                                <div class="shipping-block">
-                                    <p>Доставка</p><span class="shipping">Бесплатно</span>
-                                </div>
-                                <div class="price-block">
-                                    <p>Итого к оплате:</p><span class="price">2 527 грн</span>
-                                </div>
-                            </div>
-                        
-                            <div class="finish-order">
-                                <a href="#">Оформить заказ</a>
-                            </div>
+                        <div class="d-form__error" data-err="name-o">
+                            <span class="is-hidden"> 
+                                Шлишком короткое имя
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
                         </div>
                     </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                E-mail<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="email" data-input="email-o" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email-o">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Телефон<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш телефон" name="login" data-input="phone-o" data-validate="phone">
+                        </div>
+                        <div class="d-form__error" data-err="phone-o">
+                            <span class="is-hidden"> 
+                                Неверно набран номер
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-step">
+                </div>
+                <div class="order-step">
                 </div>
             </div>
         </main>
@@ -470,7 +782,7 @@
                         <label for="subscribe-field_footer" class="subscribe-form__label clearfix">
                         <input type="text" id="subscribe-field_footer" class="subscribe-form__input"
                                placeholder="Введите ваш e-mail чтобы первым узнавать о скидках">
-                        <input type="button" class="subscribe-form__button" value="Подписаться">
+                        <input type="submit" class="subscribe-form__button" value="Подписаться">
                     </label>
                     </form>
                 </div>
@@ -513,26 +825,26 @@
     <div class="icon-load"></div>
 
     <!-- BODY END   -->
-
+    
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
     <script type="text/javascript" src="js/components/slick.js"></script>
     <script type="text/javascript" src="js/components/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
     <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="js/magnific.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.masked.input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="js/common.js"></script>
     <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+<script type="text/javascript" src="js/components/jquery.formstyler.js" ></script>
 <script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
 -->
-
-    <script type="text/javascript" src="js/item.js"></script>
-    <script type="text/javascript" src="js/item-menu.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <!--]-->
-    <!-- <div style="text-align:center;font-size:11px" class="cbalink"><a href="https://www.zzz.com.ua/" title="&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;">&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;</a> ZZZ.COM.UA<br/><br/></div> -->
-    <!-- <script type="text/javascript" src="//a5.zzz.com.ua/r1.js"></script> -->
+    <!-- <div style="text-align:center;font-size:11px" class="cbalink"><a href="https://www.zzz.com.ua/" title="&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;">&#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1099;&#1081; &#1093;&#1086;&#1089;&#1090;&#1080;&#1085;&#1075;</a>        ZZZ.COM.UA<br/><br/></div>
+    <script type="text/javascript" src="//a5.zzz.com.ua/r1.js"></script> -->
     <div class="cumf_bt_form_wrapper" style="display:none">
         <form id="contact_us_mail_feedback" action="/oldTi9QvqM6ytokU9Q8ylQq" method="post">
             <fieldset>
@@ -565,176 +877,48 @@
             </fieldset>
         </form>
     </div>
-    <div class="b-popup" id="popup1">
-        <div class="b-popup-content">
-            <div class="wish-list-title">
-                <h2>Список желаний</h2>
+    <div class="d-alert">
+        <div class="d-alert__inner">
+            <div class="d-alert__icon">
+                <i data-icon="heart" class="d-icon d-icon_heart is-hidden"></i>
+                <i data-icon="case" class="d-icon d-icon_case is-hidden"></i>
             </div>
-            <a href="javascript:PopUpHide()"><i class="fa fa-times wish-close"></i></a>
-            <div class="slider carousel">
-                <div class="slider-block">
-                    <div class="product-block__list-item">
-                        <div class="product-block__item">
-                            <div class="product-block__img-box">
-                                <a href="#" class="product-block__link">
-                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
-                                        </a>
-                                <!--<span class="product-block__label label-new">Новинка</span>-->
-                                <span class="product-block__label label-discount">- 15%</span>
-                                <span class="product-block__label label-top label-top_top">Топ</span>
-                            </div>
-
-                            <div class="product-block__description-box">
-                                <p class="product-block__prod-code">Код товара: 23575787</p>
-                                <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
-                                </p>
-                                <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
-                                </p>
-                                <p class="product-block__old-price">9 888 грн</p>
-                                <p class="product-block__price">8 599 грн</p>
-                            </div>
-
-                            <div class="product-block__button-box">
-                                <a href="#" class="product-block__buy-button">Купить</a>
-                                <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
+            <div class="d-alert__text">
+                Товар успешно добавлен в корзину
+            </div>
+        </div>
+    </div>
+    <div class="d-modal">
+        <div class="d-modal__inner">
+            <div class="d-modal__body">
+                <div class="d-modal__text">
+                    Для восстановления доступа к учетной 
+                    записи введите e-mail который 
+                    использовался при регистрации
+                </div>
+                <div class="d-form d-form_modal">
+                    <div class="d-form__group">
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="email" data-input="email1" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email1">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="slider-block">
-                    <div class="product-block__list-item">
-                        <div class="product-block__item">
-                            <div class="product-block__img-box">
-                                <a href="#" class="product-block__link">
-                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
-                                        </a>
-                                <!--<span class="product-block__label label-new">Новинка</span>-->
-                                <span class="product-block__label label-discount">- 15%</span>
-                                <span class="product-block__label label-top label-top_top">Топ</span>
-                            </div>
-
-                            <div class="product-block__description-box">
-                                <p class="product-block__prod-code">Код товара: 23575787</p>
-                                <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
-                                </p>
-                                <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
-                                </p>
-                                <p class="product-block__old-price">9 888 грн</p>
-                                <p class="product-block__price">8 599 грн</p>
-                            </div>
-
-                            <div class="product-block__button-box">
-                                <a href="#" class="product-block__buy-button">Купить</a>
-                                <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-block">
-                    <div class="product-block__list-item">
-                        <div class="product-block__item">
-                            <div class="product-block__img-box">
-                                <a href="#" class="product-block__link">
-                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
-                                        </a>
-                                <!--<span class="product-block__label label-new">Новинка</span>-->
-                                <span class="product-block__label label-discount">- 15%</span>
-                                <span class="product-block__label label-top label-top_top">Топ</span>
-                            </div>
-
-                            <div class="product-block__description-box">
-                                <p class="product-block__prod-code">Код товара: 23575787</p>
-                                <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
-                                </p>
-                                <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
-                                </p>
-                                <p class="product-block__old-price">9 888 грн</p>
-                                <p class="product-block__price">8 599 грн</p>
-                            </div>
-
-                            <div class="product-block__button-box">
-                                <a href="#" class="product-block__buy-button">Купить</a>
-                                <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-block">
-                    <div class="product-block__list-item">
-                        <div class="product-block__item">
-                            <div class="product-block__img-box">
-                                <a href="#" class="product-block__link">
-                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
-                                        </a>
-                                <!--<span class="product-block__label label-new">Новинка</span>-->
-                                <span class="product-block__label label-discount">- 15%</span>
-                                <span class="product-block__label label-top label-top_top">Топ</span>
-                            </div>
-
-                            <div class="product-block__description-box">
-                                <p class="product-block__prod-code">Код товара: 23575787</p>
-                                <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
-                                </p>
-                                <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
-                                </p>
-                                <p class="product-block__old-price">9 888 грн</p>
-                                <p class="product-block__price">8 599 грн</p>
-                            </div>
-
-                            <div class="product-block__button-box">
-                                <a href="#" class="product-block__buy-button">Купить</a>
-                                <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-block">
-                    <div class="product-block__list-item">
-                        <div class="product-block__item">
-                            <div class="product-block__img-box">
-                                <a href="#" class="product-block__link">
-                                            <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
-                                        </a>
-                                <!--<span class="product-block__label label-new">Новинка</span>-->
-                                <span class="product-block__label label-discount">- 15%</span>
-                                <span class="product-block__label label-top label-top_top">Топ</span>
-                            </div>
-
-                            <div class="product-block__description-box">
-                                <p class="product-block__prod-code">Код товара: 23575787</p>
-                                <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
-                                </p>
-                                <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
-                                </p>
-                                <p class="product-block__old-price">9 888 грн</p>
-                                <p class="product-block__price">8 599 грн</p>
-                            </div>
-
-                            <div class="product-block__button-box">
-                                <a href="#" class="product-block__buy-button">Купить</a>
-                                <a href="#" class="product-block__wish-button"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-modal__btns">
+                    <a class="d-btn d-btn_noborder modal-close" href="#">Отмена</a>
+                    <a class="d-btn" href="#">Отправить</a>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-            //Скрыть PopUp при загрузке страницы    
-            PopUpHide();
-        });
-        //Функция отображения PopUp
-        function PopUpShow() {
-            $("#popup1").show();
-        }
-        //Функция скрытия PopUp
-        function PopUpHide() {
-            $("#popup1").hide();
-        }
-    </script>
+    <div class="overlay"></div>
+
 </body>
 
 </html>
-<!-- zzz </body><! -->
+<!-- zzz </body><!-->

@@ -503,6 +503,18 @@ $(document).ready(function () {
             $errBox.parent().removeClass('is-err');
         }
         
+    });
+    $('[data-validate="length"]').keyup(function(){
+        var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
+        if($(this).val().length < 3){
+            $errBox.removeClass('is-hidden');
+            $errBox.parent().addClass('is-err');
+            $errBox.parent().removeClass('is-success');
+        }else{
+            $errBox.addClass('is-hidden');
+            $errBox.parent().removeClass('is-err');
+            $errBox.parent().addClass('is-success');
+        }
     })
     var slider =  $("#lovelist").lightSlider({
         item: 1,
