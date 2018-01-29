@@ -802,24 +802,91 @@
                     <div class="d-form-info">
                         Выберите способ доставки
                     </div>
-                    <div class="d-form__group m-g-10">
+                    <div class="d-form__group">
                         <div class="d-form__input-flag">
                             <label>
-                                <input type="radio" name="delivery"> <span></span>
-                                Самовывоз из Новой почты
+                                <input type="radio" checked name="delivery"> <span></span>
+                                <span>Самовывоз из Новой почты</span>
                             </label>
                         </div>
                     </div>
-                    <div class="d-form__group m-g-10">
+                    <div class="d-form__group">
                         <div class="d-form__input-flag">
                             <label>
                                 <input type="radio" name="delivery"> <span></span>
-                                Самовывоз из Новой почты
+                                <span>Самовывоз из Новой почты</span>
                             </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" name="delivery"> <span></span>
+                                <span>Курьером Новой почты</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group ">
+                        <div class="d-form__input-flag m-b-40">
+                            <label>
+                                <input type="radio" name="delivery"> <span></span>
+                                <span>Курьером службы Мист Экспресс</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Укажите адрес склада<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <select class="auto-select">
+                                <option selected="selected" disabled="disabled">Введите адрес склада</option>
+                                <option value="1">Адресс 1</option>
+                                <option value="2">Адресс 2</option>
+                                <option value="3">Адресс 3</option>
+                                <option value="4">Адресс 4</option>
+                                <option value="5">Адресс 5</option>
+                                <option value="6">Адресс 6</option>
+                            </select>
+                        </div>
+                        <div class="d-form__error" data-err="phone-o">
+                            <span class="is-hidden"> 
+                                Введите адрес склада
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="order-step">
+                    <div class="d-form-info">
+                        Выберите способ доставки
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" checked name="payment"> <span></span>
+                                <span>Наличными</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" name="payment"> <span></span>
+                                <span>Безналичными</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" name="payment"> <span></span>
+                                <span>Visa/MasterCard</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

@@ -12565,6 +12565,59 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     margin: 0 0 20px;
 
 }
+.d-form__input-flag{
+    color: #95989a;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 0 -20px;
+}
+.d-form__input-flag span{
+   display: inline-block; 
+   vertical-align: middle;
+}
+.d-form__input-flag label{
+    display: block;
+    padding: 10px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.d-form__input-flag label:hover{
+    background: #f8f8f8;
+}
+.d-form__input-flag input + span{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    position: relative;
+    -webkit-box-shadow:inset 0 0 0 2px #dcdcdc;
+    box-shadow:inset 0 0 0 2px #dcdcdc;
+    border-radius: 20px;
+    
+}
+.d-form__input-flag input + span:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 20px;
+}
+.d-form__input-flag input:checked + span{
+    -webkit-box-shadow:inset 0 0 0 2px #f68b23;
+    box-shadow:inset 0 0 0 2px #f68b23;
+
+}
+.d-form__input-flag input:checked + span:after{
+    background: #f68b23;
+}
+.m-b-40{
+    margin-bottom: 40px;
+}
+
 @media only screen and (min-width:650px) {
     .news-block__item{
         width: 50%;
