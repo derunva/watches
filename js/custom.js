@@ -640,8 +640,5 @@ $(document).ready(function () {
             $('.d-alert').removeClass('is-active');
         },2000)
     })
-    console.log($('.auto-select'))
-    $('.auto-select').selectize({})
-    console.log(13)
-    
+    $('.auto-select').selectize({})   
 });
