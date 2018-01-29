@@ -260,7 +260,7 @@ html{
 		font-size: 1.25rem;
 	}
 	.description-block__vantage-subtitle{
-			font-size: 1rem;
+		font-size: 1rem;
 	}
 	.promotion-slider__slide-img{
 		height: 21.875rem;
@@ -276,15 +276,13 @@ html{
 	}
 	.subscribe-form__input{
 		font-size: 1.125rem;
-	    height: 3.125rem;
-    padding: 0.8125rem 1.25rem;
+		height: 3.125rem;
+  	  padding: 0.8125rem 1.25rem;
 	}
-
 	.subscribe-form__button{
 		font-size:1.25rem;
-		    max-width: 10rem;
-    height: 3.125rem;
-	
+		max-width: 10rem;
+  		height: 3.125rem;
 	}
 	.copyright__text{
 		font-size: 1rem;
@@ -303,5 +301,40 @@ html{
 	}
 	.footer-nav-wrap{
 		padding: 2.190rem 0 0;
+	}
+	.categories-nav__submenu-item-name{
+		font-size: 1.25rem;
+		padding: 0 0 0.3125rem 1.25rem;
+  		margin: 0 0 0.3125rem;
+	}
+	.categories-nav__list-link{
+		font-size: 1rem;
+	}
+	.categories-nav__submenu {
+    	padding: 1.5625rem 0.625rem;
+	}
+	.categories-nav__submenu-item {
+	    max-width: 19.9375rem;
+	    padding: 0 1.25rem 0.3125rem;
+	    margin: 0 0 0.625rem;
+	}
+	.section-link_all-promo{
+		font-size: 1.25rem;
+	}
+	.promotion-slider .slick-dots li button {
+    width: 1.25rem;
+    height: 1.25rem;
+	}
+	.promotion-slider .slick-dots li {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.625rem;
+	}
+	.section-link_all-news{
+		font-size:1.25rem;
+	}
+	.categories-nav__link{
+		font-size:1.25rem;
 	}
 }

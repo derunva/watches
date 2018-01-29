@@ -9771,7 +9771,8 @@ textarea {
     -webkit-border-radius: 100%;
     border-radius: 100%;
     text-align: center;
-    background: #fff
+    background: #fff;
+        color: #000;
 }
 
 .main-slider__slide-button {
