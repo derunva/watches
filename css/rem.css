@@ -256,4 +256,52 @@ html{
 	.contact-block__text{
 		font-size: 1.25rem;
 	}
+	.description-block__vantage-title{
+		font-size: 1.25rem;
+	}
+	.description-block__vantage-subtitle{
+			font-size: 1rem;
+	}
+	.promotion-slider__slide-img{
+		height: 21.875rem;
+	}
+	.news-block__item{
+		height: 21.875rem;
+	}
+	.brand-block__item{
+		height:13.75rem;
+	}
+	.footer-nav__link{
+		font-size: 1.125rem;
+	}
+	.subscribe-form__input{
+		font-size: 1.125rem;
+	    height: 3.125rem;
+    padding: 0.8125rem 1.25rem;
+	}
+
+	.subscribe-form__button{
+		font-size:1.25rem;
+		    max-width: 10rem;
+    height: 3.125rem;
+	
+	}
+	.copyright__text{
+		font-size: 1rem;
+	}
+	.footer-top{
+		padding: 4.375rem 0;
+	}
+	.subscribe-wrap{
+		max-width: 44.375rem;
+	}
+	.footer-nav{
+		margin: 0 6.25rem 0 0;
+	}
+	.footer-nav__item{
+		margin-bottom:0.9375rem;
+	}
+	.footer-nav-wrap{
+		padding: 2.190rem 0 0;
+	}
 }
