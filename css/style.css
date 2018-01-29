@@ -8172,7 +8172,7 @@ textarea {
         width: 50%;
         display: inline-block;
         vertical-align: top;
-        margin-right: -3px
+        margin-right: -5px
     }
     .second-line .item-col_75 {
         height: 700px
@@ -12650,10 +12650,14 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     }
     .product-block__list-item{
         float: left;
-        width: 25%;
+        width: 33.33%;
     }
 }
 @media only screen and (min-width:1023px) {
+    .product-block__list-item{
+        float: left;
+        width: 25%;
+    }
     .main-slider__arrow-left::after {
         height: 25px;
     }
