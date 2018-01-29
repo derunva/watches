@@ -137,4 +137,31 @@ html{
 	.product-block__label.label-discount{
 		
 	}
+	.about-title h1{
+		font-size: 2rem;
+	}
+	.about-content-text p{
+		font-size: 1.125rem;
+	}
+	.about-title h2{
+		font-size: 1.5rem;
+	}
+	.about-blocks .about-block span p{
+		font-size: 1.25rem;
+	}
+	.about-blocks .about-block p{
+		font-size: 1rem;
+	}
+	.location-block p, .location-block a{
+		font-size: 1.25rem;
+	}
+	.section-title{
+		font-size: 2rem;
+	}
+	.contact-block__title{
+		font-size: 1.25rem;
+	}
+	.contact-block__text{
+		font-size: 1.25rem;
+	}
 }
