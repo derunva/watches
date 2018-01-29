@@ -135,6 +135,98 @@ html{
 		padding: 1.875rem 0;
 	}
 	.product-block__label.label-discount{
-		
+	    padding: 1.563rem 0;
+	    font-size: 1.625rem;
+	}
+	.product-block__description-box{
+	    margin: 0 0 1.25rem;
+	}
+	.product-block__prod-code{
+		font-size: 0.875rem;
+		margin: 0 0 0.3125rem;
+	}
+	.product-block__prod-name{
+		height: 3.125rem;
+	    margin: 0 0 1.25rem;
+	    font-size: 1.25rem;
+	}
+	.product-block__prod-description{
+		padding: 0  3.75rem;
+		margin: 0 0 1.25rem;
+		font-size: 1.125rem;
+	}
+	.product-block__old-price{
+        padding: 0 3.438rem;
+	    font-size: 1.5rem !important;
+	}
+	.product-block__price{
+		font-size: 2em;
+	}
+	p {
+	    font-size: 0.8125rem;
+	    line-height: 1.125rem;
+	    padding: 0.9375rem 0 0.9375rem 0;
+	}
+	.product-block__buy-button{
+		max-width: 10.63rem;
+	    height: 3.125rem;
+	    padding: 0.8125rem 0.625rem;
+	    font-size: 1.375rem;
+	}
+	.product-block__wish-button{
+		width:  2.625rem;
+	    height: 2em;
+	    margin: 0 0 0 1.875rem;
+	}
+	.product-block__wish-button i{
+		font-size: 3rem;
+	}
+	.product-block__link-all{
+	    margin: 1.875rem 0 0;
+	    padding-right: 1rem;
+	    font-size: 1.25rem;
+	}
+	.section-link_all-promo .icon-arrow-right{
+	    margin: 0 0 0 0.3125rem;
+	}
+	.section-title.title_other{
+		margin: 0 0 1.875rem;
+	}
+	.promotion-slider__date-box{
+	    right: 1.25rem;
+	    bottom: 1.25rem;
+	    min-width: 25rem;
+	    height: 3.75em;
+	    padding: 1.063rem 1.563rem;
+	}
+	.promotion-slider__date {
+	    font-size: 1.5rem;
+	}
+	.news-block__date-box {
+	    right: 1.25rem;
+	    bottom: 1.25rem;
+	    max-width: 21.25rem;
+	    padding: 0.8125rem 0;
+	}
+	.news-block__item-title{
+	    padding: 0.8125rem 0;
+	    font-size: 1.5rem;
+	}
+	.description-block{
+	    padding: 0 6.25rem;
+	}
+	.description-block__item {
+	    margin: 0 0 1.875rem;
+	}
+	.description-block__title{
+		font-size: 2em;
+	    margin: 0 0 1.875rem;
+	}
+	.description-block__text{
+		font-size:  1.125rem;
+		text-indent: 1.875rem;
+	}
+	.description-block__vantage-box{
+		padding: 1.875rem 0 0;
 	}
 }
