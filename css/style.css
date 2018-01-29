@@ -1503,7 +1503,7 @@ footer.footer {
 }
 
 .button-up {
-    position: fixed;
+    position: absolute;
     right: 200px;
     bottom: 67px;
     display: inline-block;
