@@ -18,6 +18,18 @@ function cartPrice(){
         $('[data-sum]',this).text(text);
     })
 }
+$(window).resize(function(){
+    var windowWidth = $(window).width();
+    console.log(windowWidth)
+    if(windowWidth > 1023 && windowWidth < 1920){
+        var k =  windowWidth/1920;
+        var fs = k*16;
+        $('html').css('font-size',fs);
+        console.log(fs)
+    }else{
+        $('html').removeAttr('style')
+    }
+})
 $(window).load(function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
         $('body').addClass('ios');
@@ -201,9 +213,10 @@ $(document).scroll(function () {
         menu_top = $('.header-top'),
         menu_bottom = $('.header-bottom');
         // console.log($(document).scrollTop(), header.height(), menu_bottom.height());
-    if ($(document).scrollTop() >= header.height() - menu_bottom.height()) {
+        console.log(menu_top.outerHeight())
+    if ($(document).scrollTop()-menu_top.outerHeight() >= 0) {
         menu_bottom.addClass('menu-fixed');
-        menu_top.css('padding-bottom', menu_bottom.height());
+        // menu_top.css('padding-bottom', menu_bottom.height());
         // console.log($(window).width());
         // if($(window).width() < 992){
         //     $('.content').css('padding-top', 90);
@@ -212,7 +225,7 @@ $(document).scroll(function () {
 
     } else {
         menu_bottom.removeClass('menu-fixed');
-        menu_top.css('padding-bottom', 18);
+        // menu_top.css('padding-bottom', 18);
         // if($(window).width > 992){
         //     $('.content').css('padding-top', 0);
         // }
@@ -640,5 +653,9 @@ $(document).ready(function () {
             $('.d-alert').removeClass('is-active');
         },2000)
     })
-    $('.auto-select').selectize({})   
+    $('.auto-select').selectize({});
+    
 });
+$(window).load(function(){
+    $(window).resize();
+})
