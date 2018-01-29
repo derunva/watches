@@ -12528,6 +12528,45 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.selectize-control.single .selectize-input{
+    border:0;
+    background: none;
+    font-size: 16px;
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.selectize-input>*{
+    vertical-align: top;
+}
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input{
+    height: auto;
+}
+.selectize-dropdown{
+    background: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.m-g-20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.m-g-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ta-center{
+    text-align: center;
+}
+.selectize-control, .selectize-input {
+    margin-bottom: -1px;
+}
+.d-form-info{
+    font-size: 14px;
+    color: #95989a;
+    margin: 0 0 20px;
+
+}
 @media only screen and (min-width:650px) {
     .news-block__item{
         width: 50%;

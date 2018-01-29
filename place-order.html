@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <title>Мир часов | Главная</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.default.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
 
@@ -765,8 +766,58 @@
                             </span>
                         </div>
                     </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Город<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <select class="auto-select">
+                                <option selected="selected" disabled="disabled">Введите ваш город</option>
+                                <option value="1">Херсон</option>
+                                <option value="2">Харьков</option>
+                                <option value="3">Киев</option>
+                                <option value="4">Махачкала</option>
+                                <option value="5">ОМСК</option>
+                                <option value="6">Винница</option>
+                            </select>
+                        </div>
+                        <div class="d-form__error" data-err="phone-o">
+                            <span class="is-hidden"> 
+                                Выберите город
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label ta-center">
+                            <label>
+                                <span>*</span> — Поля, обязательные для заполнения
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="order-step">
+                    <div class="d-form-info">
+                        Выберите способ доставки
+                    </div>
+                    <div class="d-form__group m-g-10">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" name="delivery"> <span></span>
+                                Самовывоз из Новой почты
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-g-10">
+                        <div class="d-form__input-flag">
+                            <label>
+                                <input type="radio" name="delivery"> <span></span>
+                                Самовывоз из Новой почты
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="order-step">
                 </div>
@@ -817,10 +868,10 @@
             <button id="to-top" class="button-up">
             <span class="icon-arrow-right arrow-dark"></span>
         </button>
-        </footer>
-        <!-- FOOTER END   -->
+    </footer>
+    <!-- FOOTER END   -->
 
-    </div>
+</div>
 
     <div class="icon-load"></div>
 
@@ -828,12 +879,15 @@
     
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+
     <script type="text/javascript" src="js/components/slick.js"></script>
     <script type="text/javascript" src="js/components/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
     <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.masked.input.js"></script>
+    <script type="text/javascript" src="js/microplugin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <script src="js/common.js"></script>
     <!--
