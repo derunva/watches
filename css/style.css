@@ -8713,7 +8713,7 @@ textarea {
     }
     .mobile-menu__first,
     .mobile-menu__second {
-        width: 300px
+        /*width: 300px*/
     }
     .mobile-menu__first {
         z-index: 2
@@ -9239,7 +9239,7 @@ textarea {
         transition: all .25s ease
     }
     .header-button-wrap.search-opened{
-        margin-right: -152px
+        /*margin-right: -152px*/
     }
     .header-search__input{
         width: 350px;
@@ -9469,6 +9469,7 @@ textarea {
 }
 
 .mobile-menu {
+    width: 100%;
     position: fixed;
     bottom: 0;
     max-height: 100vh;
@@ -9733,7 +9734,7 @@ textarea {
     background-size: cover;
     display: block;
 }
-.main-slider__slider .item:hover .main-slider__slide-button{
+.main-slider__slider .item .main-slider__slide-button:hover{
     color: #000;
     background: #fff
 }
