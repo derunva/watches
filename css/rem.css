@@ -486,4 +486,37 @@ html{
 	.contact-block__section{
 		margin: 0 0 1.875rem;
 	}
+	.breadcrumb__item{
+		padding: 0.5625rem 1.25rem;
+	}
+	.drop-shipping-block__title{
+		font-size: 2rem;
+		padding-bottom: 1.875rem;
+	}
+	.drop-shipping-block{
+		margin-bottom: 4.375rem;
+	}
+	.drop-shipping-block__text{
+		font-size: 1.125rem;
+	}
+	.drop-shipping-outline__title{
+		font-size: 1.25rem;
+	}
+	.drop-shipping-outline__text{
+		font-size: 1.125rem;
+	}
+	.drop-shipping-outline-circle{
+		font-size: 1.75rem;
+	    width: 4.25rem;
+	    height: 4.25rem;
+	    line-height: 4rem;
+	}
+	.breadcrumb__item:before{
+		    width: 2rem;
+    height: 2rem;
+	}
+	.breadcrumb__item:after{
+		    width: 2rem;
+    height: 2rem;
+	}
 }
