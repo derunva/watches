@@ -499,4 +499,62 @@ html{
 	.contact-block__section{
 		margin: 0 0 1.875rem;
 	}
+	.header-top__right:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    background: #fff;
+	    width: 0;
+	    right: 0;
+	    -webkit-transition: all ease .5s;
+    	transition: all ease .5s;
+	}
+	.header-top__right.is-active:before{
+		width: 31.25rem;
+	}
+	.d-form{
+	    padding:1px 1.875rem;
+	}
+	.d-form_modal .d-form__group{
+	    margin: 1.25rem 0;
+	}
+	.d-form__group{
+	    margin: 0 0 1.25rem; 
+	}
+	.d-form__label{
+	    font-size: 0.75rem;
+	    margin-bottom: 0.625rem;
+	}
+	.d-form__input input{
+	    height: 1.75rem;
+	    line-height: 1.75rem;
+	    font-size: 1rem;
+	}
+	.d-form__input i{
+	    top: 50%;
+	    margin-top: -7px;
+	}
+	.d-form__error{
+	    line-height: 1.563rem;
+	    font-size: 0.75rem;
+	}
+	.m-v-40 {
+	    margin-top: 2.5rem;
+	    margin-bottom: 2.5rem;
+	}
+	.d-form__linkholder {
+	    margin:  1.875rem 0;
+	    font-size: 0.875rem;
+	}
+	.d-form__linkholder a{
+		font-size: 1rem;
+	}
+	.d-form__btnholder button{
+		font-size: 1rem;
+	    padding: 0.75rem 3.125rem;
+	}
+	.d-form__btnholder{
+		margin:  1.875rem 0;
+	}
 }

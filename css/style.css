@@ -12060,6 +12060,9 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     overflow-y: auto;
     background: rgba(0,0,0,.7);
 }
+.service-nav__item.is-active{
+    color: #000;
+}
 .header-dropdown.is-active{
     left: 0;
 }
@@ -12076,8 +12079,8 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         
     }
     .header-dropdown>*{
-        width: 500px;
-        margin-left: calc(100% - 500px);
+        width: 31.25rem;
+        margin-left: calc(100% - 31.25rem);
     }
     .header-dropdown.is-active{
         right: 0;
