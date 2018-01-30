@@ -1291,15 +1291,6 @@ footer.footer {
 }
 
 @media (max-width: 1400px) {
-    .repair-block .repair-info {
-        width: 100%;
-        float: left;
-        text-align: center;
-    }
-    .repair-block .repair-img {
-        width: 100%;
-        float: left;
-    }
     .repair-tel {
         display: block;
         width: 600px;
@@ -3678,7 +3669,7 @@ height: 220PX;
     display: inline-block;
     max-width: 250px;
     width: 100%;
-    height: 50px;
+    
     padding: 11px 0;
     border: 1px solid #dcdcdc;
     color: #95989a;
@@ -7474,7 +7465,7 @@ textarea {
 
 @media only screen and (max-width: 1350px) {
     .section-contact .contact-block__contact-box {
-        width: 290px;
+
         transition: 0.5s ease;
     }
     .place-order-content .first-step {
@@ -7706,7 +7697,7 @@ textarea {
     }
 
 }
-@media only screen and (max-width:1720px) {
+@media only screen and (max-width:1023px){
      .all-news-block__img-wrap {
         max-width: 100%;
     }
@@ -12880,7 +12871,7 @@ a.categories-block__link.categories-block__all-categories.white-btn{
    }
 
 }
-@media only screen and (max-width:1500px) {
+@media only screen and (max-width:1023px){
         .section-contact .contact-block__contact-box{
     width: 100%;
    }
@@ -13023,4 +13014,15 @@ a.categories-block__link.categories-block__all-categories.white-btn{
 .description-block__vantage-item{
     width: 19%;
 }
+}
+@media (max-width: 1023px){
+    .repair-block .repair-info {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+     .repair-block .repair-img {
+        width: 100%;
+        float: left;
+    }
 }
