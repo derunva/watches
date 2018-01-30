@@ -7509,7 +7509,9 @@ textarea {
     }
     .logo {
         width: 171px;
-        height: 40px
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle;
     }
     .header-button-wrap {
         -webkit-transition: all .25s ease;
