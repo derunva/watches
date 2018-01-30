@@ -577,7 +577,7 @@ $(document).ready(function () {
             target.addClass('is-hidden');
             $('.login-buttons a').removeClass('is-active');   
         },500)
-        $('.header-dropdown,.header-top__right').removeClass('is-active');
+        $('.header-dropdown,.header-top__right,[data-open]').removeClass('is-active');
     })
     $('[data-modal]').click(function(e){
         e.preventDefault();
