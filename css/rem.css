@@ -725,4 +725,54 @@ html{
 	    font-size: .875rem;
 	    margin: 0 0 1.25rem;
 	}
+	.item-description .product-block__prod-name{
+		font-size: 1.5rem;
+	}
+	.product-block__rating img {
+    	width: 1.5rem;
+    	height: 1.5rem;
+	}
+	.item-description .product-block__review-counter{
+		font-size: 0.875rem;
+	}
+	.item-description .product-block__prod-code{
+		font-size: 0.875rem;
+	}
+	.item-description .product-block__presence{
+		font-size: 0.875rem;
+	}
+	.item-description .product-better{
+		font-size: 1.125rem;
+	}
+	.item-description .product-block__price{
+		font-size: 2rem;
+	}
+	.item-description .product-block__rating{
+		max-width: 8.75rem;
+	}
+	.item-description .product-block__review-wrap{
+		max-width: 14.375rem;
+	}
+	.item-description{
+		width: 36.125rem;
+	}
+	.item-description .product-block__button-box{
+		width: 15.625rem;
+	}
+	.shipment-descr{
+		max-width: 33.125rem;
+	}
+	.shipment-descr li{
+		font-size: 1.125rem;
+	}
+	.shipment-descr .descr-head p{
+		font-size: 1.25rem;
+	}
+	.shipment-descr li a{
+		font-size: 1.125rem;
+	}
+	.shipment-descr .descr-head img{
+		width: 2.125rem;
+		height: 2.125rem;
+	}
 }
