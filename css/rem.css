@@ -596,4 +596,69 @@ html{
 	.catalog-block__sort-text {
 		font-size:1.125rem;
 	}
+	.filter-block__title{
+		font-size: 1.25rem;
+		height: 3.125rem;
+    	padding: 0.6875rem 1.25rem;
+	}
+	.filter-block__text{
+		font-size: 1rem;
+	}
+	.filter-block__param-list {
+   		padding: 0 2.1875rem 0 1.875rem;
+	}
+	.filter-block__param-item:last-child{
+		margin: 1.25rem 0 1.875rem;
+	}
+	.filter-block__param-clear{
+		font-size: 1rem;
+	}
+	.filter-block__price-input {
+	    max-width: 6.25rem;
+	    height: 2.5rem;
+	    font: 300 1.125rem/normal 'Open Sans', sans-serif;
+	}
+	.filter-block__price-currency{
+		font-size: 1rem;
+	}
+	.filter-block__prices-slider.ui-slider .ui-slider-handle{
+		width: 1.6875rem;
+		height: 1.6875rem;
+	}
+	.filter-block__button {
+	    max-width: 10rem;
+	    height: 3.125rem;
+	    margin: 1.25rem 0;
+	    font: 300 1.125rem/normal 'Open Sans', sans-serif;
+	}
+	.filter-block form[class*="-form"]{
+		padding-bottom: 1.875rem;
+	}
+	.filter-block__item-name{
+		font-size: 1.125rem;
+	}
+	.filter-block__pseudo-check {
+	    width: 1.125rem;
+	    height: 1.125rem;
+	    margin: 0 1.125rem 0 0;
+	    border-radius: 0.3125rem;
+	}
+	.product-block__list-item.list-item_line .product-block__desc-item{
+		font-size: 1.125rem;
+	}
+	.filter-block__label {
+	    min-height: 2.5rem;
+	    padding: 0.5rem 1.25rem;
+	}
+	.product-block__last-item-text{
+		font-size: 1.75rem;
+	}
+	.product-block__last-item-link{
+		padding-top: 10rem;
+	}
+	.product-block__last-item-img {
+	    width: 8.5625rem;
+	    height: 10.4375rem;
+	    padding-bottom: 1.25rem;
+	}
 }
