@@ -596,4 +596,47 @@ html{
 	.catalog-block__sort-text {
 		font-size:1.125rem;
 	}
+	.d-titled{
+		padding: 1.875rem 1.25rem;
+	}
+	.d-titled__title{
+		font-size: 1.25rem;
+		padding-bottom: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+	.d-titled__info{
+		margin-bottom: 1.875rem;
+		font-size: 1rem;
+	}
+	.d-btn.d-btn_large{
+		font-size: 1.25rem;
+		padding: 1.25rem 3.125rem;
+	}
+	.info-list{
+		font-size: 1.125rem;
+	}
+	.info-list li{
+		margin: 1.25rem 0;
+	}
+	.d-counter{
+		padding-right: 3.125rem;
+	}
+	.d-counter input{
+		width: 3.125rem;
+		height: 3rem;
+		line-height: 3rem;
+	}
+	.d-titled__title_wide{
+		margin-right: -1.25rem;
+		margin-left: -1.25rem;
+		padding-right: 1.25rem;
+		padding-left: 1.25rem;
+	}
+	.d-titled{
+	    padding:  1.875rem 1.25rem;
+	}
+	.d-counter__up,.d-counter__down{
+		width: 3.125rem;
+	}
+
 }

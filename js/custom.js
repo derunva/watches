@@ -2,20 +2,31 @@ function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email.toLowerCase());
 }
+function nicePrice(str){
+    str = str.toString();
+    if(str.length > 3){
+        return str.substring(0, str.length - 3)+ ' ' +str.slice(-3)
+    }else{
+        return sum;
+    }
+}
+
 function cartPrice(){
     $('[data-cart]').each(function(){
         var sum = 0;
         $('[data-price]',this).each(function(){
             sum += $(this).val()*$(this).data('price');
         });
-        var text = '';
-        sum = sum.toString();
-        if(sum.length > 3){
-            text = sum.substring(0, sum.length - 3)+ ' ' +sum.slice(-3)
-        }else{
-            text = sum;
-        }
+        var text = nicePrice(sum);
+        
         $('[data-sum]',this).text(text);
+    })
+}
+function itemPrice(){
+    $('[data-price][data-single]').each(function(){
+        var sum = $(this).data('price')*$(this).val();
+        $('[data-single-price="'+$(this).data('single')+'"]').text(nicePrice(sum));
+        $('[data-single-count="'+$(this).data('single')+'"]').text($(this).val());
     })
 }
 $(window).resize(function(){
@@ -385,7 +396,8 @@ $(window).bind('resize', handler);
 $(document).ready(function () {
     // burger
     setInterval(function(){
-        cartPrice()
+        // cartPrice();
+        // itemPrice();
     },100)
     $('.mobile-burger').click(function () {
         $(this).toggleClass('open');
