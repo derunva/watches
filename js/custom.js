@@ -547,9 +547,10 @@ $(document).ready(function () {
         item: 1,
         pager: false
     });
+    console.log(123)
+    console.log($('[data-open]'))
     $('[data-open]').click(function(e){
         e.preventDefault();
-        
         var $this = $(this);
         var target = $('[data-show="'+$(this).data('open')+'"]');
         if($this.is('[data-group]') && !$this.is('.is-active')){
