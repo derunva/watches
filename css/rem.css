@@ -638,5 +638,26 @@ html{
 	.d-counter__up,.d-counter__down{
 		width: 3.125rem;
 	}
-
+	.order-step {
+	    margin: 1.875rem 0;
+	    padding: 0 .625rem;
+	    max-width: 20000px;
+	}
+	.d-form__input-flag {
+	    font-size: 1rem;
+	    margin: 0 0 -1.25rem;
+	}
+	.d-form__input-flag input + span {
+	    height: 1.25rem;
+	    width: 1.25rem;
+	    margin-right: .9375rem;
+	    border-radius: 1.25rem;
+	}
+	.d-form__input-flag label{
+	    padding: .625rem;
+	}
+	.d-form-info {
+	    font-size: .875rem;
+	    margin: 0 0 1.25rem;
+	}
 }

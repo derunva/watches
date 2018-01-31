@@ -30,8 +30,8 @@ function itemPrice(){
     })
 }
 $(window).resize(function(){
-    var windowWidth = $(window).width();
-    console.log(windowWidth)
+    var windowWidth = $(window).outerWidth();
+    console.log(windowWidth,'window')
     if(windowWidth > 1023 && windowWidth < 1920){
         var k =  windowWidth/1920;
         var fs = k*16;
@@ -394,10 +394,12 @@ $(window).bind('resize', handler);
 
 
 $(document).ready(function () {
-    // burger
+    $('[data-remove]').click(function(){
+        $(this).parents('[data-remove-target]').remove();
+    })
     setInterval(function(){
-        // cartPrice();
-        // itemPrice();
+        cartPrice();
+        itemPrice();
     },100)
     $('.mobile-burger').click(function () {
         $(this).toggleClass('open');

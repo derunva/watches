@@ -77,7 +77,7 @@
                         </li>
                         <li>
                             <div class="product-block__item">
-                                <div class="product-block__remove"></div>
+                                <div  class="product-block__remove"></div>
                                 <div class="product-block__img-box">
                                     <a href="#" class="product-block__link">
                                     <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
@@ -717,215 +717,258 @@
                 <div class="d-titled__title d-titled__title_wide">
                     Оформление заказа
                 </div>
-                <div class="order-step">
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label">
-                            <label>
-                                ФИО<span>*</span>
-                            </label>
-                        </div>
-                        <div class="d-form__input">
-                            <input type="text" placeholder="Введите ваше фио" name="name" data-input="name-o" data-validate="length">
-                        </div>
-                        <div class="d-form__error" data-err="name-o">
-                            <span class="is-hidden"> 
-                                Шлишком короткое имя
-                                <i class="d-icon d-icon_alert"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label">
-                            <label>
-                                E-mail<span>*</span>
-                            </label>
-                        </div>
-                        <div class="d-form__input">
-                            <input type="text" placeholder="Введите ваш e-mail" name="email" data-input="email-o" data-validate="email">
-                        </div>
-                        <div class="d-form__error" data-err="email-o">
-                            <span class="is-hidden"> 
-                                Неверно набран e-mail
-                                <i class="d-icon d-icon_alert"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label">
-                            <label>
-                                Телефон<span>*</span>
-                            </label>
-                        </div>
-                        <div class="d-form__input">
-                            <input type="text" placeholder="Введите ваш телефон" name="login" data-input="phone-o" data-validate="phone">
-                        </div>
-                        <div class="d-form__error" data-err="phone-o">
-                            <span class="is-hidden"> 
-                                Неверно набран номер
-                                <i class="d-icon d-icon_alert"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label">
-                            <label>
-                                Город<span>*</span>
-                            </label>
-                        </div>
-                        <div class="d-form__input">
-                            <select class="auto-select">
-                                <option selected="selected" disabled="disabled">Введите ваш город</option>
-                                <option value="1">Херсон</option>
-                                <option value="2">Харьков</option>
-                                <option value="3">Киев</option>
-                                <option value="4">Махачкала</option>
-                                <option value="5">ОМСК</option>
-                                <option value="6">Винница</option>
-                            </select>
-                        </div>
-                        <div class="d-form__error" data-err="phone-o">
-                            <span class="is-hidden"> 
-                                Выберите город
-                                <i class="d-icon d-icon_alert"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label ta-center">
-                            <label>
-                                <span>*</span> — Поля, обязательные для заполнения
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-step">
-                    <div class="d-form-info">
-                        Выберите способ доставки
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" checked name="delivery"> <span></span>
-                                <span>Самовывоз из Новой почты</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" name="delivery"> <span></span>
-                                <span>Самовывоз из Новой почты</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" name="delivery"> <span></span>
-                                <span>Курьером Новой почты</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group ">
-                        <div class="d-form__input-flag m-b-40">
-                            <label>
-                                <input type="radio" name="delivery"> <span></span>
-                                <span>Курьером службы Мист Экспресс</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group m-v-40">
-                        <div class="d-form__label">
-                            <label>
-                                Укажите адрес склада<span>*</span>
-                            </label>
-                        </div>
-                        <div class="d-form__input">
-                            <select class="auto-select">
-                                <option selected="selected" disabled="disabled">Введите адрес склада</option>
-                                <option value="1">Адресс 1</option>
-                                <option value="2">Адресс 2</option>
-                                <option value="3">Адресс 3</option>
-                                <option value="4">Адресс 4</option>
-                                <option value="5">Адресс 5</option>
-                                <option value="6">Адресс 6</option>
-                            </select>
-                        </div>
-                        <div class="d-form__error" data-err="phone-o">
-                            <span class="is-hidden"> 
-                                Введите адрес склада
-                                <i class="d-icon d-icon_alert"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-step">
-                    <div class="d-form-info">
-                        Выберите способ доставки
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" checked name="payment"> <span></span>
-                                <span>Наличными</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" name="payment"> <span></span>
-                                <span>Безналичными</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="d-form__group">
-                        <div class="d-form__input-flag">
-                            <label>
-                                <input type="radio" name="payment"> <span></span>
-                                <span>Visa/MasterCard</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div data-cart class="cart-list">
-                    <div class="cart-list__item">
-                        <div class="cart-item">
-                            <div class="cart-item__close icon-close">
+                <div class="cart-d-box">
+                    <div class="order-step">
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label">
+                                <label>
+                                    ФИО<span>*</span>
+                                </label>
                             </div>
-                            <div class="clearfix m-b-20">
-                                <div class="cart-item__img">
-                                    <img src="img/prod-img02.png"  alt="" title="">
+                            <div class="d-form__input">
+                                <input type="text" placeholder="Введите ваше фио" name="name" data-input="name-o" data-validate="length">
+                            </div>
+                            <div class="d-form__error" data-err="name-o">
+                                <span class="is-hidden"> 
+                                    Шлишком короткое имя
+                                    <i class="d-icon d-icon_alert"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label">
+                                <label>
+                                    E-mail<span>*</span>
+                                </label>
+                            </div>
+                            <div class="d-form__input">
+                                <input type="text" placeholder="Введите ваш e-mail" name="email" data-input="email-o" data-validate="email">
+                            </div>
+                            <div class="d-form__error" data-err="email-o">
+                                <span class="is-hidden"> 
+                                    Неверно набран e-mail
+                                    <i class="d-icon d-icon_alert"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label">
+                                <label>
+                                    Телефон<span>*</span>
+                                </label>
+                            </div>
+                            <div class="d-form__input">
+                                <input type="text" placeholder="Введите ваш телефон" name="login" data-input="phone-o" data-validate="phone">
+                            </div>
+                            <div class="d-form__error" data-err="phone-o">
+                                <span class="is-hidden"> 
+                                    Неверно набран номер
+                                    <i class="d-icon d-icon_alert"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label">
+                                <label>
+                                    Город<span>*</span>
+                                </label>
+                            </div>
+                            <div class="d-form__input">
+                                <select class="auto-select">
+                                    <option selected="selected" disabled="disabled">Введите ваш город</option>
+                                    <option value="1">Херсон</option>
+                                    <option value="2">Харьков</option>
+                                    <option value="3">Киев</option>
+                                    <option value="4">Махачкала</option>
+                                    <option value="5">ОМСК</option>
+                                    <option value="6">Винница</option>
+                                </select>
+                            </div>
+                            <div class="d-form__error" data-err="phone-o">
+                                <span class="is-hidden"> 
+                                    Выберите город
+                                    <i class="d-icon d-icon_alert"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label ta-center">
+                                <label>
+                                    <span>*</span> — Поля, обязательные для заполнения
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-d-box">
+                    <div class="order-step">
+                        <div class="d-form-info">
+                            Выберите способ доставки
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" checked name="delivery"> <span></span>
+                                    <span>Самовывоз из Новой почты</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" name="delivery"> <span></span>
+                                    <span>Самовывоз из Новой почты</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" name="delivery"> <span></span>
+                                    <span>Курьером Новой почты</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group ">
+                            <div class="d-form__input-flag m-b-40">
+                                <label>
+                                    <input type="radio" name="delivery"> <span></span>
+                                    <span>Курьером службы Мист Экспресс</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group m-v-40">
+                            <div class="d-form__label">
+                                <label>
+                                    Укажите адрес склада<span>*</span>
+                                </label>
+                            </div>
+                            <div class="d-form__input">
+                                <select class="auto-select">
+                                    <option selected="selected" disabled="disabled">Введите адрес склада</option>
+                                    <option value="1">Адресс 1</option>
+                                    <option value="2">Адресс 2</option>
+                                    <option value="3">Адресс 3</option>
+                                    <option value="4">Адресс 4</option>
+                                    <option value="5">Адресс 5</option>
+                                    <option value="6">Адресс 6</option>
+                                </select>
+                            </div>
+                            <div class="d-form__error" data-err="phone-o">
+                                <span class="is-hidden"> 
+                                    Введите адрес склада
+                                    <i class="d-icon d-icon_alert"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-d-box">
+                    <div class="order-step">
+                        <div class="d-form-info">
+                            Выберите способ доставки
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" checked name="payment"> <span></span>
+                                    <span>Наличными</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" name="payment"> <span></span>
+                                    <span>Безналичными</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-form__group">
+                            <div class="d-form__input-flag">
+                                <label>
+                                    <input type="radio" name="payment"> <span></span>
+                                    <span>Visa/MasterCard</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-d-box">
+                    <div data-cart class="cart-list">
+                        <div data-remove-target class="cart-list__item">
+                            <div class="cart-item">
+                                <div data-remove class="cart-item__close icon-close">
                                 </div>
-                                <div class="cart-item__desc">
-                                    <div class="cart-item__title">
-                                        <span data-single-count="1">1</span>x Мужские часы Timex ORIGINALS Waterbury
+                                <div class="clearfix m-b-20">
+                                    <div class="cart-item__img">
+                                        <img src="img/prod-img02.png"  alt="" title="">
                                     </div>
-                                    <div class="cart-item__code">
-                                        Код товара:  47747474
-                                    </div>
-                                    <div class="cart-item__price">
-                                        <span data-single-price="1">2 529</span> грн
+                                    <div class="cart-item__desc">
+                                        <div class="cart-item__title">
+                                            <span data-single-count="1">1</span>x Мужские часы Timex ORIGINALS Waterbury
+                                        </div>
+                                        <div class="cart-item__code">
+                                            Код товара:  47747474
+                                        </div>
+                                        <div class="cart-item__price">
+                                            <span data-single-price="1">2 529</span> грн
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-counter">
-                                <input value="1" type="text" data-price="2529" data-single="1" name="count">
-                                <div data-counter="plus" class="d-counter__up"></div>
-                                <div data-counter="minus" class="d-counter__down"></div>
+                                <div class="d-counter">
+                                    <input value="1" type="text" data-price="2529" data-single="1" name="count">
+                                    <div data-counter="plus" class="d-counter__up"></div>
+                                    <div data-counter="minus" class="d-counter__down"></div>
+                                </div>
                             </div>
                         </div>
+                        <div data-remove-target class="cart-list__item">
+                            <div class="cart-item">
+                                <div data-remove class="cart-item__close icon-close">
+                                </div>
+                                <div class="clearfix m-b-20">
+                                    <div class="cart-item__img">
+                                        <img src="img/prod-img02.png"  alt="" title="">
+                                    </div>
+                                    <div class="cart-item__desc">
+                                        <div class="cart-item__title">
+                                            <span data-single-count="2">1</span>x Мужские часы Timex ORIGINALS Waterbury
+                                        </div>
+                                        <div class="cart-item__code">
+                                            Код товара:  47747474
+                                        </div>
+                                        <div class="cart-item__price">
+                                            <span data-single-price="2">2 529</span> грн
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-counter">
+                                    <input value="1" type="text" data-price="2529" data-single="2" name="count">
+                                    <div data-counter="plus" class="d-counter__up"></div>
+                                    <div data-counter="minus" class="d-counter__down"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-list__item cart-list__item_last">
+                            <ul class="info-list">
+                                <li>
+                                    Доставка:
+                                    <span class="pull-right text-green">Бесплатно</span>
+                                </li>
+                                <li>
+                                    Итого к оплате:
+                                    <span class="pull-right text-orange"><span data-sum="">7 587</span> грн</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-list__btn">
+                            <button>
+                                Оформить заказ
+                            </button>
+                        </div>
                     </div>
-                    <ul class="info-list">
-                        <li>
-                            Доставка:
-                            <span class="pull-right text-green">Бесплатно</span>
-                        </li>
-                        <li>
-                            Итого к оплате:
-                            <span class="pull-right text-orange"><span data-sum="">7 587</span> грн</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </main>
