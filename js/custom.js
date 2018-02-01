@@ -44,7 +44,7 @@ $(window).resize(function(){
         var k =  windowWidth/1920;
         var fs = k*16;
         if(windowWidth > 1023 && windowWidth < 1420){
-            fs += 3;
+            fs += 1;
         }
         $('html').css('font-size',fs);
         console.log(fs)

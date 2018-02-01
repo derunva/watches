@@ -593,12 +593,11 @@ button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid #000;
     border-radius: 4px;
     background: #FFF;
-    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 1px rgba(185, 183, 183, 0.78);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(185, 183, 183, 0.78);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(185, 183, 183, 0.78);
 }
 
 .jq-selectbox__search {
@@ -3459,6 +3458,7 @@ height: 220PX;
 .catalog-block__sort-text {
     color: #000;
     display: inline-block;
+    vertical-align: middle;
     vertical-align: center;
     font: 400 18px/normal 'Open Sans', sans-serif;
 }
@@ -3661,7 +3661,7 @@ height: 220PX;
 }
 
 .styled .jq-selectbox__dropdown {
-    width: max-content;
+    width: 290px;
 }
 
 .all-news-block__sorting-form {
@@ -10550,7 +10550,8 @@ textarea {
 }
 
 .slider .product-block__img {
-    height: 300px;
+    height: 250px;
+    width: 120px;
 }
 
 .slider .product-block__img-box {
@@ -10781,7 +10782,7 @@ textarea {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 120px;
+    width: 130px;
     padding-bottom: 1em;
     margin-bottom: 50px;
 }
@@ -12761,11 +12762,11 @@ a.categories-block__link.categories-block__all-categories.white-btn{
 }
 .jq-selectbox li.selected{
     background: #fff;
-    color: #95989a;
+    color: #000;
 }
 .jq-selectbox li:hover{
-     background: #fff;
-    color: #95989a;
+     background: #f8f8f8;
+    color: #000;
 }
 @media only screen and (max-width:480px) {
     .user-feed-name {
@@ -13545,13 +13546,26 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     .product-block__list-item.list-item_line .product-block__img-box .product-block__link{
         margin: 0 30px;
     }
-    .product-block__img-box .product-block__link {
-        height: 240px;
-    }
-    img.product-block__img{
+    a.product-block__link, img.product-block__img{
         width: 100px;
     }
-    .product-block__list-item.list-item_line .product-block__img-box{
-        float: left;
+    .product-block__img-box .product-block__link{
+        height: 230px;
+    }
+    .product-block__list-item.list-item_line .product-block__desc-item{
+        font-size: 14px;
+    }
+    .product-block__list-item.list-item_line .product-block__description-box{
+        max-width: 500px;
+    }
+    img.slide_win{
+        height: 200px;
+        width: 100px;
+    }
+}
+@media (min-width: 770px){
+    .slider .product-block__img {
+        height: 220px;
+        width: 115px;
     }
 }
