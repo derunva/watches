@@ -10820,7 +10820,7 @@ textarea {
     color: #95989a;
     font-size: 16px;
     position: relative;
-    top: 15px;
+    top: 13px;
 }
 
 /* ABOUT */
@@ -13513,8 +13513,16 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     background:#f8f8f8;
 }
 @media (max-width: 1023px){
-/*
-    .section-catalog .filter-block {
-        display: none;
-    }*/
+    .info-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .info-btn i{
+       font-size: 1.5em;
+    }
+    .info-btn a{
+        font-size: 14px;
+        top: 11px;
+    }
 }
