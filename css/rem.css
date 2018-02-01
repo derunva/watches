@@ -98,7 +98,7 @@ html{
 	    padding: 1.25rem 0;
 	}
 	.brand-block__item {
-	    min-width: 18.75rem;
+	    min-width: 14.75rem;
 	    padding: 1.25rem 0;
 	}
 	.brand-block__item .brand-block__img {
@@ -288,13 +288,13 @@ html{
 		font-size: 1rem;
 	}
 	.footer-top{
-		padding: 4.375rem 0;
+		padding: 5.375rem 0;
 	}
 	.subscribe-wrap{
 		max-width: 44.375rem;
 	}
 	.footer-nav{
-		margin: 0 6.25rem 0 0;
+		margin: 0 2.25rem 0 0;
 	}
 	.footer-nav__item{
 		margin-bottom:0.9375rem;
@@ -407,7 +407,7 @@ html{
 		font-size: 1rem;
 	}
 	.styled .jq-selectbox__select-text{
-		font-size:1.125rem;
+		font-size:1.25rem;
 	}
 	.shares-block__date-box {
     	right: 1.25rem;
@@ -833,5 +833,18 @@ html{
 	}
 	.info-btn a{
 		font-size: 1rem;
+	}
+	.item-view {
+    	width: 18.75rem;
+	}
+	.slider .product-block__img {
+        height: 22.375rem;
+        width: 12rem;
+    }
+    footer.footer{
+    	padding: 0 6.25rem;
+    }
+    .styled .jq-selectbox__dropdown {
+    	width: 18.125rem;
 	}
 }
