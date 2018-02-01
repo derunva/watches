@@ -787,4 +787,41 @@ html{
 	.user-block .positive-feedback p, .user-block .negative-feedback p{
 		font-size: 1rem;
 	}
+	.item-info-feedback{
+		padding: 1rem 6.875rem;
+	}
+	.show-more-btn {
+	    font-size: 1.25rem;
+	    padding-bottom: 1rem;
+	    margin-bottom: 3.125rem;
+	}
+	.item-info-spec .product-block__description-list{
+		padding: 1rem 6.875rem;
+	}
+	.item-info-descr{
+		padding: 1rem 6.875rem;
+	}
+	.item-info-descr .product-block__description-list li, .item-info-descr p, .item-info-spec p, .item-info-spec .product-block__description-list li{
+		 font-size: 1.25rem;
+	}
+	.item-info-spec, .item-info-feedback, .item-info-choose{
+		padding: 1rem 6.875rem;
+	}
+	.item-info-choose p{
+		font-size: 1.25rem;
+    	line-height: 1.5rem;
+	}
+	.item-info-choose span{
+		font-size: 0.8rem;
+	}
+	.item-info-choose input{
+		font-size: 1.125rem;
+		margin-bottom: 5rem;	
+	}
+	.item-info-choose a {
+	    max-width: 12.5rem;
+	    height: 3.125rem;
+	    font-size: 1.125rem;
+	    margin-bottom: 5rem;
+	}
 }
