@@ -28,248 +28,718 @@
 
     <!-- HEADER -->
     <header class="header">
-        <div class="header-top clearfix">
-            <nav class="main-nav">
-                <a href="about-company.html" class="main-nav__item">О нас</a>
-                <a href="#" class="main-nav__item">Drop shipping - прямые поставки</a>
-                <a href="#" class="main-nav__item">Гарантия</a>
-                <a href="#" class="main-nav__item">Ремон и обслуживание часов</a>
-                <a href="#" class="main-nav__item">Доставка и оплата</a>
-            </nav>
+            <!-- header right dropdowns -->
+            <div class="header-dropdown header-dropdown_right" data-slide="header-left">
+                <div data-cart data-show="shopingcart" data-group="cart" class="d-titled has-hidden is-hidden">
+                    <div class="d-titled__close" data-close-slide="header-left"></div>
+                    <div class="d-titled__title">
+                        Корзина
+                    </div>
+                    <div class="d-titled__info">
+                        В вашей корзине 2 товара
+                    </div>
+                    <ul id="cartlist">
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__remove"></div>
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <span class="product-block__label label-new">Новинка</span>
+                                    <span class="product-block__label label-discount">-20%</span>
+                                    <span class="product-block__label label-top">Топ</span>
+                                </div>
 
-            <div class="switch-lang">
-                <a href="#" class="switch-lang__item">UA</a>
-                /
-                <a href="#" class="switch-lang__item">EN</a>
-                /
-                <a href="#" class="switch-lang__item active">RU</a>
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 47747474</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">3 035 грн</p>
+                                    
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <p class="product-block__price">2 529 грн</p>
+                                    <div class="d-counter">
+                                        <input value="1" type="text" data-price="2529" name="count">
+                                        <div data-counter="plus" class="d-counter__up"></div>
+                                        <div data-counter="minus" class="d-counter__down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__remove"></div>
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img03.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <span class="product-block__label label-new">Новинка</span>
+                                    <span class="product-block__label label-discount">-20%</span>
+                                    <span class="product-block__label label-top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 47747474</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Мужские часы Timex ORIGINALS Waterbury</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">3 035 грн</p>
+                                    
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <p class="product-block__price">2 529 грн</p>
+                                    <div class="d-counter">
+                                        <input value="1" type="text" data-price="2529" name="count">
+                                        <div data-counter="plus" class="d-counter__up"></div>
+                                        <div data-counter="minus" class="d-counter__down"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="info-list">
+                        <li>
+                            Доставка:
+                            <span class="pull-right text-green">Бесплатно</span>
+                        </li>
+                        <li>
+                            Итого к оплате:
+                            <span class="pull-right text-orange"><span data-sum>2 527</span> грн</span>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn ">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder m-v-40" href="#">Продолжить покупки</a>
+                        <a class="d-btn d-btn_large d-btn_shadow d-btn_orange m-v-40" href="#">Оформить заказ</a>
+                    </div>
+                </div>
+                <div data-show="lovelist" data-group="cart" class="d-titled has-hidden is-hidden">
+                    <div class="d-titled__close" data-close-slide="header-left"></div>
+                    <div class="d-titled__title">
+                        Список желаний
+                    </div>
+                    <div class="d-titled__info">
+                        В вашем списке желаний 5 товаров
+                    </div>
+                    <ul id="lovelist">
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a 
+                                        href="#" 
+                                        data-alert='{"icon":"case", "text":"Товар успешно добавлен в корзину"}' 
+                                        class="product-block__buy-button"
+                                    >
+                                            Купить
+                                    </a>
+                                    <a 
+                                        href="#"
+                                        data-alert='{"icon":"heart", "text":"Товар успешно добавлен в список желаний"}'  
+                                        class="product-block__wish-button"
+                                    ><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-block__item">
+                                <div class="product-block__img-box">
+                                    <a href="#" class="product-block__link">
+                                    <img src="img/prod-img02.png" class="product-block__img" alt="" title="">
+                                </a>
+                                    <!--<span class="product-block__label label-new">Новинка</span>-->
+                                    <span class="product-block__label label-discount">- 15%</span>
+                                    <span class="product-block__label label-top label-top_top">Топ</span>
+                                </div>
+
+                                <div class="product-block__description-box">
+                                    <p class="product-block__prod-code">Код товара: 23575787</p>
+                                    <p class="product-block__prod-name"><a href="#" class="product-block__link">Женские часы CERTINA C034.210.36.117.00</a>
+                                    </p>
+                                    <p class="product-block__prod-description">EASY READER муж/кварц/черн/ кож.кор /30м/M/IP/40мм/Р-20мм /W217/Box14
+                                    </p>
+                                    <p class="product-block__old-price">9 888 грн</p>
+                                    <p class="product-block__price">8 599 грн</p>
+                                </div>
+
+                                <div class="product-block__button-box">
+                                    <a 
+                                        href="#" 
+                                        data-alert='{"icon":"case", "text":"Товар успешно добавлен в корзину"}' 
+                                        class="product-block__buy-button"
+                                    >
+                                            Купить
+                                    </a>
+                                    <a 
+                                        href="#"
+                                        data-alert='{"icon":"heart", "text":"Товар успешно добавлен в список желаний"}'
+                                        class="product-block__wish-button"
+                                    ><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-titled__btn">
+                        <a data-close-slide="header-left" class="d-btn d-btn_large d-btn_shadow d-btn_noborder" href="#">Продолжить покупки</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="service-nav">
-                <a href="#" class="service-nav__item">Вход</a>
-                <a href="#" class="service-nav__item">Регистрация</a>
-            </div>
-        </div>
-
-        <div class="header-bottom clearfix">
-            <div class="logo-wrap">
-                <a href="index.html" class="logo-link"><img src="img/logo.png" alt="" title="" class="logo"></a>
-            </div>
-
-            <div class="categories-nav-wrap">
-                <ul class="categories-nav">
-                    <li class="categories-nav__item">
-                        <a href="catalog.html" class="categories-nav__link">Каталог часов</a>
-
-                        <div class="categories-nav__submenu-wrap">
-                            <ul class="categories-nav__submenu clearfix">
-                                <li class="categories-nav__submenu-item submenu-item_xl">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Швейцарские часы</a>
-                                        <span class="categories-nav__icon bg-Civil_Ensign_of_Switzerland__Pantone_"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list col-3">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Alfex</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Calvin Klein</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jaguar</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Atlantic</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rue du Rhone</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Chrono</a>
-                                        </li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Balmain</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova Accutron</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Candino</a></li>
-
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Epos</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Franck Muller</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Longines</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Louis Erard</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Maurice Lacroix</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rado</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Raymond Weil</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Roamer</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Hanowa</a>
-                                        </li>
-
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Tag Heuer</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Oris</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Versace</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Zenith</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Certina</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Christina Design</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Японские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Japan"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Casio</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Citizen</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Q&Q</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Orient</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Seiko</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Английские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_England"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Vivienne</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Westwood</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Royal London</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Французские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_France"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Michel Renee</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Elite</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Pierre Lannier</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Корейские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_the_Provisional_Government_of_the_Republic_of_Korea"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Romanson</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Датские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Denmark"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Skagen</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Итальянские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Italy"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Diesel</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Шведские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Sweden"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Daniel Wellington</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Австрийские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Austria"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jacques Lemans</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Немецкие часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Germany"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bruno Sohnle</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Continental</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">США часы</a>
-                                        <span class="categories-nav__icon bg-usa"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova</a></li>
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Fossil</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Испанские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Spain"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Festina</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="categories-nav__submenu-item">
-                                    <p class="categories-nav__submenu-item-name clearfix">
-                                        <a href="#" class="categories-nav__name-link">Украинские часы</a>
-                                        <span class="categories-nav__icon bg-Flag_of_Ukraine"></span>
-                                    </p>
-                                    <ul class="categories-nav__submenu-list">
-                                        <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Kleynod</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+            <div data-slide="header-right" class="header-dropdown" >
+                <div data-show="login" data-group="sign"  class="header-dropdown__form d-form is-hidden has-hidden ">
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Логин
+                            </label>
                         </div>
-                    </li>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass"
+                                data-compare="pass"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass"></i>
+                        </div>
+                        <div class="d-form__error">
+                            <span class="is-hidden"> 
+                                Неверный логин или пароль
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        <a data-modal="restore-pass" href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+                <div data-show="registration" data-group="sign" class="header-dropdown__form d-form is-hidden has-hidden">
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                ФИО<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваше фио" name="name" data-input="name" data-validate="length">
+                        </div>
+                        <div class="d-form__error" data-err="name">
+                            <span class="is-hidden"> 
+                                Шлишком короткое имя
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                E-mail<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш e-mail" name="login"  data-input="email2" data-validate="email">
+                        </div>
+                        <div class="d-form__error" data-err="email2">
+                            <span class="is-hidden"> 
+                                Неверно набран e-mail
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Телефон
+                            </label>
+                        </div>
+                        <div class="d-form__input">
+                            <input type="text" placeholder="Введите ваш телефон" name="login"  data-input="phone" data-validate="phone">
+                        </div>
+                        <div class="d-form__error" data-err="phone">
+                            <span class="is-hidden"> 
+                                Неверно набран номер
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                             <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Повторите пароль"
+                                data-toggle="pass12"
+                                data-compare="pass-compare"
+                                data-same="password"
+                                data-input="password"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Пароль" 
+                                data-toggle="pass12"
+                                data-compare="pass-compare"
+                                data-same="password"
+                                data-input="password"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass12"></i>
+                        </div>
+                        <div class="d-form__error" data-err="password">
+                            <span class="is-hidden"> 
+                                Пароли не совпадают
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__group m-v-40">
+                        <div class="d-form__label">
+                            <label>
+                                Пароль<span>*</span>
+                            </label>
+                        </div>
+                        <div class="d-form__input d-form__input_pass">
+                            <input 
+                                type="text" 
+                                class="is-hidden" 
+                                name="password" 
+                                placeholder="Повторите пароль"
+                                data-toggle="pass11"
+                                data-compare="pass-compare1"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Повторите пароль" 
+                                data-toggle="pass11"
+                                data-compare="pass-compare1"
+                                data-same-input="password"
+                                data-input="password"
+                            >
+                            <i class="d-icon d-icon_eye" data-toggle-trigger="pass11"></i>
+                        </div>
+                        <div class="d-form__error" data-err="password">
+                            <span class="is-hidden"> 
+                                Пароли не совпадают
+                                <i class="d-icon d-icon_alert"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="d-form__btnholder">
+                        <button type="submit">
+                            Регистрация
+                        </button>
+                    </div>
+                    <div class="d-form__linkholder">
+                        Поля с <span>*</span> обязательны для заполнения
+                    </div>
+                </div>
+            </div>
+            <!-- header right dropdowns -->
+            <div class="header-top">
+                <div class="header-top__left">
+                    <nav class="main-nav">
+                        <a href="about-company.html" class="main-nav__item">О нас</a>
+                        <a href="drop-shipping.html" class="main-nav__item">Drop shipping - прямые поставки</a>
+                        <a href="guarantee.html" class="main-nav__item">Гарантия</a>
+                        <a href="#" class="main-nav__item">Ремонт и обслуживание часов</a>
+                        <a href="#" class="main-nav__item">Доставка и оплата</a>
+                    </nav>
 
-                    <li class="categories-nav__item">
-                        <a href="catalog.html" class="categories-nav__link">Мужские часы</a>
-                    </li>
-
-                    <li class="categories-nav__item">
-                        <a href="catalog.html" class="categories-nav__link">Женские часы</a>
-                    </li>
-
-                    <li class="categories-nav__item">
-                        <a href="contact.html" class="categories-nav__link">Контакты</a>
-                    </li>
-                </ul>
+                    <div class="switch-lang">
+                        <a href="#" class="switch-lang__item">UA</a> /
+                        <a href="#" class="switch-lang__item">EN</a> /
+                        <a href="#" class="switch-lang__item active">RU</a>
+                    </div>
+                </div>
+                <div data-slide="header-right" class="header-top__right">
+                    <div class="service-nav">
+                        <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                        <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="header-button-wrap clearfix">
-                <form action="" class="header-search">
-                    <label for="header_search" class="header-search__label">
-                        <input type="text" id="header_search" class="header-search__input" placeholder="Ищете что-то конкретное?">
-                        <input type="button" class="header-search__button">
-                    </label>
-                </form>
+            <div class="header-bottom clearfix">
+                <div class="mobile-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo-wrap">
+                    <a href="index.html" class="logo-link">
+                        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-846 61 209.304 50">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: none;
+                                stroke: #000;
+                                stroke-miterlimit: 10;
+                              }
 
-                <a href="#" class="header-button button-search">
+                              .cls-2, .cls-3 {
+                                fill: #f68b23;
+                              }
+
+                              .cls-3 {
+                                font-size: 24px;
+                                font-family: OpenSans-Bold, Open Sans;
+                                font-weight: 700;
+                              }
+
+                              .cls-4 {
+                                fill: #000;
+                              }
+                            </style>
+                          </defs>
+                          <g id="Group_7" data-name="Group 7" transform="translate(-846 61)">
+                            <path id="Path_71" data-name="Path 71" class="cls-1" d="M440.9,63.9" transform="translate(-302.946 -43.906)"/>
+                            <path id="Path_72" data-name="Path 72" class="cls-2" d="M78.974,48c-33.667,0-60.982-9.887-60.982-22.09S45.307,3.817,78.974,3.817c23.31,0,43.554,4.725,53.817,11.7C122.466,6.414,97.778,0,68.961,0,30.882,0,0,11.2,0,25S30.882,50,68.961,50c16.771,0,32.1-2.159,44.055-5.757A147.47,147.47,0,0,1,78.974,48Z"/>
+                            <path id="Path_73" data-name="Path 73" d="M136.336,75.671a3.536,3.536,0,1,1,3.536-3.536A3.552,3.552,0,0,1,136.336,75.671Zm0-5.82a2.284,2.284,0,1,0,2.284,2.284A2.3,2.3,0,0,0,136.336,69.852Z" transform="translate(-91.248 -47.136)"/>
+                            <text id="МИРЧАСОВ" class="cls-3" transform="translate(66.304 33.957)"><tspan class="cls-4" x="0" y="0">МИР</tspan><tspan class="cls-2" y="0">ЧАСОВ</tspan></text>
+                            <path id="Path_74" data-name="Path 74" d="M160.012,31.8l-3.536.876L145.4,43.721l2.66,2.66,11.076-11.045Z" transform="translate(-99.906 -21.85)"/>
+                            <path id="Path_75" data-name="Path 75" d="M64.2.1l.313,1.627L86.666,23.848l1.314-1.314L65.858.413Z" transform="translate(-44.112 -0.069)"/>
+                          </g>
+                        </svg>
+
+                    </a>
+                </div>
+
+                <div class="categories-nav-wrap">
+                    <ul class="categories-nav">
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">
+
+                                Каталог часов
+                                <!-- <i class="fa fa-chevron-right hidden-min1200" aria-hidden="true"></i> -->
+                            </a>
+
+                            <div class="categories-nav__submenu-wrap">
+                                <ul class="categories-nav__submenu clearfix">
+                                    <li class="categories-nav__submenu-item submenu-item_xl">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Швейцарские часы</a>
+                                            <span class="categories-nav__icon bg-Civil_Ensign_of_Switzerland__Pantone_"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list col-3">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Alfex</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Calvin Klein</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jaguar</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Atlantic</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rue du Rhone</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Chrono</a>
+                                            </li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Balmain</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova Accutron</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Candino</a></li>
+
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Epos</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Franck Muller</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Longines</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Louis Erard</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Maurice Lacroix</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Rado</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Raymond Weil</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Roamer</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Swiss Military-Hanowa</a>
+                                            </li>
+
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Tag Heuer</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Oris</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Versace</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Zenith</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Certina</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Christina Design</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Японские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Japan"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Casio</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Citizen</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Q & Q</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Orient</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Seiko</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Английские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_England"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Vivienne</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Westwood</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Royal London</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Французские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_France"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Michel Renee</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Elite</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Pierre Lannier</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Корейские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_the_Provisional_Government_of_the_Republic_of_Korea"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Romanson</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Датские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Denmark"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Skagen</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Итальянские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Italy"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Diesel</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Шведские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Sweden"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Daniel Wellington</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Австрийские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Austria"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Jacques Lemans</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Немецкие часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Germany"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bruno Sohnle</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Continental</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">США часы</a>
+                                            <span class="categories-nav__icon bg-usa"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Bulova</a></li>
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Fossil</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Испанские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Spain"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Festina</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="categories-nav__submenu-item">
+                                        <p class="categories-nav__submenu-item-name clearfix">
+                                            <a href="#" class="categories-nav__name-link">Украинские часы</a>
+                                            <span class="categories-nav__icon bg-Flag_of_Ukraine"></span>
+                                        </p>
+                                        <ul class="categories-nav__submenu-list">
+                                            <li class="categories-nav__submenu-list-item"><a href="#" class="categories-nav__list-link">Kleynod</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">Мужские часы</a>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="catalog.html" class="categories-nav__link">Женские часы</a>
+                        </li>
+
+                        <li class="categories-nav__item">
+                            <a href="contact.html" class="categories-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-button-wrap clearfix">
+
+
+                    <a href="#" class="header-button button-search">
                     <i class="fa fa-search fa-2" aria-hidden="true"></i>
+                    <form action="" class="header-search">
+                        <label for="header_search" class="header-search__label">
+                        <input type="text" id="header_search" class="header-search__input" placeholder="Ищете что-то конкретное?">
+                        <!-- <input type="button" class="header-search__button "> -->
+                        <button type="submit" name="button" class="header-search__submit"><i class="fa fa-search"></i></button>
+                    </label>
+                    </form>
                 </a>
 
-                <a href="#" class="header-button button-wish">
+                    <a href="#" data-open="lovelist" data-group="cart" data-slide-trigger="header-left" class="header-button button-wish">
                     <i class="fa fa-heart fa-2" aria-hidden="true"></i>
                 </a>
 
-                <a href="#" class="header-button button-cart">
+                    <a href="#" data-open="shopingcart" data-group="cart" data-slide-trigger="header-left"  class="header-button button-cart">
                     <i class="fa fa-shopping-bag fa-2" aria-hidden="true"></i>
                     <span class="cart-item-count">9</span>
                 </a>
+                </div>
             </div>
-        </div>
-    </header>
+
+            <div class="mobile-menu"> <!-- mobile menu start -->
+                <div class="mobile-menu__first">
+                    <div class="login-buttons">
+                        <a href="#" data-open="login" data-group="sign" data-slide-trigger="header-right" class="service-nav__item has-active">Вход</a>
+                    <a href="#" data-open="registration" data-group="sign"  data-slide-trigger="header-right" class="service-nav__item has-active" class="service-nav__item">Регистрация</a>
+                    </div>
+                    <nav class="mobile-navigation">
+                        <ul class="navigtaion-list">
+                            <li class="navigtaion-list__item submenu-link" data-target="menu_1"><a href="#">Каталог часов <i class="fa fa-chevron-right"></i></a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Мужские часы</a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Женские часы</a> </li>
+                            <li class="navigtaion-list__item"><a href="#">Контакты</a> </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-switch-lang">
+                        <a href="#" class="mobile-switch-lang__item">UA</a> <span>/</span>
+                        <a href="#" class="mobile-switch-lang__item">EN</a> <span>/</span>
+                        <a href="#" class="mobile-switch-lang__item active">RU</a>
+                    </div>
+                    <nav class="mobile-menu-footer">
+                        <ul class="mobile-menu-footer-list">
+                            <li class="mobile-menu-footer-list__item"><a href="#">О нас</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Drop shipping - прямые поставки</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Гарантия</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Ремонт и обслуживание часов</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Доставка и оплата</a></li>
+                            <li class="mobile-menu-footer-list__item"><a href="#">Дисконтная система</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-menu__second" data-target="menu_1">
+                    <nav class="watches-navigation">
+                        <ul class="watches-list">
+                            <li class="navigtaion-list__item submenu-link" data-target="menu_1"><a href="#">Каталог часов <i class="fa fa-chevron-up"></i></a> </li>
+                            <li class="watches-list__item"><a href="#">Швейцарские часы <span class="categories-nav__icon bg-Civil_Ensign_of_Switzerland__Pantone_"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Японские часы <span class="categories-nav__icon bg-Flag_of_Japan"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Австрийские часы <span class="categories-nav__icon bg-Flag_of_Austria"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Английские часы <span class="categories-nav__icon bg-Flag_of_England"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Немецкие часы <span class="categories-nav__icon bg-Flag_of_Germany"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Французские часы <span class="categories-nav__icon bg-Flag_of_France"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Американские часы <span class="categories-nav__icon bg-usa"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Корейские часы <span class="categories-nav__icon bg-Flag_of_the_Provisional_Government_of_the_Republic_of_Korea"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Итальянские часы <span class="categories-nav__icon bg-Flag_of_Italy"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Испанские часы <span class="categories-nav__icon bg-Flag_of_Spain"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Датские часы <span class="categories-nav__icon bg-Flag_of_Denmark"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Шведские часы <span class="categories-nav__icon bg-Flag_of_Sweden"></span></a></li>
+                            <li class="watches-list__item"><a href="#">Украинские часы <span class="categories-nav__icon bg-Flag_of_Ukraine"></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>  <!-- mobile menu end -->
+        </header>
     <!-- HEADER END   -->
 
     <!-- CONTENT -->
@@ -431,6 +901,8 @@
 <script type="text/javascript" src="js/components/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
 <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
+<script type="text/javascript" src="js/jquery.masked.input.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
 <!--
 <script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
 <script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
