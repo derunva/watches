@@ -2197,7 +2197,7 @@ height: 220PX;
     transition: 0.5s ease;
 }
 
-@media (max-width:1385px) {
+@media (max-width:1023px){
     .shipment-descr {
         display: none;
     }
@@ -2637,7 +2637,7 @@ height: 220PX;
     width: 16px;
     height: 16px;
     margin-right: 10px;
-    vertical-align: sub;
+    vertical-align: middle;
 }
 
 /*** section-promotion ***/
