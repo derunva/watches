@@ -824,4 +824,14 @@ html{
 	    font-size: 1.125rem;
 	    margin-bottom: 5rem;
 	}
+	.info-btn {
+    	width: 5.625rem;
+    	height: 5.625rem;
+	}
+	.info-btn i{
+		font-size: 2rem;
+	}
+	.info-btn a{
+		font-size: 1rem;
+	}
 }
