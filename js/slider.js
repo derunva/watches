@@ -4,7 +4,7 @@ $(document).on('ready', function () {
         slidesToScroll: 1,
         arrows: true,
         responsive: [{
-                breakpoint: 1700,
+                breakpoint: 1700, 
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,

@@ -743,9 +743,1153 @@
             </div>  <!-- mobile menu end -->
         </header>
         <!-- HEADER END   -->
+        <!-- Filter -->
+        <div data-slide="filter" data-closer="filter" class="filter-block">
+            <div class="filter-block__closer" data-closer="filter">
+                
+            </div>
+            <div data-show="filter" class="filter-block__section has-hidden is-hidden">
+                <p class="filter-block__title">Параметры фильтра</p>
+                <ul class="filter-block__param-list">
+                    <li class="filter-block__param-item">
+                        <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        <span class="filter-block__text">Топ продаж</span>
+                    </li>
 
+                    <li class="filter-block__param-item">
+                        <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        <span class="filter-block__text">Новинки</span>
+                    </li>
+
+                    <li class="filter-block__param-item">
+                        <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        <span class="filter-block__text">Классические</span>
+                    </li>
+
+                    <li class="filter-block__param-item">
+                        <a href="#" class="filter-block__param-clear">Сбросить фильтр</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Цена <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" method="get" class="filter-block__price-form">
+                        <div class="filter-block__price-section">
+                            <label for="min-cost" class="filter-block__price-label">
+                            <input type="number" id="min-cost" class="filter-block__price-input from-price" value="967">
+                        </label>
+
+                            <span class="filter-block__input-separator"></span>
+
+                            <label for="max-cost" class="filter-block__price-label">
+                            <input type="number" id="max-cost" class="filter-block__price-input to-price" value="27164">
+                        </label>
+
+                            <span class="filter-block__price-currency">грн</span>
+                        </div>
+
+                        <div id="prices-slider" class="filter-block__prices-slider"></div>
+
+                        <div class="filter-block__button-wrap">
+                            <input type="reset" class="filter-block__button" value="Сбросить">
+                            <input type="submit" class="filter-block__button" value="Применить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Тип <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__type-form">
+                        <label for="type_man" class="filter-block__label">
+                        <input type="checkbox" id="type_man" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Мужские <span class="filter-block__item-quantity">(11321)</span></span>
+                    </label>
+
+                        <label for="type_woman" class="filter-block__label">
+                        <input type="checkbox" id="type_woman" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Женские <span class="filter-block__item-quantity">(8679)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Стиль <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__style-form">
+                        <label for="style_classic" class="filter-block__label">
+                        <input type="checkbox" id="style_classic" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Классические <span class="filter-block__item-quantity">(9134)</span></span>
+                    </label>
+
+                        <label for="style_sport" class="filter-block__label">
+                        <input type="checkbox" id="style_sport" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Спортивные <span class="filter-block__item-quantity">(3459)</span></span>
+                    </label>
+
+                        <label for="style_smart" class="filter-block__label">
+                        <input type="checkbox" id="style_smart" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Smart <span class="filter-block__item-quantity">(2341)</span></span>
+                    </label>
+
+                        <label for="style_fashion" class="filter-block__label">
+                        <input type="checkbox" id="style_fashion" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Fashion <span class="filter-block__item-quantity">(1437)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Бренд <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__brand-form">
+                        <label for="brand_aflex" class="filter-block__label">
+                        <input type="checkbox" id="brand_aflex" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Alfex</span>
+                    </label>
+
+                        <label for="brand_jaguar" class="filter-block__label">
+                        <input type="checkbox" id="brand_jaguar" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Jaguar</span>
+                    </label>
+
+                        <label for="brand_rdr" class="filter-block__label">
+                        <input type="checkbox" id="brand_rdr" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Rue du Rhone</span>
+                    </label>
+
+                        <label for="brand_balmain" class="filter-block__label">
+                        <input type="checkbox" id="brand_balmain" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Balmain</span>
+                    </label>
+
+                        <label for="brand_candino" class="filter-block__label">
+                        <input type="checkbox" id="brand_candino" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Candino <span class="filter-block__item-quantity">(2)</span></span>
+                    </label>
+
+                        <label for="brand_christina_d" class="filter-block__label">
+                        <input type="checkbox" id="brand_christina_d" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Christina Design</span>
+                    </label>
+
+                        <label for="brand_frank_muller" class="filter-block__label">
+                        <input type="checkbox" id="brand_frank_muller" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Frank Muller</span>
+                    </label>
+
+                        <label for="brand_louis_erard" class="filter-block__label">
+                        <input type="checkbox" id="brand_louis_erard" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Louis Erard <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_rado" class="filter-block__label">
+                        <input type="checkbox" id="brand_rado" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Rado <span class="filter-block__item-quantity">(2)</span></span>
+                    </label>
+
+                        <label for="brand_roamer" class="filter-block__label">
+                        <input type="checkbox" id="brand_roamer" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Roamer</span>
+                    </label>
+
+                        <label for="brand_tag_heuer" class="filter-block__label">
+                        <input type="checkbox" id="brand_tag_heuer" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Tag Heuer</span>
+                    </label>
+
+                        <label for="brand_versace" class="filter-block__label">
+                        <input type="checkbox" id="brand_versace" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Versace <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_calvin_clein" class="filter-block__label">
+                        <input type="checkbox" id="brand_calvin_clein" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Calvin Clein <span class="filter-block__item-quantity">(3)</span></span>
+                    </label>
+
+                        <label for="brand_atlantic" class="filter-block__label">
+                        <input type="checkbox" id="brand_atlantic" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Atlantic <span class="filter-block__item-quantity">(2)</span></span>
+                    </label>
+
+                        <label for="brand_sm_chrono" class="filter-block__label">
+                        <input type="checkbox" id="brand_sm_chrono" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Swiss Military - Chrono</span>
+                    </label>
+
+                        <label for="brand_bulova_acutron" class="filter-block__label">
+                        <input type="checkbox" id="brand_bulova_acutron" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Bulova Acutron <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_certina" class="filter-block__label">
+                        <input type="checkbox" id="brand_certina" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Certina <span class="filter-block__item-quantity">(4)</span></span>
+                    </label>
+
+                        <label for="brand_epos" class="filter-block__label">
+                        <input type="checkbox" id="brand_epos" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Epos <span class="filter-block__item-quantity">(2)</span></span>
+                    </label>
+
+                        <label for="brand_longines" class="filter-block__label">
+                        <input type="checkbox" id="brand_longines" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Longines <span class="filter-block__item-quantity">(3)</span></span>
+                    </label>
+
+                        <label for="brand_maurice_lacroix" class="filter-block__label">
+                        <input type="checkbox" id="brand_maurice_lacroix" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Maurice Lacroix</span>
+                    </label>
+
+                        <label for="brand_raymond_weil" class="filter-block__label">
+                        <input type="checkbox" id="brand_raymond_weil" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Raymond Weil <span class="filter-block__item-quantity">(4)</span></span>
+                    </label>
+
+                        <label for="brand_sm_hanowa" class="filter-block__label">
+                        <input type="checkbox" id="brand_sm_hanowa" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Swiss Military - Hanowa</span>
+                    </label>
+
+                        <label for="brand_oris" class="filter-block__label">
+                        <input type="checkbox" id="brand_oris" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Oris <span class="filter-block__item-quantity">(3)</span></span>
+                    </label>
+
+                        <label for="brand_zenith" class="filter-block__label">
+                        <input type="checkbox" id="brand_zenith" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Zenith</span>
+                    </label>
+
+                        <label for="brand_bruno_sohnle" class="filter-block__label">
+                        <input type="checkbox" id="brand_bruno_sohnle" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Bruno Sohnle <span class="filter-block__item-quantity">(4)</span></span>
+                    </label>
+
+                        <label for="brand_continental" class="filter-block__label">
+                        <input type="checkbox" id="brand_continental" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Continental</span>
+                    </label>
+
+                        <label for="brand_vivienne" class="filter-block__label">
+                        <input type="checkbox" id="brand_vivienne" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Vivienne <span class="filter-block__item-quantity">(3)</span></span>
+                    </label>
+
+                        <label for="brand_westwood" class="filter-block__label">
+                        <input type="checkbox" id="brand_westwood" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Westwood</span>
+                    </label>
+
+                        <label for="brand_royal_london" class="filter-block__label">
+                        <input type="checkbox" id="brand_royal_london" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Royal London <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_citizen" class="filter-block__label">
+                        <input type="checkbox" id="brand_citizen" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Citizen</span>
+                    </label>
+
+                        <label for="brand_casio" class="filter-block__label">
+                        <input type="checkbox" id="brand_casio" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Casio <span class="filter-block__item-quantity">(7)</span></span>
+                    </label>
+
+                        <label for="brand_orient" class="filter-block__label">
+                        <input type="checkbox" id="brand_orient" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Orient</span>
+                    </label>
+
+                        <label for="brand_qq" class="filter-block__label">
+                        <input type="checkbox" id="brand_qq" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Q&Q <span class="filter-block__item-quantity">(2)</span></span>
+                    </label>
+
+                        <label for="brand_seiko" class="filter-block__label">
+                        <input type="checkbox" id="brand_seiko" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Seiko</span>
+                    </label>
+
+                        <label for="brand_jacques_lemans" class="filter-block__label">
+                        <input type="checkbox" id="brand_jacques_lemans" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Jacques Lemans <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_elite" class="filter-block__label">
+                        <input type="checkbox" id="brand_elite" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Elite</span>
+                    </label>
+
+                        <label for="brand_michel_renee" class="filter-block__label">
+                        <input type="checkbox" id="brand_michel_renee" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Michel Renee <span class="filter-block__item-quantity">(3)</span></span>
+                    </label>
+
+                        <label for="brand_pierre_lannier" class="filter-block__label">
+                        <input type="checkbox" id="brand_pierre_lannier" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Pierre Lannier</span>
+                    </label>
+
+                        <label for="brand_diesel" class="filter-block__label">
+                        <input type="checkbox" id="brand_diesel" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Diesel <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_romanson" class="filter-block__label">
+                        <input type="checkbox" id="brand_romanson" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Romanson</span>
+                    </label>
+
+                        <label for="brand_bulova" class="filter-block__label">
+                        <input type="checkbox" id="brand_bulova" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Bulova <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_fossil" class="filter-block__label">
+                        <input type="checkbox" id="brand_fossil" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Fossil</span>
+                    </label>
+
+                        <label for="brand_festina" class="filter-block__label">
+                        <input type="checkbox" id="brand_festina" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Festina <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_skagen" class="filter-block__label">
+                        <input type="checkbox" id="brand_skagen" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Skagen</span>
+                    </label>
+
+                        <label for="brand_kleynod" class="filter-block__label">
+                        <input type="checkbox" id="brand_kleynod" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Kleynod <span class="filter-block__item-quantity">(1)</span></span>
+                    </label>
+
+                        <label for="brand_daniel_wellington" class="filter-block__label">
+                        <input type="checkbox" id="brand_daniel_wellington" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Daniel Wellington</span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Страна бренда <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                    aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__country-brand-form">
+                        <label for="country_switzerland" class="filter-block__label">
+                        <input type="checkbox" id="country_switzerland" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Швейцария <span class="filter-block__item-quantity">(4134)</span></span>
+                    </label>
+
+                        <label for="country_germany" class="filter-block__label">
+                        <input type="checkbox" id="country_germany" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Германия <span class="filter-block__item-quantity">(659)</span></span>
+                    </label>
+
+                        <label for="country_england" class="filter-block__label">
+                        <input type="checkbox" id="country_england" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Англия <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="country_japan" class="filter-block__label">
+                        <input type="checkbox" id="country_japan" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Япония <span class="filter-block__item-quantity">(1137)</span></span>
+                    </label>
+
+                        <label for="country_austria" class="filter-block__label">
+                        <input type="checkbox" id="country_austria" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Австрия <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="country_france" class="filter-block__label">
+                        <input type="checkbox" id="country_france" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Франция <span class="filter-block__item-quantity">(239)</span></span>
+                    </label>
+
+                        <label for="country_italy" class="filter-block__label">
+                        <input type="checkbox" id="country_italy" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Италия <span class="filter-block__item-quantity">(141)</span></span>
+                    </label>
+
+                        <label for="country_korea" class="filter-block__label">
+                        <input type="checkbox" id="country_korea" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Корея <span class="filter-block__item-quantity">(97)</span></span>
+                    </label>
+
+                        <label for="country_usa" class="filter-block__label">
+                        <input type="checkbox" id="country_usa" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">США <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="country_spanish" class="filter-block__label">
+                        <input type="checkbox" id="country_spanish" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Испания <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="country_denmark" class="filter-block__label">
+                        <input type="checkbox" id="country_denmark" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Дания <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="country_ukraine" class="filter-block__label">
+                        <input type="checkbox" id="country_ukraine" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Украина <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+
+                        <label for="country_sweden" class="filter-block__label">
+                        <input type="checkbox" id="country_sweden" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Швеция <span class="filter-block__item-quantity">(74)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Категория <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                </p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__category-form">
+                        <label for="category_new" class="filter-block__label">
+                        <input type="checkbox" id="category_new" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Новинки <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="category_top" class="filter-block__label">
+                        <input type="checkbox" id="category_top" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Топ продаж <span class="filter-block__item-quantity">(249)</span></span>
+                    </label>
+
+                        <label for="category_discount" class="filter-block__label">
+                        <input type="checkbox" id="category_discount" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Скидки <span class="filter-block__item-quantity">(341)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Механизм <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                </p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__mechanism-form">
+                        <label for="mechanism_mechanical" class="filter-block__label">
+                        <input type="checkbox" id="mechanism_mechanical" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Механический <span class="filter-block__item-quantity">(341)</span></span>
+                    </label>
+
+                        <label for="mechanism_mechanical_auto" class="filter-block__label">
+                        <input type="checkbox" id="mechanism_mechanical_auto" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Механический с автоподзаводом</span>
+                    </label>
+
+                        <label for="mechanism_quartz" class="filter-block__label">
+                        <input type="checkbox" id="mechanism_quartz" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Кварцевый <span class="filter-block__item-quantity">(1541)</span></span>
+                    </label>
+
+                        <label for="mechanism_quartz_battery" class="filter-block__label">
+                        <input type="checkbox" id="mechanism_quartz_battery" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Кварцевый (батарейка) <span class="filter-block__item-quantity">(1137)</span></span>
+                    </label>
+
+                        <label for="mechanism_quartz_solar_battery" class="filter-block__label">
+                        <input type="checkbox" id="mechanism_quartz_solar_battery" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Кварцевый (солнечная батарея) <span
+                                class="filter-block__item-quantity">(234)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Тип крепления <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                    aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__fastening-form">
+                        <label for="fastening_strap" class="filter-block__label">
+                        <input type="checkbox" id="fastening_strap" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Ремешок <span class="filter-block__item-quantity">(3412)</span></span>
+                    </label>
+
+                        <label for="fastening_bracelete" class="filter-block__label">
+                        <input type="checkbox" id="fastening_bracelete" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Браслет <span class="filter-block__item-quantity">(2345)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Тип индикации <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                    aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__indication-form">
+                        <label for="indication_arrows" class="filter-block__label">
+                        <input type="checkbox" id="indication_arrows" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Стрелочные <span class="filter-block__item-quantity">(3412)</span></span>
+                    </label>
+
+                        <label for="indication_numbers" class="filter-block__label">
+                        <input type="checkbox" id="indication_numbers" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Цифровые <span class="filter-block__item-quantity">(2345)</span></span>
+                    </label>
+
+                        <label for="indication_arrow_numbers" class="filter-block__label">
+                        <input type="checkbox" id="indication_arrow_numbers" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Стрелочно - цифровые <span class="filter-block__item-quantity">(345)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Стекло <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__glass-form">
+                        <label for="glass_crystal" class="filter-block__label">
+                        <input type="checkbox" id="glass_crystal" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Хрустальное <span class="filter-block__item-quantity">(341)</span></span>
+                    </label>
+
+                        <label for="glass_plastic" class="filter-block__label">
+                        <input type="checkbox" id="glass_plastic" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Пластиковое</span>
+                    </label>
+
+                        <label for="glass_mineral" class="filter-block__label">
+                        <input type="checkbox" id="glass_mineral" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Минеральное <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="glass_sapphire" class="filter-block__label">
+                        <input type="checkbox" id="glass_sapphire" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Сапфировое <span class="filter-block__item-quantity">(137)</span></span>
+                    </label>
+
+                        <label for="glass_plexiglass" class="filter-block__label">
+                        <input type="checkbox" id="glass_plexiglass" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Плексиглас <span class="filter-block__item-quantity">(2534)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Материал корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                </p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__material-body-form">
+                        <label for="material-body_plastic" class="filter-block__label">
+                        <input type="checkbox" id="material-body_plastic" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Пластик <span class="filter-block__item-quantity">(341)</span></span>
+                    </label>
+
+                        <label for="material-body_stainless_steel_gold" class="filter-block__label">
+                        <input type="checkbox" id="material-body_stainless_steel_gold" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Нержавеющая сталь с золотым напылением <span
+                                class="filter-block__item-quantity">(12)</span></span>
+                    </label>
+
+                        <label for="material-body_stainless_steel" class="filter-block__label">
+                        <input type="checkbox" id="material-body_stainless_steel" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Нержавеющая сталь <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="material-body_steel" class="filter-block__label">
+                        <input type="checkbox" id="material-body_steel" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Сталь <span class="filter-block__item-quantity">(137)</span></span>
+                    </label>
+
+                        <label for="material-body_titan" class="filter-block__label">
+                        <input type="checkbox" id="material-body_titan" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Титан <span class="filter-block__item-quantity">(34)</span></span>
+                    </label>
+
+                        <label for="material-body_gold" class="filter-block__label">
+                        <input type="checkbox" id="material-body_gold" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Золото <span class="filter-block__item-quantity">(41)</span></span>
+                    </label>
+
+                        <label for="material-body_ceramics" class="filter-block__label">
+                        <input type="checkbox" id="material-body_ceramics" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Керамика <span class="filter-block__item-quantity">(91)</span></span>
+                    </label>
+
+                        <label for="material-body_polimer" class="filter-block__label">
+                        <input type="checkbox" id="material-body_polimer" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Поллимер <span class="filter-block__item-quantity">(244)</span></span>
+                    </label>
+
+                        <label for="material-body_other" class="filter-block__label">
+                        <input type="checkbox" id="material-body_other" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Другое <span class="filter-block__item-quantity">(120)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Водонепроницаемость <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                          aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__water-resist-form">
+                        <label for="water-resist_wr" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_wr" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Брызгозащита (water resistant) <span
+                                class="filter-block__item-quantity">(21)</span></span>
+                    </label>
+
+                        <label for="water-resist_3_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_3_atm" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">3 АТМ</span>
+                    </label>
+
+                        <label for="water-resist_5_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_5_atm" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">5 АТМ <span class="filter-block__item-quantity">(41)</span></span>
+                    </label>
+
+                        <label for="water-resist_10_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_10_atm" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">10 АТМ <span class="filter-block__item-quantity">(137)</span></span>
+                    </label>
+
+                        <label for="water-resist_20_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_20_atm" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">20 ATM <span class="filter-block__item-quantity">(34)</span></span>
+                    </label>
+
+                        <label for="water-resist_30_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_30_atm" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">30 ATM</span>
+                    </label>
+
+                        <label for="water-resist_50_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_50_atm" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">50 ATM <span class="filter-block__item-quantity">(93)</span></span>
+                    </label>
+
+                        <label for="water-resist_100_atm" class="filter-block__label">
+                        <input type="checkbox" id="water-resist_100_atm" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">100 ATM <span class="filter-block__item-quantity">(76)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Форма корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                    aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__shape-body-form">
+                        <label for="shape-body_round" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_round" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Круглая <span class="filter-block__item-quantity">(21)</span></span>
+                    </label>
+
+                        <label for="shape-body_square" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_square" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Квадратная <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+
+                        <label for="shape-body_rectangular" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_rectangular" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Прямоугольная <span class="filter-block__item-quantity">(41)</span></span>
+                    </label>
+
+                        <label for="shape-body_oval" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_oval" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Овальная <span class="filter-block__item-quantity">(137)</span></span>
+                    </label>
+
+                        <label for="shape-body_triangular" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_triangular" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Треугольная <span class="filter-block__item-quantity">(34)</span></span>
+                    </label>
+
+                        <label for="shape-body_non_standard" class="filter-block__label">
+                        <input type="checkbox" id="shape-body_non_standard" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Нестандартная <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Цвет корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                   aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__color-body-form">
+                        <label for="color-body_silver_yellow" class="filter-block__label">
+                        <input type="checkbox" id="color-body_silver_yellow" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серебристо - желтый <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="color-body_blue" class="filter-block__label">
+                        <input type="checkbox" id="color-body_blue" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Синий <span class="filter-block__item-quantity">(659)</span></span>
+                    </label>
+
+                        <label for="color-body_red" class="filter-block__label">
+                        <input type="checkbox" id="color-body_red" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Красный <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="color-body_green" class="filter-block__label">
+                        <input type="checkbox" id="color-body_green" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Зеленый <span class="filter-block__item-quantity">(1137)</span></span>
+                    </label>
+
+                        <label for="color-body_combined" class="filter-block__label">
+                        <input type="checkbox" id="color-body_combined" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Комбинированный <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="color-body_orange" class="filter-block__label">
+                        <input type="checkbox" id="color-body_orange" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Оранжевый <span class="filter-block__item-quantity">(239)</span></span>
+                    </label>
+
+                        <label for="color-body_gray" class="filter-block__label">
+                        <input type="checkbox" id="color-body_gray" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серый <span class="filter-block__item-quantity">(141)</span></span>
+                    </label>
+
+                        <label for="color-body_white" class="filter-block__label">
+                        <input type="checkbox" id="color-body_white" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Белый <span class="filter-block__item-quantity">(97)</span></span>
+                    </label>
+
+                        <label for="color-body_gold" class="filter-block__label">
+                        <input type="checkbox" id="color-body_gold" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Золотистый <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="color-body_yellow" class="filter-block__label">
+                        <input type="checkbox" id="color-body_yellow" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Желтый <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="color-body_choco" class="filter-block__label">
+                        <input type="checkbox" id="color-body_choco" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Шоколадный <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="color-body_black" class="filter-block__label">
+                        <input type="checkbox" id="color-body_black" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Черный <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+
+                        <label for="color-body_silver" class="filter-block__label">
+                        <input type="checkbox" id="color-body_silver" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серебристый <span class="filter-block__item-quantity">(74)</span></span>
+                    </label>
+
+                        <label for="color-body_silver_pink" class="filter-block__label">
+                        <input type="checkbox" id="color-body_silver_pink" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серебристо - розовый <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="color-body_khaki" class="filter-block__label">
+                        <input type="checkbox" id="color-body_khaki" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Хаки <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="color-body_lilac" class="filter-block__label">
+                        <input type="checkbox" id="color-body_lilac" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Сиреневый <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="color-body_violet" class="filter-block__label">
+                        <input type="checkbox" id="color-body_violet" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Фиолетовый <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+
+                        <label for="color-body_brown" class="filter-block__label">
+                        <input type="checkbox" id="color-body_brown" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Коричневый <span class="filter-block__item-quantity">(74)</span></span>
+                    </label>
+
+                        <label for="color-body_pink" class="filter-block__label">
+                        <input type="checkbox" id="color-body_pink" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Розовый <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+
+                        <label for="color-body_light_blue" class="filter-block__label">
+                        <input type="checkbox" id="color-body_light_blue" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Голубой <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Цвет циферблата <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                      aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__color-face-form">
+                        <label for="color-face_cream" class="filter-block__label">
+                        <input type="checkbox" id="color-face_cream" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Кремовый <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="color-face_blue" class="filter-block__label">
+                        <input type="checkbox" id="color-face_blue" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Синий <span class="filter-block__item-quantity">(659)</span></span>
+                    </label>
+
+                        <label for="color-face_red" class="filter-block__label">
+                        <input type="checkbox" id="color-face_red" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Красный <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="color-face_green" class="filter-block__label">
+                        <input type="checkbox" id="color-face_green" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Зеленый <span class="filter-block__item-quantity">(1137)</span></span>
+                    </label>
+
+                        <label for="color-face_combined" class="filter-block__label">
+                        <input type="checkbox" id="color-face_combined" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Комбинированный <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="color-face_orange" class="filter-block__label">
+                        <input type="checkbox" id="color-face_orange" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Оранжевый <span class="filter-block__item-quantity">(239)</span></span>
+                    </label>
+
+                        <label for="color-face_gray" class="filter-block__label">
+                        <input type="checkbox" id="color-face_gray" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серый <span class="filter-block__item-quantity">(141)</span></span>
+                    </label>
+
+                        <label for="color-face_white" class="filter-block__label">
+                        <input type="checkbox" id="color-face_white" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Белый <span class="filter-block__item-quantity">(97)</span></span>
+                    </label>
+
+                        <label for="color-face_gold" class="filter-block__label">
+                        <input type="checkbox" id="color-face_gold" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Золотистый <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="color-face_yellow" class="filter-block__label">
+                        <input type="checkbox" id="color-face_yellow" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Желтый <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="color-face_choco" class="filter-block__label">
+                        <input type="checkbox" id="color-face_choco" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Шоколадный <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="color-face_black" class="filter-block__label">
+                        <input type="checkbox" id="color-face_black" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Черный <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+
+                        <label for="color-face_silver" class="filter-block__label">
+                        <input type="checkbox" id="color-face_silver" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Серебристый <span class="filter-block__item-quantity">(74)</span></span>
+                    </label>
+
+                        <label for="color-face_champagne" class="filter-block__label">
+                        <input type="checkbox" id="color-face_champagne" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Шампань <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="color-face_khaki" class="filter-block__label">
+                        <input type="checkbox" id="color-face_khaki" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Хаки <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="color-face_lilac" class="filter-block__label">
+                        <input type="checkbox" id="color-face_lilac" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Сиреневый <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="color-face_violet" class="filter-block__label">
+                        <input type="checkbox" id="color-face_violet" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Фиолетовый <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+
+                        <label for="color-face_brown" class="filter-block__label">
+                        <input type="checkbox" id="color-face_brown" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Коричневый <span class="filter-block__item-quantity">(74)</span></span>
+                    </label>
+
+                        <label for="color-face_pink" class="filter-block__label">
+                        <input type="checkbox" id="color-face_pink" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Розовый <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+
+                        <label for="color-face_light_blue" class="filter-block__label">
+                        <input type="checkbox" id="color-face_light_blue" class="filter-block__checkbox" disabled>
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Голубой <span class="filter-block__item-quantity">()</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filter-block__section">
+                <p class="filter-block__title">Дополнительно <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
+                                                                                                    aria-hidden="true"></i></span></p>
+
+                <div class="filter-block__content">
+                    <form action="" class="filter-block__additionally-form">
+                        <label for="additionally_backlight" class="filter-block__label">
+                        <input type="checkbox" id="additionally_backlight" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Подсветка <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="additionally_auto-callendar" class="filter-block__label">
+                        <input type="checkbox" id="additionally_auto-callendar" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Автоматический календарь <span class="filter-block__item-quantity">(659)</span></span>
+                    </label>
+
+                        <label for="additionally_self-winding" class="filter-block__label">
+                        <input type="checkbox" id="additionally_self-winding" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Автоподзавод <span class="filter-block__item-quantity">(541)</span></span>
+                    </label>
+
+                        <label for="additionally_anti-reflective" class="filter-block__label">
+                        <input type="checkbox" id="additionally_anti-reflective" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Антибликовое покрытие <span class="filter-block__item-quantity">(1137)</span></span>
+                    </label>
+
+                        <label for="additionally_barometer" class="filter-block__label">
+                        <input type="checkbox" id="additionally_barometer" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Барометр <span class="filter-block__item-quantity">(134)</span></span>
+                    </label>
+
+                        <label for="additionally_big-date" class="filter-block__label">
+                        <input type="checkbox" id="additionally_big-date" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Большая дата <span class="filter-block__item-quantity">(239)</span></span>
+                    </label>
+
+                        <label for="additionally_alarm-clock" class="filter-block__label">
+                        <input type="checkbox" id="additionally_alarm-clock" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Будильник <span class="filter-block__item-quantity">(141)</span></span>
+                    </label>
+
+                        <label for="additionally_second-time" class="filter-block__label">
+                        <input type="checkbox" id="additionally_second-time" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Второе время <span class="filter-block__item-quantity">(97)</span></span>
+                    </label>
+
+                        <label for="additionally_depth-gauge" class="filter-block__label">
+                        <input type="checkbox" id="additionally_depth-gauge" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Глубиномер <span class="filter-block__item-quantity">(378)</span></span>
+                    </label>
+
+                        <label for="additionally_dirty-transparency" class="filter-block__label">
+                        <input type="checkbox" id="additionally_dirty-transparency" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Грязенепроницаемость <span class="filter-block__item-quantity">(89)</span></span>
+                    </label>
+
+                        <label for="additionally_frost-resistance" class="filter-block__label">
+                        <input type="checkbox" id="additionally_frost-resistance" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Морозоустойчивость <span class="filter-block__item-quantity">(56)</span></span>
+                    </label>
+
+                        <label for="additionally_shock-resistance" class="filter-block__label">
+                        <input type="checkbox" id="additionally_shock-resistance" class="filter-block__checkbox">
+                        <span class="filter-block__pseudo-check"></span>
+                        <span class="filter-block__item-name">Ударопрочность <span class="filter-block__item-quantity">(37)</span></span>
+                    </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Filter End -->
         <!-- CONTENT -->
         <main class="content">
+            <div   data-slide-trigger="filter" data-open="filter" class="filter-icon">
+                <span></span>
+                фильтр
+            </div>
             <div class="breadcrumb-wrap">
                 <ul class="breadcrumb">
                     <li class="breadcrumb__item">
@@ -759,1142 +1903,7 @@
             </div>
 
             <section class="section-catalog clearfix">
-                <div class="filter-block">
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Параметры фильтра</p>
-                        <ul class="filter-block__param-list">
-                            <li class="filter-block__param-item">
-                                <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <span class="filter-block__text">Топ продаж</span>
-                            </li>
-
-                            <li class="filter-block__param-item">
-                                <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <span class="filter-block__text">Новинки</span>
-                            </li>
-
-                            <li class="filter-block__param-item">
-                                <a href="#" class="filter-block__button-delete"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                <span class="filter-block__text">Классические</span>
-                            </li>
-
-                            <li class="filter-block__param-item">
-                                <a href="#" class="filter-block__param-clear">Сбросить фильтр</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Цена <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" method="get" class="filter-block__price-form">
-                                <div class="filter-block__price-section">
-                                    <label for="min-cost" class="filter-block__price-label">
-                                    <input type="number" id="min-cost" class="filter-block__price-input from-price" value="967">
-                                </label>
-
-                                    <span class="filter-block__input-separator"></span>
-
-                                    <label for="max-cost" class="filter-block__price-label">
-                                    <input type="number" id="max-cost" class="filter-block__price-input to-price" value="27164">
-                                </label>
-
-                                    <span class="filter-block__price-currency">грн</span>
-                                </div>
-
-                                <div id="prices-slider" class="filter-block__prices-slider"></div>
-
-                                <div class="filter-block__button-wrap">
-                                    <input type="reset" class="filter-block__button" value="Сбросить">
-                                    <input type="submit" class="filter-block__button" value="Применить">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Тип <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__type-form">
-                                <label for="type_man" class="filter-block__label">
-                                <input type="checkbox" id="type_man" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Мужские <span class="filter-block__item-quantity">(11321)</span></span>
-                            </label>
-
-                                <label for="type_woman" class="filter-block__label">
-                                <input type="checkbox" id="type_woman" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Женские <span class="filter-block__item-quantity">(8679)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Стиль <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__style-form">
-                                <label for="style_classic" class="filter-block__label">
-                                <input type="checkbox" id="style_classic" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Классические <span class="filter-block__item-quantity">(9134)</span></span>
-                            </label>
-
-                                <label for="style_sport" class="filter-block__label">
-                                <input type="checkbox" id="style_sport" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Спортивные <span class="filter-block__item-quantity">(3459)</span></span>
-                            </label>
-
-                                <label for="style_smart" class="filter-block__label">
-                                <input type="checkbox" id="style_smart" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Smart <span class="filter-block__item-quantity">(2341)</span></span>
-                            </label>
-
-                                <label for="style_fashion" class="filter-block__label">
-                                <input type="checkbox" id="style_fashion" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Fashion <span class="filter-block__item-quantity">(1437)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Бренд <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__brand-form">
-                                <label for="brand_aflex" class="filter-block__label">
-                                <input type="checkbox" id="brand_aflex" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Alfex</span>
-                            </label>
-
-                                <label for="brand_jaguar" class="filter-block__label">
-                                <input type="checkbox" id="brand_jaguar" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Jaguar</span>
-                            </label>
-
-                                <label for="brand_rdr" class="filter-block__label">
-                                <input type="checkbox" id="brand_rdr" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Rue du Rhone</span>
-                            </label>
-
-                                <label for="brand_balmain" class="filter-block__label">
-                                <input type="checkbox" id="brand_balmain" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Balmain</span>
-                            </label>
-
-                                <label for="brand_candino" class="filter-block__label">
-                                <input type="checkbox" id="brand_candino" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Candino <span class="filter-block__item-quantity">(2)</span></span>
-                            </label>
-
-                                <label for="brand_christina_d" class="filter-block__label">
-                                <input type="checkbox" id="brand_christina_d" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Christina Design</span>
-                            </label>
-
-                                <label for="brand_frank_muller" class="filter-block__label">
-                                <input type="checkbox" id="brand_frank_muller" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Frank Muller</span>
-                            </label>
-
-                                <label for="brand_louis_erard" class="filter-block__label">
-                                <input type="checkbox" id="brand_louis_erard" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Louis Erard <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_rado" class="filter-block__label">
-                                <input type="checkbox" id="brand_rado" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Rado <span class="filter-block__item-quantity">(2)</span></span>
-                            </label>
-
-                                <label for="brand_roamer" class="filter-block__label">
-                                <input type="checkbox" id="brand_roamer" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Roamer</span>
-                            </label>
-
-                                <label for="brand_tag_heuer" class="filter-block__label">
-                                <input type="checkbox" id="brand_tag_heuer" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Tag Heuer</span>
-                            </label>
-
-                                <label for="brand_versace" class="filter-block__label">
-                                <input type="checkbox" id="brand_versace" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Versace <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_calvin_clein" class="filter-block__label">
-                                <input type="checkbox" id="brand_calvin_clein" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Calvin Clein <span class="filter-block__item-quantity">(3)</span></span>
-                            </label>
-
-                                <label for="brand_atlantic" class="filter-block__label">
-                                <input type="checkbox" id="brand_atlantic" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Atlantic <span class="filter-block__item-quantity">(2)</span></span>
-                            </label>
-
-                                <label for="brand_sm_chrono" class="filter-block__label">
-                                <input type="checkbox" id="brand_sm_chrono" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Swiss Military - Chrono</span>
-                            </label>
-
-                                <label for="brand_bulova_acutron" class="filter-block__label">
-                                <input type="checkbox" id="brand_bulova_acutron" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Bulova Acutron <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_certina" class="filter-block__label">
-                                <input type="checkbox" id="brand_certina" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Certina <span class="filter-block__item-quantity">(4)</span></span>
-                            </label>
-
-                                <label for="brand_epos" class="filter-block__label">
-                                <input type="checkbox" id="brand_epos" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Epos <span class="filter-block__item-quantity">(2)</span></span>
-                            </label>
-
-                                <label for="brand_longines" class="filter-block__label">
-                                <input type="checkbox" id="brand_longines" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Longines <span class="filter-block__item-quantity">(3)</span></span>
-                            </label>
-
-                                <label for="brand_maurice_lacroix" class="filter-block__label">
-                                <input type="checkbox" id="brand_maurice_lacroix" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Maurice Lacroix</span>
-                            </label>
-
-                                <label for="brand_raymond_weil" class="filter-block__label">
-                                <input type="checkbox" id="brand_raymond_weil" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Raymond Weil <span class="filter-block__item-quantity">(4)</span></span>
-                            </label>
-
-                                <label for="brand_sm_hanowa" class="filter-block__label">
-                                <input type="checkbox" id="brand_sm_hanowa" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Swiss Military - Hanowa</span>
-                            </label>
-
-                                <label for="brand_oris" class="filter-block__label">
-                                <input type="checkbox" id="brand_oris" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Oris <span class="filter-block__item-quantity">(3)</span></span>
-                            </label>
-
-                                <label for="brand_zenith" class="filter-block__label">
-                                <input type="checkbox" id="brand_zenith" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Zenith</span>
-                            </label>
-
-                                <label for="brand_bruno_sohnle" class="filter-block__label">
-                                <input type="checkbox" id="brand_bruno_sohnle" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Bruno Sohnle <span class="filter-block__item-quantity">(4)</span></span>
-                            </label>
-
-                                <label for="brand_continental" class="filter-block__label">
-                                <input type="checkbox" id="brand_continental" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Continental</span>
-                            </label>
-
-                                <label for="brand_vivienne" class="filter-block__label">
-                                <input type="checkbox" id="brand_vivienne" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Vivienne <span class="filter-block__item-quantity">(3)</span></span>
-                            </label>
-
-                                <label for="brand_westwood" class="filter-block__label">
-                                <input type="checkbox" id="brand_westwood" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Westwood</span>
-                            </label>
-
-                                <label for="brand_royal_london" class="filter-block__label">
-                                <input type="checkbox" id="brand_royal_london" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Royal London <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_citizen" class="filter-block__label">
-                                <input type="checkbox" id="brand_citizen" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Citizen</span>
-                            </label>
-
-                                <label for="brand_casio" class="filter-block__label">
-                                <input type="checkbox" id="brand_casio" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Casio <span class="filter-block__item-quantity">(7)</span></span>
-                            </label>
-
-                                <label for="brand_orient" class="filter-block__label">
-                                <input type="checkbox" id="brand_orient" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Orient</span>
-                            </label>
-
-                                <label for="brand_qq" class="filter-block__label">
-                                <input type="checkbox" id="brand_qq" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Q&Q <span class="filter-block__item-quantity">(2)</span></span>
-                            </label>
-
-                                <label for="brand_seiko" class="filter-block__label">
-                                <input type="checkbox" id="brand_seiko" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Seiko</span>
-                            </label>
-
-                                <label for="brand_jacques_lemans" class="filter-block__label">
-                                <input type="checkbox" id="brand_jacques_lemans" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Jacques Lemans <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_elite" class="filter-block__label">
-                                <input type="checkbox" id="brand_elite" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Elite</span>
-                            </label>
-
-                                <label for="brand_michel_renee" class="filter-block__label">
-                                <input type="checkbox" id="brand_michel_renee" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Michel Renee <span class="filter-block__item-quantity">(3)</span></span>
-                            </label>
-
-                                <label for="brand_pierre_lannier" class="filter-block__label">
-                                <input type="checkbox" id="brand_pierre_lannier" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Pierre Lannier</span>
-                            </label>
-
-                                <label for="brand_diesel" class="filter-block__label">
-                                <input type="checkbox" id="brand_diesel" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Diesel <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_romanson" class="filter-block__label">
-                                <input type="checkbox" id="brand_romanson" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Romanson</span>
-                            </label>
-
-                                <label for="brand_bulova" class="filter-block__label">
-                                <input type="checkbox" id="brand_bulova" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Bulova <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_fossil" class="filter-block__label">
-                                <input type="checkbox" id="brand_fossil" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Fossil</span>
-                            </label>
-
-                                <label for="brand_festina" class="filter-block__label">
-                                <input type="checkbox" id="brand_festina" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Festina <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_skagen" class="filter-block__label">
-                                <input type="checkbox" id="brand_skagen" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Skagen</span>
-                            </label>
-
-                                <label for="brand_kleynod" class="filter-block__label">
-                                <input type="checkbox" id="brand_kleynod" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Kleynod <span class="filter-block__item-quantity">(1)</span></span>
-                            </label>
-
-                                <label for="brand_daniel_wellington" class="filter-block__label">
-                                <input type="checkbox" id="brand_daniel_wellington" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Daniel Wellington</span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Страна бренда <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                            aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__country-brand-form">
-                                <label for="country_switzerland" class="filter-block__label">
-                                <input type="checkbox" id="country_switzerland" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Швейцария <span class="filter-block__item-quantity">(4134)</span></span>
-                            </label>
-
-                                <label for="country_germany" class="filter-block__label">
-                                <input type="checkbox" id="country_germany" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Германия <span class="filter-block__item-quantity">(659)</span></span>
-                            </label>
-
-                                <label for="country_england" class="filter-block__label">
-                                <input type="checkbox" id="country_england" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Англия <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="country_japan" class="filter-block__label">
-                                <input type="checkbox" id="country_japan" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Япония <span class="filter-block__item-quantity">(1137)</span></span>
-                            </label>
-
-                                <label for="country_austria" class="filter-block__label">
-                                <input type="checkbox" id="country_austria" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Австрия <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="country_france" class="filter-block__label">
-                                <input type="checkbox" id="country_france" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Франция <span class="filter-block__item-quantity">(239)</span></span>
-                            </label>
-
-                                <label for="country_italy" class="filter-block__label">
-                                <input type="checkbox" id="country_italy" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Италия <span class="filter-block__item-quantity">(141)</span></span>
-                            </label>
-
-                                <label for="country_korea" class="filter-block__label">
-                                <input type="checkbox" id="country_korea" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Корея <span class="filter-block__item-quantity">(97)</span></span>
-                            </label>
-
-                                <label for="country_usa" class="filter-block__label">
-                                <input type="checkbox" id="country_usa" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">США <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="country_spanish" class="filter-block__label">
-                                <input type="checkbox" id="country_spanish" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Испания <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="country_denmark" class="filter-block__label">
-                                <input type="checkbox" id="country_denmark" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Дания <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="country_ukraine" class="filter-block__label">
-                                <input type="checkbox" id="country_ukraine" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Украина <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-
-                                <label for="country_sweden" class="filter-block__label">
-                                <input type="checkbox" id="country_sweden" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Швеция <span class="filter-block__item-quantity">(74)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Категория <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-                        </p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__category-form">
-                                <label for="category_new" class="filter-block__label">
-                                <input type="checkbox" id="category_new" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Новинки <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="category_top" class="filter-block__label">
-                                <input type="checkbox" id="category_top" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Топ продаж <span class="filter-block__item-quantity">(249)</span></span>
-                            </label>
-
-                                <label for="category_discount" class="filter-block__label">
-                                <input type="checkbox" id="category_discount" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Скидки <span class="filter-block__item-quantity">(341)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Механизм <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-                        </p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__mechanism-form">
-                                <label for="mechanism_mechanical" class="filter-block__label">
-                                <input type="checkbox" id="mechanism_mechanical" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Механический <span class="filter-block__item-quantity">(341)</span></span>
-                            </label>
-
-                                <label for="mechanism_mechanical_auto" class="filter-block__label">
-                                <input type="checkbox" id="mechanism_mechanical_auto" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Механический с автоподзаводом</span>
-                            </label>
-
-                                <label for="mechanism_quartz" class="filter-block__label">
-                                <input type="checkbox" id="mechanism_quartz" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Кварцевый <span class="filter-block__item-quantity">(1541)</span></span>
-                            </label>
-
-                                <label for="mechanism_quartz_battery" class="filter-block__label">
-                                <input type="checkbox" id="mechanism_quartz_battery" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Кварцевый (батарейка) <span class="filter-block__item-quantity">(1137)</span></span>
-                            </label>
-
-                                <label for="mechanism_quartz_solar_battery" class="filter-block__label">
-                                <input type="checkbox" id="mechanism_quartz_solar_battery" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Кварцевый (солнечная батарея) <span
-                                        class="filter-block__item-quantity">(234)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Тип крепления <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                            aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__fastening-form">
-                                <label for="fastening_strap" class="filter-block__label">
-                                <input type="checkbox" id="fastening_strap" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Ремешок <span class="filter-block__item-quantity">(3412)</span></span>
-                            </label>
-
-                                <label for="fastening_bracelete" class="filter-block__label">
-                                <input type="checkbox" id="fastening_bracelete" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Браслет <span class="filter-block__item-quantity">(2345)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Тип индикации <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                            aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__indication-form">
-                                <label for="indication_arrows" class="filter-block__label">
-                                <input type="checkbox" id="indication_arrows" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Стрелочные <span class="filter-block__item-quantity">(3412)</span></span>
-                            </label>
-
-                                <label for="indication_numbers" class="filter-block__label">
-                                <input type="checkbox" id="indication_numbers" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Цифровые <span class="filter-block__item-quantity">(2345)</span></span>
-                            </label>
-
-                                <label for="indication_arrow_numbers" class="filter-block__label">
-                                <input type="checkbox" id="indication_arrow_numbers" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Стрелочно - цифровые <span class="filter-block__item-quantity">(345)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Стекло <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__glass-form">
-                                <label for="glass_crystal" class="filter-block__label">
-                                <input type="checkbox" id="glass_crystal" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Хрустальное <span class="filter-block__item-quantity">(341)</span></span>
-                            </label>
-
-                                <label for="glass_plastic" class="filter-block__label">
-                                <input type="checkbox" id="glass_plastic" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Пластиковое</span>
-                            </label>
-
-                                <label for="glass_mineral" class="filter-block__label">
-                                <input type="checkbox" id="glass_mineral" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Минеральное <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="glass_sapphire" class="filter-block__label">
-                                <input type="checkbox" id="glass_sapphire" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Сапфировое <span class="filter-block__item-quantity">(137)</span></span>
-                            </label>
-
-                                <label for="glass_plexiglass" class="filter-block__label">
-                                <input type="checkbox" id="glass_plexiglass" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Плексиглас <span class="filter-block__item-quantity">(2534)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Материал корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-                        </p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__material-body-form">
-                                <label for="material-body_plastic" class="filter-block__label">
-                                <input type="checkbox" id="material-body_plastic" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Пластик <span class="filter-block__item-quantity">(341)</span></span>
-                            </label>
-
-                                <label for="material-body_stainless_steel_gold" class="filter-block__label">
-                                <input type="checkbox" id="material-body_stainless_steel_gold" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Нержавеющая сталь с золотым напылением <span
-                                        class="filter-block__item-quantity">(12)</span></span>
-                            </label>
-
-                                <label for="material-body_stainless_steel" class="filter-block__label">
-                                <input type="checkbox" id="material-body_stainless_steel" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Нержавеющая сталь <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="material-body_steel" class="filter-block__label">
-                                <input type="checkbox" id="material-body_steel" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Сталь <span class="filter-block__item-quantity">(137)</span></span>
-                            </label>
-
-                                <label for="material-body_titan" class="filter-block__label">
-                                <input type="checkbox" id="material-body_titan" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Титан <span class="filter-block__item-quantity">(34)</span></span>
-                            </label>
-
-                                <label for="material-body_gold" class="filter-block__label">
-                                <input type="checkbox" id="material-body_gold" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Золото <span class="filter-block__item-quantity">(41)</span></span>
-                            </label>
-
-                                <label for="material-body_ceramics" class="filter-block__label">
-                                <input type="checkbox" id="material-body_ceramics" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Керамика <span class="filter-block__item-quantity">(91)</span></span>
-                            </label>
-
-                                <label for="material-body_polimer" class="filter-block__label">
-                                <input type="checkbox" id="material-body_polimer" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Поллимер <span class="filter-block__item-quantity">(244)</span></span>
-                            </label>
-
-                                <label for="material-body_other" class="filter-block__label">
-                                <input type="checkbox" id="material-body_other" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Другое <span class="filter-block__item-quantity">(120)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Водонепроницаемость <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                                  aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__water-resist-form">
-                                <label for="water-resist_wr" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_wr" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Брызгозащита (water resistant) <span
-                                        class="filter-block__item-quantity">(21)</span></span>
-                            </label>
-
-                                <label for="water-resist_3_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_3_atm" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">3 АТМ</span>
-                            </label>
-
-                                <label for="water-resist_5_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_5_atm" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">5 АТМ <span class="filter-block__item-quantity">(41)</span></span>
-                            </label>
-
-                                <label for="water-resist_10_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_10_atm" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">10 АТМ <span class="filter-block__item-quantity">(137)</span></span>
-                            </label>
-
-                                <label for="water-resist_20_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_20_atm" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">20 ATM <span class="filter-block__item-quantity">(34)</span></span>
-                            </label>
-
-                                <label for="water-resist_30_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_30_atm" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">30 ATM</span>
-                            </label>
-
-                                <label for="water-resist_50_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_50_atm" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">50 ATM <span class="filter-block__item-quantity">(93)</span></span>
-                            </label>
-
-                                <label for="water-resist_100_atm" class="filter-block__label">
-                                <input type="checkbox" id="water-resist_100_atm" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">100 ATM <span class="filter-block__item-quantity">(76)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Форма корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                            aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__shape-body-form">
-                                <label for="shape-body_round" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_round" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Круглая <span class="filter-block__item-quantity">(21)</span></span>
-                            </label>
-
-                                <label for="shape-body_square" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_square" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Квадратная <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-
-                                <label for="shape-body_rectangular" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_rectangular" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Прямоугольная <span class="filter-block__item-quantity">(41)</span></span>
-                            </label>
-
-                                <label for="shape-body_oval" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_oval" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Овальная <span class="filter-block__item-quantity">(137)</span></span>
-                            </label>
-
-                                <label for="shape-body_triangular" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_triangular" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Треугольная <span class="filter-block__item-quantity">(34)</span></span>
-                            </label>
-
-                                <label for="shape-body_non_standard" class="filter-block__label">
-                                <input type="checkbox" id="shape-body_non_standard" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Нестандартная <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Цвет корпуса <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                           aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__color-body-form">
-                                <label for="color-body_silver_yellow" class="filter-block__label">
-                                <input type="checkbox" id="color-body_silver_yellow" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серебристо - желтый <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="color-body_blue" class="filter-block__label">
-                                <input type="checkbox" id="color-body_blue" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Синий <span class="filter-block__item-quantity">(659)</span></span>
-                            </label>
-
-                                <label for="color-body_red" class="filter-block__label">
-                                <input type="checkbox" id="color-body_red" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Красный <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="color-body_green" class="filter-block__label">
-                                <input type="checkbox" id="color-body_green" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Зеленый <span class="filter-block__item-quantity">(1137)</span></span>
-                            </label>
-
-                                <label for="color-body_combined" class="filter-block__label">
-                                <input type="checkbox" id="color-body_combined" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Комбинированный <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="color-body_orange" class="filter-block__label">
-                                <input type="checkbox" id="color-body_orange" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Оранжевый <span class="filter-block__item-quantity">(239)</span></span>
-                            </label>
-
-                                <label for="color-body_gray" class="filter-block__label">
-                                <input type="checkbox" id="color-body_gray" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серый <span class="filter-block__item-quantity">(141)</span></span>
-                            </label>
-
-                                <label for="color-body_white" class="filter-block__label">
-                                <input type="checkbox" id="color-body_white" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Белый <span class="filter-block__item-quantity">(97)</span></span>
-                            </label>
-
-                                <label for="color-body_gold" class="filter-block__label">
-                                <input type="checkbox" id="color-body_gold" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Золотистый <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="color-body_yellow" class="filter-block__label">
-                                <input type="checkbox" id="color-body_yellow" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Желтый <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="color-body_choco" class="filter-block__label">
-                                <input type="checkbox" id="color-body_choco" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Шоколадный <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="color-body_black" class="filter-block__label">
-                                <input type="checkbox" id="color-body_black" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Черный <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-
-                                <label for="color-body_silver" class="filter-block__label">
-                                <input type="checkbox" id="color-body_silver" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серебристый <span class="filter-block__item-quantity">(74)</span></span>
-                            </label>
-
-                                <label for="color-body_silver_pink" class="filter-block__label">
-                                <input type="checkbox" id="color-body_silver_pink" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серебристо - розовый <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="color-body_khaki" class="filter-block__label">
-                                <input type="checkbox" id="color-body_khaki" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Хаки <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="color-body_lilac" class="filter-block__label">
-                                <input type="checkbox" id="color-body_lilac" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Сиреневый <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="color-body_violet" class="filter-block__label">
-                                <input type="checkbox" id="color-body_violet" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Фиолетовый <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-
-                                <label for="color-body_brown" class="filter-block__label">
-                                <input type="checkbox" id="color-body_brown" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Коричневый <span class="filter-block__item-quantity">(74)</span></span>
-                            </label>
-
-                                <label for="color-body_pink" class="filter-block__label">
-                                <input type="checkbox" id="color-body_pink" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Розовый <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-
-                                <label for="color-body_light_blue" class="filter-block__label">
-                                <input type="checkbox" id="color-body_light_blue" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Голубой <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Цвет циферблата <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                              aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__color-face-form">
-                                <label for="color-face_cream" class="filter-block__label">
-                                <input type="checkbox" id="color-face_cream" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Кремовый <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="color-face_blue" class="filter-block__label">
-                                <input type="checkbox" id="color-face_blue" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Синий <span class="filter-block__item-quantity">(659)</span></span>
-                            </label>
-
-                                <label for="color-face_red" class="filter-block__label">
-                                <input type="checkbox" id="color-face_red" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Красный <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="color-face_green" class="filter-block__label">
-                                <input type="checkbox" id="color-face_green" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Зеленый <span class="filter-block__item-quantity">(1137)</span></span>
-                            </label>
-
-                                <label for="color-face_combined" class="filter-block__label">
-                                <input type="checkbox" id="color-face_combined" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Комбинированный <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="color-face_orange" class="filter-block__label">
-                                <input type="checkbox" id="color-face_orange" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Оранжевый <span class="filter-block__item-quantity">(239)</span></span>
-                            </label>
-
-                                <label for="color-face_gray" class="filter-block__label">
-                                <input type="checkbox" id="color-face_gray" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серый <span class="filter-block__item-quantity">(141)</span></span>
-                            </label>
-
-                                <label for="color-face_white" class="filter-block__label">
-                                <input type="checkbox" id="color-face_white" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Белый <span class="filter-block__item-quantity">(97)</span></span>
-                            </label>
-
-                                <label for="color-face_gold" class="filter-block__label">
-                                <input type="checkbox" id="color-face_gold" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Золотистый <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="color-face_yellow" class="filter-block__label">
-                                <input type="checkbox" id="color-face_yellow" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Желтый <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="color-face_choco" class="filter-block__label">
-                                <input type="checkbox" id="color-face_choco" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Шоколадный <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="color-face_black" class="filter-block__label">
-                                <input type="checkbox" id="color-face_black" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Черный <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-
-                                <label for="color-face_silver" class="filter-block__label">
-                                <input type="checkbox" id="color-face_silver" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Серебристый <span class="filter-block__item-quantity">(74)</span></span>
-                            </label>
-
-                                <label for="color-face_champagne" class="filter-block__label">
-                                <input type="checkbox" id="color-face_champagne" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Шампань <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="color-face_khaki" class="filter-block__label">
-                                <input type="checkbox" id="color-face_khaki" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Хаки <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="color-face_lilac" class="filter-block__label">
-                                <input type="checkbox" id="color-face_lilac" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Сиреневый <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="color-face_violet" class="filter-block__label">
-                                <input type="checkbox" id="color-face_violet" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Фиолетовый <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-
-                                <label for="color-face_brown" class="filter-block__label">
-                                <input type="checkbox" id="color-face_brown" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Коричневый <span class="filter-block__item-quantity">(74)</span></span>
-                            </label>
-
-                                <label for="color-face_pink" class="filter-block__label">
-                                <input type="checkbox" id="color-face_pink" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Розовый <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-
-                                <label for="color-face_light_blue" class="filter-block__label">
-                                <input type="checkbox" id="color-face_light_blue" class="filter-block__checkbox" disabled>
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Голубой <span class="filter-block__item-quantity">()</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="filter-block__section">
-                        <p class="filter-block__title">Дополнительно <span class="filter-block__title-arrow"><i class="fa fa-chevron-up"
-                                                                                                            aria-hidden="true"></i></span></p>
-
-                        <div class="filter-block__content">
-                            <form action="" class="filter-block__additionally-form">
-                                <label for="additionally_backlight" class="filter-block__label">
-                                <input type="checkbox" id="additionally_backlight" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Подсветка <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="additionally_auto-callendar" class="filter-block__label">
-                                <input type="checkbox" id="additionally_auto-callendar" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Автоматический календарь <span class="filter-block__item-quantity">(659)</span></span>
-                            </label>
-
-                                <label for="additionally_self-winding" class="filter-block__label">
-                                <input type="checkbox" id="additionally_self-winding" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Автоподзавод <span class="filter-block__item-quantity">(541)</span></span>
-                            </label>
-
-                                <label for="additionally_anti-reflective" class="filter-block__label">
-                                <input type="checkbox" id="additionally_anti-reflective" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Антибликовое покрытие <span class="filter-block__item-quantity">(1137)</span></span>
-                            </label>
-
-                                <label for="additionally_barometer" class="filter-block__label">
-                                <input type="checkbox" id="additionally_barometer" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Барометр <span class="filter-block__item-quantity">(134)</span></span>
-                            </label>
-
-                                <label for="additionally_big-date" class="filter-block__label">
-                                <input type="checkbox" id="additionally_big-date" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Большая дата <span class="filter-block__item-quantity">(239)</span></span>
-                            </label>
-
-                                <label for="additionally_alarm-clock" class="filter-block__label">
-                                <input type="checkbox" id="additionally_alarm-clock" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Будильник <span class="filter-block__item-quantity">(141)</span></span>
-                            </label>
-
-                                <label for="additionally_second-time" class="filter-block__label">
-                                <input type="checkbox" id="additionally_second-time" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Второе время <span class="filter-block__item-quantity">(97)</span></span>
-                            </label>
-
-                                <label for="additionally_depth-gauge" class="filter-block__label">
-                                <input type="checkbox" id="additionally_depth-gauge" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Глубиномер <span class="filter-block__item-quantity">(378)</span></span>
-                            </label>
-
-                                <label for="additionally_dirty-transparency" class="filter-block__label">
-                                <input type="checkbox" id="additionally_dirty-transparency" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Грязенепроницаемость <span class="filter-block__item-quantity">(89)</span></span>
-                            </label>
-
-                                <label for="additionally_frost-resistance" class="filter-block__label">
-                                <input type="checkbox" id="additionally_frost-resistance" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Морозоустойчивость <span class="filter-block__item-quantity">(56)</span></span>
-                            </label>
-
-                                <label for="additionally_shock-resistance" class="filter-block__label">
-                                <input type="checkbox" id="additionally_shock-resistance" class="filter-block__checkbox">
-                                <span class="filter-block__pseudo-check"></span>
-                                <span class="filter-block__item-name">Ударопрочность <span class="filter-block__item-quantity">(37)</span></span>
-                            </label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="catalog-block">
                     <div class="catalog-block__sorting-block clearfix">

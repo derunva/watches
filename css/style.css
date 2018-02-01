@@ -2255,6 +2255,7 @@ height: 220PX;
     .section-catalog .catalog-block {
         width: 100%;
         transition: 0.5s ease;
+        margin-left: 0;
     }
 }
 
@@ -3011,15 +3012,80 @@ height: 220PX;
     border-top: 1px solid #dcdcdc;
     margin: 0 auto;
 }
-
-.filter-block {
-    display: inline-block;
-    max-width: 410px;
-    width: 25%;
-    float: left;
-    box-shadow: 1px 0 0 0 #dcdcdc;
+.filter-block__closer{
+    position: absolute;
+    left: 12%;
+    margin-left: -25px;
+    top: 15px;
+    height: 10px;
+    width: 10px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: none !important;
+    cursor: pointer;
 }
-
+.filter-block__closer:before,.filter-block__closer:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -.5px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #fff;
+}
+.filter-block__closer:after{
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    margin-top: -.5px;
+    margin-left: 0;
+    width: auto;
+    height: 1px;
+}
+.filter-block {
+    display: block;
+    padding-left: 12%;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    overflow-y: auto;
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -200%;
+    box-shadow: 1px 0 0 0 #dcdcdc;
+     -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+@media (min-width: 1023px){
+    .filter-block{
+        right: auto;
+        left: 0;
+        width: 25%;
+        padding-left: 0;
+        bottom: auto;
+        position: absolute;
+        z-index: 5;
+        background: none;
+    }
+    .filter-block > .is-hidden{
+        display: block;
+    }
+}
+.filter-block>*{
+  background: #fff;  
+}
+.filter-block.is-active{
+    right: 0;
+}
 .filter-block__section {
     border-bottom: 1px solid #DCDCDC;
 }
@@ -3328,7 +3394,8 @@ height: 220PX;
     min-height: 100px;
     padding: 20px;
     border-left: 1px solid #dcdcdc;
-    float: left;
+    
+    margin-left: 25%;
     /*&__select-list {
     width: auto;
     vertical-align: text-bottom;
@@ -7826,7 +7893,7 @@ textarea {
     }
 
     .slider.carousel.slick-initialized.slick-slider {
-        height: 700px !important;
+        height: 800px !important;
     }
     #popup1 .slider.carousel.slick-initialized.slick-slider {
         width: 200px !important;
@@ -8525,9 +8592,9 @@ textarea {
         padding: 0;
         width: 90%;
     }
-    .filter-block {
+    /*.filter-block {
         display: none;
-    }
+    }*/
     .section-drop-shipping .drop-shipping-outline {
         width: 450px;
     }
@@ -10533,11 +10600,13 @@ textarea {
 .slider .product-block__list-item {
     height: 500px;
     position: relative;
-    display: inline-block;
-    max-width: 300px;
-    margin: 0 0 10px;
+    display: block;
+    /*max-width: 300px;*/
+    margin: 0 5px 10px;
     text-align: center;
     transition: 0.5s ease;
+    width: auto;
+    float: none;
 }
 
 .slider .slider-block.slick-active {
@@ -12904,6 +12973,56 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         font-weight: 300;
     }
 }
+.filter-icon{
+    position: absolute;
+    cursor: pointer;
+    top: 110px;
+    right: 15px;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 4.375rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    background: #fff;
+    color: #95989a;
+    font-size: .75rem;
+    -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+}
+.filter-icon span{
+    position: absolute;
+    margin-top: -10px;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    height: 2px;
+    width: 10px;
+    background: #f68b23;
+}
+.filter-icon span:before{
+    content: '';
+    position: absolute;
+    top: -3px;
+    height: 1px;
+    left: -2px;
+    width: 14px;
+    background: #f68b23;
+}
+.filter-icon span:after{
+    content: '';
+    position: absolute;
+    top: 4px;
+    height: 2px;
+    left: 3px;
+    width: 4px;
+    background: #f68b23;
+}
+@media only screen and (min-width:1023px) {
+    .filter-icon{
+        display: none;
+    }
+}
 @media only screen and (max-width:770px) {
         .user-feed-name {
         font-size: 18px;
@@ -13394,8 +13513,8 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     background:#f8f8f8;
 }
 @media (max-width: 1023px){
-
+/*
     .section-catalog .filter-block {
         display: none;
-    }
+    }*/
 }

@@ -30,26 +30,29 @@ function itemPrice(){
     })
 }
 $(window).resize(function(){
+
+    
     var windowWidth = $(window).outerWidth();
+    if(windowWidth > 1023){
+        $('.filter-block').css({
+            top: $('.catalog-block').position().top,
+            bottom: $('.footer').outerHeight()
+        })
+    }
     console.log(windowWidth,'window')
     if(windowWidth > 1023 && windowWidth < 1920){
         var k =  windowWidth/1920;
         var fs = k*16;
+        if(windowWidth > 1023 && windowWidth < 1420){
+            fs += 3;
+        }
         $('html').css('font-size',fs);
         console.log(fs)
     }else{
         $('html').removeAttr('style')
     }
 })
-$(window).load(function () {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        $('body').addClass('ios');
-    } else {
-        $('body').addClass('web');
-    }
 
-    $('body').removeClass('loaded');
-});
 function modalOpen(item){
     $('.d-modal').removeClass('is-active');
     item.addClass('is-active');
@@ -392,8 +395,56 @@ $(window).bind('load', handler);
 $(window).bind('resize', handler);
 
 
-
+$(document).on('ready', function () {
+   
+});
+$(document).on('ready', function () {
+    
+});
 $(document).ready(function () {
+     $('.slider-mobile-menu').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+    $('.slider-mobile-view').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+    $('.same-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [{
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+
+
+                }
+                    },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+    });
+    
     $('[data-remove]').click(function(){
         $(this).parents('[data-remove-target]').remove();
     })
@@ -552,13 +603,14 @@ $(document).ready(function () {
     $('[data-open]').click(function(e){
         e.preventDefault();
         var $this = $(this);
+
         var target = $('[data-show="'+$(this).data('open')+'"]');
         if($this.is('[data-group]') && !$this.is('.is-active')){
             console.log(123)
             $('[data-group="'+$this.data('group')+'"].has-active').removeClass('is-active');
             $('[data-group="'+$this.data('group')+'"].has-hidden').addClass('is-hidden');
         }
-        
+        console.log(target)
         if(target.hasClass('is-hidden')){
             target.removeClass('is-hidden');
             $this.addClass('is-active');
@@ -582,6 +634,16 @@ $(document).ready(function () {
             }
         }
     });
+    $('[data-closer]').click(function(){
+        var targetsHide = $('[data-show="'+$(this).data('closer')+'"]');
+        var targetsActive = $('[data-slide="'+$(this).data('closer')+'"],[data-slide-target="'+$(this).data('closer')+'"]')
+        targetsHide.addClass('is-hidden');
+        targetsActive.removeClass('is-active');
+    })
+    $('[data-closer]>*').click(function(e){
+        e.stopPropagation();
+    })
+    $('.filter-block__content').slideUp(0)
     $('.header-dropdown *').click(function(e){
         e.stopPropagation();
     })
@@ -671,6 +733,17 @@ $(document).ready(function () {
     $('.auto-select').selectize({});
     
 });
-$(window).load(function(){
-    $(window).resize();
-})
+$(window).load(function () {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        $('body').addClass('ios');
+    } else {
+        $('body').addClass('web');
+    }
+
+    $('body').removeClass('loaded');
+    setTimeout(function(){
+        $('html,body').scroll()
+        $(window).resize()
+    },100)
+    
+});
