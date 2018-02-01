@@ -7930,7 +7930,7 @@ textarea {
     .slider-mobile-menu .slick-prev.slick-arrow:before,
     .slider-mobile-menu .slick-next.slick-arrow:before {
         top: -30px;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
     .slider-mobile-menu .info-list-menu li {
         padding-bottom: 1em;
