@@ -136,7 +136,26 @@ q:after {
     content: '';
     content: none;
 }
+textarea:-ms-input-placeholder {
+   font-size: 18px;
+   color: #a79fb7;
+}
 
+textarea::-webkit-input-placeholder {
+   font-size: 18px;
+   color: #a79fb7;
+}
+
+textarea:-moz-placeholder {
+   font-size: 18px;
+   color: #a79fb7;
+}
+
+/* firefox 19+ */
+textarea::-moz-placeholder {
+   font-size: 18px;
+   color: #a79fb7;
+}
 table {
     border-collapse: collapse;
     border-width: 0px;
@@ -7936,7 +7955,9 @@ textarea {
         padding-bottom: 1em;
     }
 }
-
+.center-text{
+    text-align: center;
+}
 @media only screen and (max-width: 600px) {
     .about-title {
         width: 100%;
@@ -12001,6 +12022,11 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     padding-top: 3px;
     font-size: 16px;
 }
+.d-form__input textarea{
+    line-height: 28px;
+    width: 100%;
+    font-size: 16px;
+}
 .d-form__input{
     position: relative;
 }
@@ -12123,9 +12149,7 @@ a.categories-block__link.categories-block__all-categories.white-btn{
 .d-icon_eye.is-active{
     opacity: 1;
 }
-.is-hidden{
-    display: none;
-}
+
 .header-dropdown{
     position: fixed;
     top: 130px;
@@ -13489,6 +13513,40 @@ a.categories-block__link.categories-block__all-categories.white-btn{
     font-size: 1.25rem;
     font-weight: 300;
 }
+.add-review{
+    padding: 30px 0;
+}
+.add-review__title{
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.rating{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.rating>*{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.rating__stars{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    margin-top: -4px;
+    height: 20px;
+    background: url('../img/rating.png');
+}
+.rating__stars span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: url('../img/rating.png');
+    background-position: 0 -19px;
+}
 @media (min-width: 1023px){
     .description-block__vantage-item{
         width: 19%;
@@ -13531,6 +13589,9 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         font-size: 14px;
         top: 11px;
     }
+
+
+
     .product-block__list-item.list-item_line .product-block__label-wrap{
         max-width: 50px;
     }
@@ -13569,4 +13630,11 @@ a.categories-block__link.categories-block__all-categories.white-btn{
         height: 220px;
         width: 115px;
     }
+
+}
+.ta-left{
+    text-align: left;
+}
+.is-hidden{
+    display: none;
 }
