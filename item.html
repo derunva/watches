@@ -639,40 +639,113 @@
                             </ul>
                         </div>
                         <div class="item-info-feedback">
-                            <div class="user-block">
-                                <div class="feedback-user-info">
-                                    <p class="user-feed-name">Евгений Левченко</p>
-                                    <p class="shopping-bag"><i class="fa fa-shopping-bag"></i>Уже купил</p>
-                                    <div class="product-block__rating"></div>
-                                </div>
-                                <p class="date">19.09.2017</p>
-                                <div class="feedback-block">
-                                    <div class="positive-feedback">
-                                        <img src="img/plus.png" width="22" height="22">
-                                        <p>Стильный дизайн, качественная сборка</p>
-                                    </div>
-                                    <div class="negative-feedback">
-                                        <img src="img/minus.png" width="22" height="2">
-                                        <p>Пока не обнаружил</p>
-                                    </div>
-                                </div>
-                                <p class="coment-item">Покупал жене, ей очень понравились.</p>
+                            <div class="center-text has-hidden" data-group="reviews" data-show="reviews">
+                                <a data-open="write-review"  data-group="reviews" class="d-btn has-active " href="#">
+                                    Написать отзыв
+                                </a>
                             </div>
-                            <div class="user-block">
-                                <div class="feedback-user-info">
-                                    <p class="user-feed-name">Марина</p>
-                                    <div class="product-block__rating"></div>
+                            <div data-show="write-review" data-group="reviews" class="add-review has-hidden is-hidden">
+                                <div class="add-review__title">Ваш отзыв</div>
+                                <div class="rating">
+                                    <span>Рейтинг:</span>
+                                    <span class="rating__stars">
+                                        <span></span>
+                                    </span>
+                                    <input type="hidden" name="rating">
                                 </div>
-                                <p class="date">19.09.2017</p>
-                                <div class="feedback-block">
-                                    <div class="positive-feedback">
-                                        <img src="img/plus.png" width="22" height="22">
-                                        <p>Отличный дизайн, качество товара.</p>
+                                <div class="d-form__group m-v-40">
+                                    <div class="d-form__label">
+                                        <label>
+                                            Преимущества
+                                        </label>
+                                    </div>
+                                    <div class="d-form__input">
+                                        <input type="text" placeholder="Опишите преимущества товара" name="good" data-input="good" data-validate="length" data-length="101">
+                                    </div>
+                                    <div class="d-form__error" data-err="good">
+                                        <span class="is-hidden"> 
+                                            <span data-curent-length >0</span>/101
+                                            <i class="d-icon d-icon_alert"></i>
+                                        </span>
                                     </div>
                                 </div>
-                                <p class="coment-item">Люблю эту фирму и их часы, у меня их уже 5 штук, последние подарил мне такие парень, теперь ношу их не снимая</p>
+                                <div class="d-form__group m-v-40">
+                                    <div class="d-form__label">
+                                        <label>
+                                            Недостатки
+                                        </label>
+                                    </div>
+                                    <div class="d-form__input">
+                                        <input type="text" placeholder="Опишите недостатки товара" name="bad" data-input="bad" data-validate="length" data-length="80">
+                                    </div>
+                                    <div class="d-form__error" data-err="bad">
+                                        <span class="is-hidden"> 
+                                            <span data-curent-length >0</span>/80
+                                            <i class="d-icon d-icon_alert"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-form__group m-v-40">
+                                    <div class="d-form__label">
+                                        <label>
+                                            Комментарий
+                                        </label>
+                                    </div>
+                                    <div class="d-form__input">
+                                        <textarea rows="3"  placeholder="Опишите недостатки товара" name="comment" data-input="comment" data-validate="length" data-length="89"></textarea>
+                                    </div>
+                                    <div class="d-form__error" data-err="comment">
+                                        <span class="is-hidden"> 
+                                            <span data-curent-length >0</span>/89
+                                            <i class="d-icon d-icon_alert"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-form__linkholder ta-left">
+                                    <span>*</span>  Ваш отзыв будет опубликован после 
+прохождения модерации
+                                </div>
+                                <div class="d-modal__btns">
+                                    <a data-open="reviews" data-group="reviews"  class="d-btn has-active d-btn_noborder" href="#">Отмена</a>
+                                    <a class="d-btn" href="#">Оставить отзыв</a>
+                                </div>
                             </div>
-                            <a class="show-more-btn" href="#">Показать все</a>
+                            <div data-show="reviews" data-group="reviews" class="has-hidden">
+                                <div  class="user-block  ">
+                                    <div class="feedback-user-info">
+                                        <p class="user-feed-name">Евгений Левченко</p>
+                                        <p class="shopping-bag"><i class="fa fa-shopping-bag"></i>Уже купил</p>
+                                        <div class="product-block__rating"></div>
+                                    </div>
+                                    <p class="date">19.09.2017</p>
+                                    <div class="feedback-block">
+                                        <div class="positive-feedback">
+                                            <img src="img/plus.png" width="22" height="22">
+                                            <p>Стильный дизайн, качественная сборка</p>
+                                        </div>
+                                        <div class="negative-feedback">
+                                            <img src="img/minus.png" width="22" height="2">
+                                            <p>Пока не обнаружил</p>
+                                        </div>
+                                    </div>
+                                    <p class="coment-item">Покупал жене, ей очень понравились.</p>
+                                </div>
+                                <div class="user-block">
+                                    <div class="feedback-user-info">
+                                        <p class="user-feed-name">Марина</p>
+                                        <div class="product-block__rating"></div>
+                                    </div>
+                                    <p class="date">19.09.2017</p>
+                                    <div class="feedback-block">
+                                        <div class="positive-feedback">
+                                            <img src="img/plus.png" width="22" height="22">
+                                            <p>Отличный дизайн, качество товара.</p>
+                                        </div>
+                                    </div>
+                                    <p class="coment-item">Люблю эту фирму и их часы, у меня их уже 5 штук, последние подарил мне такие парень, теперь ношу их не снимая</p>
+                                </div>
+                                <a class="show-more-btn" href="#">Показать все</a>
+                            </div>
                         </div>
                         <div class="item-info-choose">
                             <p class="title-pod">Индивидуальный подбор часов. Как это работает?</p>
@@ -896,13 +969,12 @@
     <script type="text/javascript" src="js/components/slick.js"></script>
     <script type="text/javascript" src="js/components/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/components/jquery.formstyler.js"></script>
+    <script type="text/javascript" src="js/jquery.masked.input.js"></script>
     <script type="text/javascript" src="js/components/jquery.raty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <!-- Magnific Popup core JS file -->
     <script src="js/magnific.js"></script>
-    <!--
-<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
-<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
--->
+
 
     <script type="text/javascript" src="js/item.js"></script>
     <script type="text/javascript" src="js/item-menu.js"></script>

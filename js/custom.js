@@ -409,7 +409,6 @@ $(document).ready(function () {
     });
     $('.slider-mobile-menu').on('afterChange', function(event, slick, currentSlide, nextSlide){
         $('.slider-mobile-menu [data-slick-index="'+currentSlide+'"] .info-list-menu li').click()
-      
     });
     $('.slider-mobile-view').slick({
         slidesToShow: 4,
@@ -561,10 +560,12 @@ $(document).ready(function () {
         var pass = $(this).val();
         $('.d-form__input_pass input[data-compare="'+$(this).data('compare')+'"]').val(pass);
     });
+
     $('[data-validate="phone"]').mask("(999) 99-99-999");
     $('[data-validate="phone"]').blur(function(){
         console.log($(this).val().length)
     })
+    
     $('[data-validate="email"]').keyup(function(){
         var email = $(this).val();
         var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
@@ -578,6 +579,7 @@ $(document).ready(function () {
             $errBox.parent().addClass('is-success');
         }
     });
+   
     $('[data-validate="email"]').blur(function(){
         if($(this).val().length < 1){
             var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
@@ -586,9 +588,15 @@ $(document).ready(function () {
         }
         
     });
+    
     $('[data-validate="length"]').keyup(function(){
+        var len = 3;
         var $errBox = $('[data-err="'+$(this).data('input')+'"] > span');
-        if($(this).val().length < 3){
+        if($(this).is('[data-length]')){
+            len = $(this).data('length')*1;
+            $('[data-curent-length]',$errBox ).text($(this).val().length);
+        }
+        if($(this).val().length < len){
             $errBox.removeClass('is-hidden');
             $errBox.parent().addClass('is-err');
             $errBox.parent().removeClass('is-success');
@@ -597,6 +605,32 @@ $(document).ready(function () {
             $errBox.parent().removeClass('is-err');
             $errBox.parent().addClass('is-success');
         }
+    })
+    $('.rating__stars').mousemove(function(e){
+        if($(this).is('.is-done')){
+            return false;
+        }
+        var x = e.pageX - this.offsetLeft;
+        $('span',this).css({
+            width : x 
+        })
+    })
+    $('.rating__stars').mouseleave(function(){
+        if($(this).is('.is-done')){
+            return false;
+        }
+        $('span',this).removeAttr('style');
+    })
+    $('.rating__stars').click(function(e){
+        $(this).addClass('is-done');
+        var x = e.pageX - this.offsetLeft;
+        var starWidth = $(this).width()/5;
+        var rate = Math.round((x/(starWidth))+.5)
+      
+        $('span',this).css({
+            width : starWidth*rate
+        })
+        $(this).parent().find('input').val(rate);
     })
     var slider =  $("#lovelist").lightSlider({
         item: 1,
