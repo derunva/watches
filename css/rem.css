@@ -775,4 +775,16 @@ html{
 		width: 2.125rem;
 		height: 2.125rem;
 	}
+	.user-feed-name{
+		font-size: 1.25rem;
+	}
+	.shopping-bag{
+		font-size: 1rem;
+	}
+	.date{
+		font-size: 1rem;
+	}
+	.user-block .positive-feedback p, .user-block .negative-feedback p{
+		font-size: 1rem;
+	}
 }
